@@ -85,6 +85,11 @@ def analyzer(spanish_sentence: str, max_retries: int = 10, pause: float = 0.5) -
                 {"role": "user", "content": "Mi casa es pequeña."}, {"role": "assistant", "content": "A1"},
                 {"role": "user", "content": "El libro está en la mesa."}, {"role": "assistant", "content": "A1"},
                 {"role": "user", "content": "Él come una manzana."}, {"role": "assistant", "content": "A1"},
+                {"role": "user", "content": "Tengo una bicicleta."}, {"role": "assistant", "content": "A1"},
+                {"role": "user", "content": "El perro está en el jardín."}, {"role": "assistant", "content": "A1"},
+                {"role": "user", "content": "La ventana está abierta."}, {"role": "assistant", "content": "A1"},
+                {"role": "user", "content": "Hoy hace sol."}, {"role": "assistant", "content": "A1"},
+
 
                 # --- A2 anchors ---
                 {"role": "user", "content": "Tengo que limpiar mi habitación."}, {"role": "assistant", "content": "A2"},
@@ -95,6 +100,11 @@ def analyzer(spanish_sentence: str, max_retries: int = 10, pause: float = 0.5) -
                 {"role": "user", "content": "¿Puedes ayudarme con la tarea?"}, {"role": "assistant", "content": "A2"},
                 {"role": "user", "content": "Necesito comprar un regalo."}, {"role": "assistant", "content": "A2"},
                 {"role": "user", "content": "Quiero aprender a tocar la guitarra."}, {"role": "assistant", "content": "A2"},
+                {"role": "user", "content": "Tengo que estudiar para el examen."}, {"role": "assistant", "content": "A2"},
+                {"role": "user", "content": "Voy a cocinar pasta esta noche."}, {"role": "assistant", "content": "A2"},
+                {"role": "user", "content": "Me duele la cabeza después de trabajar."}, {"role": "assistant", "content": "A2"},
+                {"role": "user", "content": "Siempre tomo café por la mañana."}, {"role": "assistant", "content": "A2"},
+
 
                 # --- B1 anchors ---
                 {"role": "user", "content": "Ayer fui al cine con mis amigos."}, {"role": "assistant", "content": "B1"},
@@ -102,6 +112,14 @@ def analyzer(spanish_sentence: str, max_retries: int = 10, pause: float = 0.5) -
                 {"role": "user", "content": "He terminado mi tarea."}, {"role": "assistant", "content": "B1"},
                 {"role": "user", "content": "Este es el pueblo del que te hablé."}, {"role": "assistant", "content": "B1"},
                 {"role": "user", "content": "Comí caviar por primera vez."}, {"role": "assistant", "content": "B1"},
+                {"role": "user", "content": "Aunque estaba cansado, terminé el proyecto a tiempo."}, {"role": "assistant", "content": "B1"},
+                {"role": "user", "content": "Me gusta la ciudad donde nací."}, {"role": "assistant", "content": "B1"},
+                {"role": "user", "content": "Si llueve mañana, no iremos al parque."}, {"role": "assistant", "content": "B1"},
+                {"role": "user", "content": "Prefiero el café sin azúcar, pero con leche."}, {"role": "assistant", "content": "B1"},
+                {"role": "user", "content": "El libro que estoy leyendo es interesante."}, {"role": "assistant", "content": "B1"},
+                {"role": "user", "content": "Cuando era niño, jugaba en la calle con mis amigos."}, {"role": "assistant", "content": "B1"},
+                {"role": "user", "content": "No pude ir a la fiesta porque tenía que estudiar."}, {"role": "assistant", "content": "B1"},
+
 
                 # --- B2 anchors ---
                 {"role": "user", "content": "Aunque estaba cansado, terminé el proyecto."}, {"role": "assistant", "content": "B2"},
@@ -110,6 +128,11 @@ def analyzer(spanish_sentence: str, max_retries: int = 10, pause: float = 0.5) -
                 {"role": "user", "content": "Sin embargo, decidimos continuar."}, {"role": "assistant", "content": "B2"},
                 {"role": "user", "content": "Cuando termine el curso, buscaré trabajo."}, {"role": "assistant", "content": "B2"},
                 {"role": "user", "content": "No abras antes de que el tren se detenga."}, {"role": "assistant", "content": "B2"},
+                {"role": "user", "content": "La vida sin amor es completamente inútil."}, {"role": "assistant", "content": "B2"},
+                {"role": "user", "content": "No quiero pasar el resto de mi vida arrepintiéndome de ello."}, {"role": "assistant", "content": "B2"},
+                {"role": "user", "content": "¡No significa nada!"}, {"role": "assistant", "content": "B2"},
+                {"role": "user", "content": "Un avaro acumula dinero no porque sea prudente, sino porque es codicioso."}, {"role": "assistant", "content": "B2"},
+
 
                 # --- New idiomatic/discourse anchors ---
                 {"role": "user", "content": "No te puedes perder; está justo en el centro."}, {"role": "assistant", "content": "B2"},
@@ -124,6 +147,8 @@ def analyzer(spanish_sentence: str, max_retries: int = 10, pause: float = 0.5) -
                 {"role": "user", "content": "La ontología estudia la naturaleza del ser y la existencia."}, {"role": "assistant", "content": "C2"},
                 {"role": "user", "content": "La segunda mitad de la vida de un hombre está compuesta únicamente por los hábitos que ha adquirido durante la primera mitad."}, {"role": "assistant", "content": "C2"},
                 {"role": "user", "content": "Estoy en contra de usar la muerte como castigo. También estoy en contra de usarla como recompensa."}, {"role": "assistant", "content": "C2"},
+                {"role": "user", "content": "Es una pena que no se puedan comprar milagros como se compran patatas."}, {"role": "assistant", "content": "C2"},
+                {"role": "user", "content": "Las personas ciegas a veces desarrollan una habilidad compensatoria para percibir la proximidad de los objetos."}, {"role": "assistant", "content": "C2"},
 
                 # --- New academic/abstract anchors ---
                 {"role": "user", "content": "Las personas ciegas a veces desarrollan una habilidad compensatoria para percibir la proximidad de los objetos que las rodean."}, {"role": "assistant", "content": "C2"},
@@ -131,6 +156,56 @@ def analyzer(spanish_sentence: str, max_retries: int = 10, pause: float = 0.5) -
                 {"role": "user", "content": "La ética examina las normas que regulan la conducta humana."}, {"role": "assistant", "content": "C2"},
                 {"role": "user", "content": "La sociología estudia las estructuras y dinámicas de las sociedades modernas."}, {"role": "assistant", "content": "C2"},
                 {"role": "user", "content": "La filosofía política reflexiona sobre la legitimidad del poder y la justicia social."}, {"role": "assistant", "content": "C2"},
+               
+                                # --- Abstract/Philosophical corrective anchors ---
+                {"role": "user", "content": "La vida es corta."}, {"role": "assistant", "content": "B1"},
+                {"role": "user", "content": "Nada es eterno."}, {"role": "assistant", "content": "B1"},
+                {"role": "user", "content": "La belleza reside en la verdad."}, {"role": "assistant", "content": "B2"},
+                {"role": "user", "content": "La existencia humana refleja la complejidad de la conciencia."}, {"role": "assistant", "content": "C2"},
+                {"role": "user", "content": "El tiempo revela la naturaleza de nuestras decisiones."}, {"role": "assistant", "content": "C2"},
+
+                # --- Ethical/Modal corrective anchors ---
+                {"role": "user", "content": "Debes respetar a los demás."}, {"role": "assistant", "content": "B1"},
+                {"role": "user", "content": "Podríamos considerar otras opciones."}, {"role": "assistant", "content": "B2"},
+                {"role": "user", "content": "Deberíamos reflexionar sobre las implicaciones éticas de nuestras acciones."}, {"role": "assistant", "content": "C2"},
+                {"role": "user", "content": "Es importante que ayudemos a quienes lo necesitan."}, {"role": "assistant", "content": "B2"},
+                {"role": "user", "content": "Podría ser necesario replantear la estrategia si fallan los supuestos iniciales."}, {"role": "assistant", "content": "C2"},
+
+                # --- Idioms/Figurative corrective anchors ---
+                {"role": "user", "content": "Más vale tarde que nunca."}, {"role": "assistant", "content": "A2"},
+                {"role": "user", "content": "No hay mal que por bien no venga."}, {"role": "assistant", "content": "B1"},
+                {"role": "user", "content": "El que madruga, Dios le ayuda."}, {"role": "assistant", "content": "B1"},
+                {"role": "user", "content": "La ironía del destino se revela en los momentos más inesperados."}, {"role": "assistant", "content": "C2"},
+                {"role": "user", "content": "El tiempo es oro."}, {"role": "assistant", "content": "A2"},
+
+                # --- Concise C2 corrective anchors ---
+                {"role": "user", "content": "La libertad exige responsabilidad."}, {"role": "assistant", "content": "C2"},
+                {"role": "user", "content": "El poder corrompe."}, {"role": "assistant", "content": "C2"},
+                {"role": "user", "content": "El conocimiento sin ética es peligroso."}, {"role": "assistant", "content": "C2"},
+                {"role": "user", "content": "La justicia sin compasión es incompleta."}, {"role": "assistant", "content": "C2"},
+                {"role": "user", "content": "La verdad incomoda, pero libera."}, {"role": "assistant", "content": "C2"},
+                
+                                # --- Syntax-Complexity corrective anchors ---
+                {"role": "user", "content": "Este es el libro que compré ayer."}, {"role": "assistant", "content": "B1"},
+                {"role": "user", "content": "La persona que conocí en la conferencia me ofreció trabajo."}, {"role": "assistant", "content": "B2"},
+                {"role": "user", "content": "Aunque estaba cansado, terminé el proyecto a tiempo."}, {"role": "assistant", "content": "B2"},
+                {"role": "user", "content": "Si hubiera sabido la verdad, habría actuado de otra manera."}, {"role": "assistant", "content": "C2"},
+                {"role": "user", "content": "El informe, que fue redactado por expertos internacionales, analiza las consecuencias a largo plazo."}, {"role": "assistant", "content": "C2"},
+                {"role": "user", "content": "A pesar de que el resultado parecía incierto, logramos alcanzar nuestros objetivos."}, {"role": "assistant", "content": "B2"},
+                {"role": "user", "content": "El hecho de que la sociedad dependa de la cooperación demuestra la importancia de la solidaridad."}, {"role": "assistant", "content": "C2"},
+  
+                # --- Lexical-Complexity corrective anchors ---
+                {"role": "user", "content": "La pseudociencia engaña a millones de personas."}, {"role": "assistant", "content": "C2"},
+                {"role": "user", "content": "La justicia es costosa."}, {"role": "assistant", "content": "B2"},
+                {"role": "user", "content": "La verdad absoluta no existe."}, {"role": "assistant", "content": "C2"},
+                {"role": "user", "content": "La esperanza es una estrategia peligrosa."}, {"role": "assistant", "content": "B2"},
+                {"role": "user", "content": "Cada persona es un mundo."}, {"role": "assistant", "content": "B2"},
+                {"role": "user", "content": "El conocimiento sin ética es peligroso."}, {"role": "assistant", "content": "C2"},
+                {"role": "user", "content": "La libertad exige responsabilidad."}, {"role": "assistant", "content": "C2"},
+                {"role": "user", "content": "La ironía del destino se revela en los momentos más inesperados."}, {"role": "assistant", "content": "C2"},
+                {"role": "user", "content": "La belleza reside en la verdad."}, {"role": "assistant", "content": "B2"},
+                {"role": "user", "content": "La política sin principios destruye la confianza."}, {"role": "assistant", "content": "C2"},
+
                     
                 # --- Actual request ---
                 {"role": "user", "content": spanish_sentence},
