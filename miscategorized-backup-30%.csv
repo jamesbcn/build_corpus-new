@@ -1,0 +1,376 @@
+sentence,expected,predicted
+"El que ríe último, ríe mejor",A2,C2
+Más vale tarde que nunca,A2,A2
+"De tal palo, tal astilla",A2,A2
+"A quien madruga, Dios le ayuda",A2,A2
+"Quien busca, encuentra",A2,C2
+Roma no se construyó en un día,A2,B1
+El silencio otorga consentimiento,A2,C2
+"Donde hay voluntad, hay un camino",A2,A2
+Dicen que el amor es ciego,A2,A2
+Una piedra que rueda no junta musgo,A2,C2
+Es porque no quieres estar solo,A2,A2
+No puedo vivir ese tipo de vida,B1,A2
+Estoy sin palabras,A2,A2
+Nada es bello excepto la verdad,B1,C2
+La vida es hermosa,B1,A1
+Me haces soñar,B1,A2
+Es una pena cuando alguien muere,B1,C2
+Nuestra opinión es una idea que tenemos; nuestra convicción es una idea que nos tiene,B1,C2
+La vida es una enfermedad de transmisión sexual fatal,B1,C2
+El todo es mayor que la suma de las partes,B1,C2
+Este es el pueblo del que te hablé,B2,B1
+Este es el chico en el que pienso,B2,A2
+Se le ha advertido en varias ocasiones,B2,B1
+Siempre me he preguntado cómo sería tener hermanos,B2,C2
+Ella está preguntando cómo es eso posible,B2,B1
+La última persona a la que le conté mi idea pensó que estaba loco,B2,B1
+Es una palabra para la que me gustaría encontrar un sustituto,B2,C2
+No sé a qué te refieres,B2,A2
+No sabía de dónde venía,B2,B1
+¿Con quién estoy hablando?,B2,A1
+Sabía que él aceptaría,B2,B1
+"Si pudiera enviarte un malvavisco, lo haría",C1,B2
+"Si no hubiera dado respuesta, no habría hablado",C1,C1
+"Si no puedes tener hijos, siempre podrías adoptar",B2,C1
+"Si no comes, mueres",B2,B1
+"Si ves un error, por favor corrígelo",B2,B2
+"Si no tienes nada que hacer, mira el techo de tu habitación",B2,B1
+"Si levantas una ceja, puede significar…",B2,B1
+"Si dos hombres siempre tienen la misma opinión, uno de ellos es innecesario",B2,C2
+"Si no hay solución, entonces no hay problema",B2,C2
+Es mejor ser odiado por lo que eres que amado por lo que no eres,B1,C2
+No es raro en absoluto vivir más de noventa años,B1,C2
+La educación en este mundo me decepciona,B1,C2
+Supongo que es diferente cuando lo piensas a largo plazo,B1,C2
+Creo que tengo una teoría al respecto,B1,B2
+La inocencia es una cosa hermosa,B1,C2
+Los humanos nunca estuvieron destinados a vivir para siempre,B1,C2
+La libertad consiste en poder hacer todo lo más inofensivo posible,B1,C2
+Una verdad matemática no es ni simple ni complicada; simplemente es,B1,C2
+"Los matemáticos son poetas, excepto que tienen que probar lo que su fantasía crea",B1,C2
+Estoy embarazada de cuatro meses,A2,A1
+"Poco a poco, notarás mejoras en tus escritos",B2,B1
+¿Cómo puedes tener una laptop y no un teléfono celular?,B2,A2
+Voy a dispararle,B2,B1
+Voy a llevar mi coche,B2,B1
+Voy a tomar un baño,B2,B1
+Pensé que era verdad,B2,B1
+Ellos discutieron,B2,B1
+Tomaste la llave equivocada,B2,B1
+Logré entrar,B2,B1
+Estuve en las montañas,B2,B1
+Nunca me gustó la biología,B2,B1
+Una vez quise ser astrofísico,B2,B1
+No me gustó,B2,A2
+Ganamos la batalla,B2,B1
+Fui al zoológico ayer,B2,B1
+Vi televisión esta mañana,B2,B1
+Dormí un poco durante el almuerzo porque estaba muy cansado,B2,B1
+Empecé a aprender chino la semana pasada,B2,B1
+",Algún día compraré una máquina de algodón de azúcar",B2,B1
+El comunismo nunca se alcanzará en mi vida,B1,C2
+El creacionismo es una pseudociencia,B1,C2
+"Las matemáticas son como el amor: una idea simple, pero puede volverse complicada",B1,C2
+La mayoría de los avances científicos no son más que el descubrimiento de lo obvio,B1,C2
+El cerebro es solo una máquina complicada,B1,C2
+Un metro cúbico corresponde a 1000 litros,B1,A1
+La discrepancia entre las versiones…,B1,C2
+La formación y el movimiento de los huracanes…,B1,C2
+La ceguera es responsable de un asombroso costo…,B1,C2
+Las universidades y colegios privados de Estados Unidos son autónomos,B1,C2
+Es inútil seguir pensando más,B1,C2
+¿Realmente necesitas hacer la pregunta para saber la respuesta?,B1,C2
+¡No esperes que otros piensen por ti!,B1,C2
+Es presuntuoso que los humanos asuman que nuestra tarea es hacer lo que solo Dios puede hacer,B1,C2
+La justicia es costosa,B1,C2
+La pasión crea sufrimiento,B1,C2
+Nada se logra sin esfuerzo,B1,C2
+Muchas personas navegan por la vida sin un propósito,B1,C2
+La vida sin amor es completamente inútil,B1,C2
+",Creo que los exámenes están arruinando la educación",B1,C2
+Es una pena que no se puedan comprar milagros como se compran patatas,B1,C2
+"La mayoría de las escuelas fueron diseñadas no para transformar la sociedad, sino para reproducirla",B1,C2
+El viento se calmó,B1,B1
+Es práctico tener una laptop,B1,A1
+Es bastante difícil dominar el francés en 2 o 3 años,B1,B1
+Es imposible para mí explicártelo,B1,C2
+No quiero pasar el resto de mi vida arrepintiéndome de ello,B1,C2
+Sería divertido ver cómo cambian las cosas a lo largo de los años,B1,C2
+Estoy fuera de mí de alegría,B1,A2
+Es la verdad absoluta,B1,C2
+"sentence,expected,predicted
+""Tengo sed",A1,A1
+",Cuando les pregunto a las personas qué es lo que más lamentan de la escuela secundaria, casi todos dicen lo mismo: que desperdiciaron tanto tiempo.",B2,C2
+",Cuando no puedes hacer lo que quieres, haces lo que puedes.",C2,C2
+Dale una pulgada y tomará una yarda,A2,B2
+¡Lo hiciste intencionadamente!,B1,B1
+¿No le dijiste nada?,B1,B1
+Me hiciste perder la cabeza,A2,A2
+Eres mi tipo,A1,A2
+Eres irresistible,A1,A1
+"¿Podrías llamar más tarde, por favor?",B2,B2
+¿Con quién estoy hablando?,B1,A2
+"Acepto, pero solo bajo una condición.",B2,B2
+"¡Sonríe ahora, llora después!",C2,C2
+"A la edad de seis años, había aprendido a usar la máquina de escribir y le dijo a la maestra que no necesitaba aprender a escribir a mano.",B2,B2
+La vida es hermosa,C2,C2
+Hay días en los que siento que mi cerebro quiere abandonarme,C2,C2
+¡No puedo cortarme las uñas y planchar al mismo tiempo!,A2,A2
+¡No puedo más! ¡No he dormido en tres días!,B1,B1
+Él no quiere que le hables sobre tu vida sexual,B2,B2
+¿Alguna vez has comido un pastel de plátano?,B1,B1
+¿Por qué te casarías con una mujer si te gustan los hombres?,C2,C2
+"Si no puedes tener hijos, siempre podrías adoptar.",B2,C2
+¿Estás a favor o en contra del aborto?,C2,C2
+¿Qué te hizo cambiar de opinión?,B1,B1
+"¡Mira, un mono de tres cabezas!",A1,A1
+Es una pena que no se puedan comprar milagros como se compran patatas,C2,C2
+Me encanta la lasaña,A2,A2
+"Si sabes que algo desagradable va a suceder, como ir al dentista, por ejemplo, o a Francia, entonces eso no es bueno.",B1,C2
+"Los números primos son como la vida; son completamente lógicos, pero es imposible encontrar las reglas, incluso si pasas todo tu tiempo pensando en ello.",C2,C2
+"Si levantas una ceja, puede significar 'Quiero tener sexo contigo', pero también 'Encuentro que lo que acabas de decir es completamente idiota.'",B2,C2
+El cerebro es solo una máquina complicada,C2,C2
+"Un horario es una tarjeta de identidad para el tiempo, pero, si no tienes un horario, el tiempo no está.",C2,C2
+¡Este pingüino bebé es demasiado lindo!,A1,A1
+Estoy en el hospital. Me cayó un rayo,B1,B1
+"Seamos realistas, es imposible. Nunca lo vamos a lograr.",C2,C2
+¿Cuál es tu mayor fuente de inspiración?,A2,A1
+"No te casas con alguien con quien puedes vivir, te casas con la persona sin la cual no puedes vivir.",C2,C2
+"En teoría, no hay diferencia entre la teoría y la práctica. Pero, en la práctica, sí la hay.",C2,C2
+"No te quedes en la cama, a menos que puedas ganar dinero en ella.",C2,C2
+Hay personas en el mundo tan hambrientas que Dios no puede aparecer ante ellas más que en forma de pan,C2,C2
+Todo lo que es demasiado estúpido para ser hablado se canta,C2,C2
+Se necesita sabiduría para entender la sabiduría: la música no es nada si el público es sordo,C2,C2
+Estaba releyendo las cartas que me enviaste,B1,B1
+No quiero ir a la escuela,A2,A2
+Se acabó entre nosotros. ¡Devuélveme mi anillo!,A2,A2
+Está lloviendo,A1,A1
+"Estaba planeando ir a la playa hoy, pero luego empezó a llover.",B2,B1
+"Ella es realmente inteligente, ¿verdad?",A2,A2
+Una opinión es impactante solo si es una convicción,C2,C2
+"Las personas que aman no dudan de nada, o dudan de todo.",C2,C2
+La justicia es costosa,C2,C2
+La libertad consiste en poder hacer todo lo más inofensivo posible,C2,C2
+El más lento en hacer una promesa es el más fiel en cumplirla,C2,C2
+",Cada opinión es una mezcla de verdad y errores",C2,C2
+La vida es una enfermedad de transmisión sexual fatal,C2,C2
+"Si dos hombres siempre tienen la misma opinión, uno de ellos es innecesario.",C2,C2
+Nuestra opinión es una idea que tenemos; nuestra convicción es una idea que nos tiene,C2,C2
+Mañana voy a estudiar en la biblioteca,B1,B1
+Demasiado tarde,A1,A1
+Fui al zoológico ayer,B1,B1
+Ganamos la batalla,B1,B1
+¿Hola? ¿Sigues aquí?,A1,A1
+Hago el almuerzo todos los días,A1,A1
+Vi televisión esta mañana,B1,B1
+Leí un libro mientras comía,B2,B1
+Dormí un poco durante el almuerzo porque estaba muy cansado,B1,B1
+Empecé a aprender chino la semana pasada,B1,B1
+Es más fácil ligar con gente por Internet que en la calle,B1,B1
+"Vivo cerca del mar, así que a menudo puedo ir a la playa.",B2,B2
+Algún día compraré una máquina de algodón de azúcar,B1,B1
+Es práctico tener una laptop,A2,A2
+Tus gafas cayeron al suelo,B1,B1
+¿Cuántas veces al día te miras en el espejo?,A2,A2
+Fuimos a Londres el año pasado,B1,B1
+Ella no quiere hablar de eso,A2,A2
+He perdido mi inspiración,B1,B1
+"Si no tienes nada que hacer, mira el techo de tu habitación.",B1,B1
+¡No significa nada!,A1,A1
+"Por favor, ten paciencia. Toma tiempo.",A2,A2
+Cierra la puerta cuando salgas,B2,B2
+Esta es una historia tan triste,A1,A1
+"Si no hay solución, entonces no hay problema.",C2,C2
+Mi hermanito está viendo la televisión,B1,B1
+Es presuntuoso que los humanos asuman que nuestra tarea es hacer lo que solo Dios puede hacer,C2,C2
+"Un lector astuto debería estar dispuesto a sopesar todo lo que lee, incluidas las fuentes anónimas.",C2,C2
+"Negando ser anarquista, Katja sostenía que solo deseaba hacer cambios en nuestro gobierno, no destruirlo.",C2,C2
+"La ceguera es responsable de un asombroso costo en salud deficiente, sufrimiento, pérdida de dignidad y disminución en la calidad de vida de las personas en todo el mundo.",C2,C2
+"La formación y el movimiento de los huracanes son caprichosos, incluso con nuestra tecnología actual.",C2,C2
+"Cuando envías un telegrama, la brevedad es esencial porque te cobrarán por cada palabra.",B2,B2
+"David tiene un gran interés en la estética: las cualidades que hacen que una pintura, escultura, composición musical o poema sean agradables a la vista, al oído o a la mente.",C2,C2
+"A pesar de las constantes afirmaciones de amor de Trang, Spenser sigue temiendo que algún día ella deje de amarlo.",C2,C2
+¿Lo conociste en la universidad?,B1,B1
+¡Aaah! ¡Mi computadora está rota!,A1,A1
+Las universidades y colegios privados de Estados Unidos son autónomos,C2,C2
+"Cada vez que me uno a un nuevo juego de Warcraft, me enfrento a un nuevo equipo de adversarios.",B2,B2
+"Desde el momento en que supe que la universidad existía, he querido ir allí.",B2,B1
+Mi apatía hacia votar proviene de mi desagrado por la política,C2,C2
+La ascendencia de los monarcas es lo que mantiene a sus súbditos alejados de la rebelión,C2,C2
+Sarah fue lo suficientemente perspicaz como para darse cuenta de que sus amigos estaban tratando de hacerle una broma,B2,C2
+La orquesta hace ruidos discordantes al afinar,B2,A2
+La discrepancia entre las versiones de las dos partes involucradas en el accidente era tan grande que las autoridades tuvieron dificultades para decidir cuál de los lados decía la verdad,C2,C2
+"Sí, sucede de vez en cuando.",A2,A1
+Es bueno tener ideales... ¿no crees?,A2,C2
+La vida es hermosa,A1,C2
+Estaba cansado de ser vilipendiado todo el tiempo por personas que tenían celos de su habilidad,B1,B2
+Siempre había demasiada escritura superflua en sus ensayos,B1,C2
+"Su ensayo ofreció solo un análisis superficial del problema, por lo que fue una verdadera sorpresa para él cuando obtuvo la mejor calificación de la clase.",B1,C2
+Los fiscales en el tribunal deben fundamentar sus afirmaciones para demostrar que un sospechoso es culpable,B2,C2
+Las ideas de Freud sobre el comportamiento humano lo llevaron a ser reconocido como un pensador profundo,B2,C2
+La comida y la bebida se sirvieron en tal profusión en la boda que la novia y el novio comenzaron a preguntarse si no deberían haber invitado a más invitados,B2,C2
+La proliferación del uso de Internet ha dado lugar a una nueva generación de jóvenes,B2,C2
+Las personas ciegas a veces desarrollan una habilidad compensatoria para percibir la proximidad de los objetos que las rodean,B2,C2
+"Un avaro acumula dinero no porque sea prudente, sino porque es codicioso.",B1,C2
+El abogado defensor estaba seguro de que podría responder a los argumentos del fiscal en su réplica,B2,C2
+Los maestros deben cansarse de corregir los mismos errores una y otra vez en los trabajos de sus estudiantes,B1,C2
+Los testigos pudieron refutar el falso testimonio del sospechoso,B2,C2
+El líder del gremio relegó a Vince a un cargo menor porque estaba abusando de su poder,B2,B1
+Juana de Arco se negó a renunciar a su creencia de que la voz que escuchaba era de Dios y de nadie más,B2,C2
+"Conmovidos por los eventos del 11 de septiembre, los políticos de todo el mundo condenaron a los terroristas por su acto reprobable.",B2,C2
+"Para evitar que su idea original fuera copiada, Henry recurrió a la reticencia.",B2,B2
+Me gustaría retractarme de mi declaración anterior,B2,C2
+"Para ganar a su audiencia, el orador recurrió a utilizar técnicas retóricas que aprendió en sus cursos de comunicación.",B2,C2
+Su padre nunca aprobaría su compromiso con una chica que no compartiera las mismas creencias religiosas que su familia,B2,C2
+"Todos los súbditos del rey, temiendo su ira, a menudo actuaban de manera bastante servil.",B2,C2
+Las personas suelen ser bastante escépticas sobre las cosas a menos que se les presente una prueba creíble,B2,C2
+Las personas censuradoras se deleitan en echar la culpa,B1,C2
+Los artistas pop prosperan gracias a la adoración de sus leales fans,B1,C2
+Debemos aprender a enfrentar la adversidad con gracia,B1,C2
+Su tono severo y su voz fuerte ocultaban su sensibilidad interior y su naturaleza cariñosa,B1,C2
+El joven rico y hedonista se sentía extrañamente atraído por la vida estricta y ascética que llevaban los miembros de algunas órdenes monásticas,B2,C2
+¿Qué criterio utilizaste al elegir este ensayo como el ganador?,B1,C2
+Los estafadores se aprovechan de la credulidad de los inversores inexpertos y los engañan para robarles su dinero,B2,C2
+"Incluso si tus oraciones fueran realmente sin sentido, al menos tienes la suerte de poder formar oraciones hermosas.",B1,C2
+Había una sensación de restricción en la sala; nadie se atrevía a decirle al rey lo tonto que era su decisión,B2,B2
+El consenso indica que estamos en contra de la idea propuesta,B1,C2
+Un pequeño incendio forestal puede propagarse fácilmente y convertirse rápidamente en una gran conflagración,B1,C2
+",A pesar de haber cumplido su condena en prisión, el asesino nunca fue del todo perdonado por el público por su crimen.",B2,C2
+Encuentro que las palabras con definiciones concisas son las más fáciles de recordar,B1,C2
+Un examen superficial de sus dientes indicó que tenía gingivitis,B1,C2
+"El artículo de noticias retrató al acusado como un hombre culpable, a pesar de que se había demostrado su inocencia.",B2,C2
+El político impulsó la reforma denunciando la corrupción de los funcionarios del gobierno,B2,C2
+La depravación de los actos del rey llevó al pueblo a creer que no era más que un tirano que necesitaba ser derrocado,B2,C2
+"Cuando somos pequeños, todo parece tan grande.",B1,C2
+No me rebajaré a su nivel,B1,C2
+"Dirás y harás cosas que tus padres dijeron e hicieron, incluso si juraste que nunca lo harías.",B1,C2
+Estoy vivo aunque no estoy dando ninguna señal de vida,B1,B2
+Nunca intentes morir,B1,B2
+Soy demasiado viejo para este mundo,B1,C2
+La vida comienza cuando nos damos cuenta de quiénes somos realmente,B1,C2
+La vida comienza cuando decides qué esperas de ella,B1,C2
+La vida comienza cuando pagas impuestos,B1,C2
+Lo que no tienes es mejor que lo que sí tienes,B1,C2
+La vida comienza cuando estás listo para vivirla,B1,C2
+Nunca es demasiado tarde para aprender,B1,C2
+Me pregunto si estoy hecho para este mundo,B1,C2
+"Un niño no es un recipiente para llenar, sino un fuego que encender.",B1,C2
+"Lamentablemente, muchas personas creerán cosas que se les dicen a través de un correo electrónico que encontrarían implausibles en persona.",B2,C2
+"Puede sonar descabellado, pero este es un problema real.",B1,C2
+Alguien robó mi espada mágica.,B2,B1
+Es difícil tener grandes ideas,B1,C2
+Los datos sugieren que la duración óptima de una conferencia puede ser de 30 en lugar de 60 minutos,B2,C2
+Smith ha pasado años estudiando los efectos del sueño y la falta de sueño en la memoria y el aprendizaje,B2,C2
+No puede haber progreso sin comunicación,B1,C2
+Todo el mundo quisiera creer que los sueños pueden hacerse realidad,B1,C2
+La mejor manera de hacer realidad tus sueños es despertarte,B1,C2
+El mundo no gira a tu alrededor,B1,A1
+El mundo está lleno de tontos,B1,C2
+Espero con interés conocer tus opiniones sobre este asunto,B2,C2
+¿Y qué si soy gay? ¿Es un crimen?,B1,C2
+Mi vida es vacía sin él,B1,C2
+Deberías haber rechazado una propuesta tan injusta,B2,C2
+Las matemáticas no son solo la memorización de fórmulas,B2,C2
+Estoy enfermo y cansado de estar enfermo y cansado,B1,C2
+La esencia de las matemáticas es la libertad,B2,C2
+¿Puedes imaginar cómo sería nuestra vida sin electricidad?,B2,C2
+"Si le prestas a alguien 20 dólares y nunca vuelves a ver a esa persona, probablemente valió la pena.",B2,C2
+La esencia de la libertad es la matemática,B2,C2
+Su historia era demasiado ridícula para que alguien la creyera,B1,B2
+",Cada persona es un mundo",B1,A1
+¿Crees que la humanidad colonizará algún día la Luna?,B2,C2
+No sé qué es peor,B1,A2
+La vida en prisión es peor que la vida de un animal,B1,C2
+La belleza está en los ojos de quien la mira,B1,C2
+¿Quién compra este tipo de arte?,B1,C2
+¿Por qué no podemos hacernos cosquillas a nosotros mismos?,B1,C2
+La respuesta nos lleva a un círculo vicioso,B1,C2
+Siento que soy libre,B1,A1
+La libertad no es gratuita,B1,C2
+",A este ritmo, es poco probable que terminemos antes de que acabe la semana.",B2,C2
+Supongo que mi perspectiva sobre la amistad es bastante sombría porque nunca he tenido que depender de nadie para nada,B2,B2
+Tiene una cara como un mes de domingos lluviosos,B1,A2
+No necesariamente confío en las traducciones,B1,C2
+",Compartir la pasión de uno es vivirla plenamente",B1,C2
+"Si te mostrara mi casa, mi vecindario de entonces, ¿entenderías de dónde soy?",B2,C2
+"¡La vida no es larga, es ancha!",B1,C2
+",Cuando tenía tu edad, Plutón era un planeta.",B1,B1
+Ella está al borde de un colapso nervioso,B1,C2
+"El queso es un alimento sólido hecho de la leche de vacas, cabras, ovejas y otros mamíferos.",A1,C2
+"Todavía no me gustan Cavalieri, Tonelli ni Fubini... y mi examen oral de cálculo ya es mañana.",B2,C2
+Hay muchas cosas que no sabes sobre mi personalidad,B1,B2
+Todos merecen una segunda oportunidad,B1,C2
+Hay 1000 películas que uno debe ver antes de morir,B2,C2
+"Las siete preguntas que un ingeniero debe hacerse son: quién, qué, cuándo, dónde, por qué, cómo y cuánto.",B2,C2
+¿Todavía te preguntas cuál es el significado de la vida?,B2,C2
+¿Cuándo se puede decir que una persona tiene problemas con el alcohol?,B2,C2
+Recuerda que todos estamos en el mismo barco,B1,C2
+"Todo lo que necesito saber sobre la vida, lo aprendí de un muñeco de nieve.",B1,C2
+Las despedidas siempre son tristes,B1,C2
+Nosotros los hombres estamos acostumbrados a esperar a las mujeres,B1,B1
+"En general, ¿quién visita más a sus padres, los hijos o las hijas?",B1,C2
+Todo esfuerzo merece una recompensa,B1,C2
+Más del 90 por ciento de las visitas a una página web provienen de motores de búsqueda,B2,C2
+"Sabía que era plástico, pero sabía a madera.",B1,B1
+Hay cosas en este mundo que simplemente no se pueden expresar con palabras,B1,C2
+La forma más pérfida de dañar una causa consiste en defenderla deliberadamente con argumentos defectuosos,B2,C2
+"Por más que lo intentes, no puedes imponer una creencia a otra persona, y mucho menos a ti mismo.",B2,C2
+Estoy en contra de usar la muerte como castigo. También estoy en contra de usarla como recompensa,B2,C2
+La segunda mitad de la vida de un hombre está compuesta únicamente por los hábitos que ha adquirido durante la primera mitad,B2,C2
+"Según un nuevo informe, las niñas tienen más probabilidades que los niños de estar desnutridas, sufrir pobreza, enfrentar violencia y ser privadas de educación.",B2,C2
+"Estamos atormentados por una vida ideal, y es porque llevamos dentro de nosotros el comienzo y la posibilidad de alcanzarla.",B2,C2
+La teoría científica que más me gusta es que los anillos de Saturno están compuestos enteramente de equipaje perdido,B2,C2
+La única forma en la Tierra de multiplicar la felicidad es dividirla,B1,C2
+Un error conocido es mejor que una verdad desconocida,B1,C2
+Todo es teóricamente imposible hasta que se hace,B1,C2
+"Hasta que hagas las paces con quien eres, nunca estarás contento con lo que tienes.",B1,C2
+"Puedes sentirte decepcionado si fracasas, pero estás condenado si no lo intentas.",B1,C2
+"El aburrimiento es la sensación de que todo es una pérdida de tiempo; la serenidad, que nada lo es.",B2,C2
+"Nunca pierdas de vista la importancia de un hermoso amanecer, de ver a tus hijos dormir o del olor de la lluvia. A menudo son las pequeñas cosas las que realmente importan en la vida.",B1,C2
+No hay distancia en esta tierra tan lejana como ayer,B1,C2
+",Cada hombre toma los límites de su propio campo de visión como los límites del mundo",B2,C2
+Podemos viajar en el tiempo. Y lo hacemos a la notable velocidad de un segundo por segundo,B1,C2
+Mi interés está en el futuro porque voy a pasar el resto de mi vida allí,B1,B1
+¡El problema con muchas cosas son las ideas preconcebidas que tenemos sobre ellas!,B1,C2
+La mejor manera de predecir el futuro es inventarlo,B2,C2
+La publicidad puede describirse como la ciencia de detener la inteligencia humana el tiempo suficiente para obtener dinero de ella,B2,C2
+"Para el hombre que solo tiene un martillo en su caja de herramientas, cada problema parece un clavo.",B1,C2
+Nada es imposible para el hombre que no tiene que hacerlo él mismo,B1,C2
+Esa es la cuestión con las personas que piensan que odian las computadoras. Lo que realmente odian son los programadores mediocres,B1,C2
+No puedo entender por qué la gente tiene miedo a las nuevas ideas. Yo tengo miedo de las viejas,B1,C2
+La esperanza no es una estrategia,B1,C2
+"El que ríe último, ríe mejor.",A2,C2
+"Somos lo que pretendemos ser, así que debemos tener cuidado con lo que pretendemos ser.",B2,C2
+La gente debería entender que el mundo está cambiando,B1,C2
+"El habla es plata, pero el silencio es oro.",A2,C2
+El cincuenta y dos por ciento de las mujeres británicas prefieren el chocolate al sexo,B2,C2
+No puedes lograr lo imposible sin intentar lo absurdo,B2,C2
+Estar en silencio en clase es respetar el sueño de los demás,B1,C2
+La lógica es un método sistemático para llegar a la conclusión equivocada con confianza,B2,C2
+El axioma de Cole: La suma de la inteligencia en el planeta es una constante; la población está creciendo,B2,C2
+La gente aceptará tu idea mucho más fácilmente si les dices que Benjamin Franklin la dijo primero,B2,C2
+"Si ves a un hombre acercándose a ti con la clara intención de hacerte el bien, deberías correr por tu vida.",B2,C2
+Aprendemos por experiencia que los hombres nunca aprenden nada de la experiencia,B2,C2
+Más vale tarde que nunca,A2,A2
+"De tal palo, tal astilla.",A2,A2
+"A quien madruga, Dios le ayuda.",A2,A2
+En la vida hay altibajos,A2,A1
+Todos los gatos son grises en la oscuridad,A2,C2
+"La riqueza llega a quienes hacen que las cosas sucedan, no a quienes dejan que las cosas sucedan.",B2,C2
+"Si piensas que la educación es cara, espera a ver lo que te cuesta la ignorancia.",B2,C2
+El mundo se divide en personas que hacen las cosas y personas que se llevan el crédito,B2,C2
+Más personas se meten en problemas por lo que dicen que por lo que hacen,B2,C2
+"Las personas que te mentirán por ti, también te mentirán a ti.",B1,C2
+No hay duda,A1,A1
+"En el mundo empresarial actual, demasiados ejecutivos gastan dinero que no han ganado para comprar cosas que no necesitan para impresionar a personas con las que ni siquiera se gustan.",B2,C2
+Cualquier actividad que debas realizar llevará más tiempo del que tienes disponible,B2,C2
+No hay amor sin celos,A2,C2
+Ningún amor es malo ni prisión es justa,B1,C2
+Estamos cortados del mismo paño,A2,A2
+Nada grandioso se ha logrado jugando a lo seguro,B2,C2
+"En general, se sabe poco sobre las ecuaciones diferenciales no lineales de segundo orden.",B2,C2
+Mali es uno de los países más pobres de África subsahariana,B1,C2
+"En esta etapa, aún no hay una política energética clara para llevar energía descentralizada a las zonas rurales.",B2,C2
+Nos preguntamos por qué,B1,A1
+Nos esforzamos tanto por mejorar las cosas para nuestros hijos que las empeoramos,B1,B2
