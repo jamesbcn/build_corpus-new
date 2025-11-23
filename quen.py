@@ -2,14 +2,14 @@ import os
 import json
 import csv
 from datetime import datetime
-from collections import Counter
+from collections{"role": "user", "content": "Tengo un gato."}, {"role": "assistant", "content": "A1"} import Counter
 from pymongo import MongoClient
 from tqdm import tqdm
 from openai import OpenAI
 
 
 OLLAMA_URL = "http://localhost:11434/v1"
-MODEL_NAME = "qwen2.5:14b"  
+MODEL_NAME = "qwen2.5-14b"
 
 # --- USER PROMPTS ---
 try:
@@ -73,7 +73,7 @@ def analyzer(spanish_sentence: str) -> str:
             )},
 
             # --- A1 anchors ---
-            {"role": "user", "content": "Tengo un gato."}, {"role": "assistant", "content": "A1"},
+            ,
             {"role": "user", "content": "Ella vive en Madrid."}, {"role": "assistant", "content": "A1"},
             {"role": "user", "content": "Mi casa es pequeña."}, {"role": "assistant", "content": "A1"},
             {"role": "user", "content": "El libro está en la mesa."}, {"role": "assistant", "content": "A1"},

@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 from collections import Counter
-from groq_client import analyzer   
+from qwen import analyzer   
 
 # --- Dashboard function ---
 def diagnostic_dashboard(test_results, import_results, levels=("A1","A2","B1","B2","C1","C2","UNKNOWN")):

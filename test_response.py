@@ -1,4 +1,4 @@
-from groq_client import analyzer  # replace with your actual module name
+from qwen import analyzer  # replace with your actual module name
 
 # Example Spanish sentence
 spanish_sentence = "Cuanto antes, mejor."

@@ -1,5 +1,5 @@
 import pandas as pd
-from groq_client import analyzer
+from qwen import analyzer
 from diagnostic_dashboard import diagnostic_dashboard
 import time
 

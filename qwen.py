@@ -1,4 +1,3 @@
-from groq import Groq
 import json
 import re
 import csv
@@ -7,10 +6,11 @@ from datetime import datetime
 from collections import Counter
 from pymongo import MongoClient
 from tqdm import tqdm
+from openai import OpenAI
 
 
 OLLAMA_URL = "http://localhost:11434/v1"
-MODEL_NAME = "qwen2.5-14b"  
+MODEL_NAME = "qwen2.5:14b"  
 
 # --- USER PROMPTS ---
 try:
@@ -31,13 +31,13 @@ DB_NAME = "vocaba"
 COLLECTION_NAME = "english"
 
 # --- SETUP ---
-client = Groq(api_key="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")
+client = OpenAI(
+        base_url=OLLAMA_URL,
+        api_key="ollama" # Required but ignored
+    )
 
 TRANSLATOR_MODEL = MODEL_NAME
 ANALYZER_MODEL = MODEL_NAME
-
-# --- CEFR Mapping ---
-CEFR_MAP = {"A1": 1, "A2": 2, "B1": 3, "B2": 4, "C1": 5, "C2": 6}
 
 def translator(english_sentence: str) -> str:
     """Translate English → Spanish using llama3."""
@@ -54,102 +54,98 @@ def translator(english_sentence: str) -> str:
     )
     return response.choices[0].message.content.strip()
 
-def analyzer(spanish_sentence: str, max_retries: int = 10, pause: float = 0.5) -> str:
-    """Classify Spanish sentence by CEFR level. Returns 'UNKNOWN' if JSON parsing fails."""
+def analyzer(spanish_sentence: str, max_retries: int = 10, pause: float = 0.5):
+    """Classify Spanish sentence by CEFR level. Returns ('UNKNOWN','') if parsing fails."""
     valid_levels = {"A1","A2","B1","B2","C1","C2"}
      
     for attempt in range(1, max_retries + 1):
         try:
             response = client.chat.completions.create(
-            model=ANALYZER_MODEL,
-            messages=[
-                {"role": "system", "content": (
-                    "Classify the following Spanish sentence by CEFR level (A1, A2, B1, B2, C1, C2). "
-                    "Guidelines: "
-                    "A1 = simple present tense with basic vocabulary. "
-                    "A2 = idiomatic expressions (tener hambre, tener frío), habitual actions, modal verbs (tener que, poder, necesitar, querer), preference verbs (gustar, encantar). "
-                    "B1 = past and future tenses, present perfect, everyday reasoning. "
-                    "B2 = sentences with connectors (aunque, sin embargo, mientras, cuando) OR multiple independent clauses joined by punctuation (semicolon, colon, dash), and subjunctive in common contexts (es posible que, prefiero que). "
-                    "C1 = complex conditionals, nuanced subjunctive, advanced connectors. "
-                    "C2 = abstract, academic, or philosophical sentences, even if expressed in simple present tense. "
-                    "Classify at the highest CEFR level indicated by the grammar or vocabulary present. "
-                    "Sentences containing idioms, connectors, modal verbs, or academic language should not be treated as A1."
-                     "Respond ONLY with a JSON object of the form: "
-                      "{ \"cefr_level\": \"A1|A2|B1|B2|C1|C2\", \"reasoning\": \"explanation\" } "
-                    "The 'cefr_level' MUST be exactly one of: A1, A2, B1, B2, C1, C2."
+                model=ANALYZER_MODEL,
+                messages=[
+                {
+                    "role": "system",
+                    "content": (
+                        "You are an official DELE senior examiner for Instituto Cervantes with 20+ years of experience.\n"
+                        "Your task: assign a CEFR level followed by an in-depth justification.\n\n"
+                        "Decision rules (strict hierarchical order – never skip):\n"
+                        "A1 → exclusively present tense, extremely basic lexicon (saludar, ser/estar, tener for age/family/possession, números, colores). "
+                        "Functions limited to introductions, simple possession, location, age. "
+                        "No modal verbs (tener que, poder, deber), no idiomatic tener-phrases (hambre, frío, sueño), no periphrastic constructions. "
+                        "Discourse limited to isolated sentences or y.\n\n"
+                        "A2 → first appearance of pretérito indefinido or perfecto compuesto OR functional expansions: obligation (tener que, deber), ability (poder, saber + inf), "
+                        "desire (querer + inf), idiomatic tener-phrases (hambre, frío, sueño). "
+                        "Lexicon expands to everyday topics (food, shopping, health, hobbies). "
+                        "Discourse includes basic connectors (y, pero, porque, cuando). "
+                        "No systematic tense contrast, no subjunctive.\n\n"
+                        "B1 → systematic and correct contrast between indefinido and imperfecto. "
+                        "Lexicon broadens to narrative vocabulary (childhood, travel, work). "
+                        "Functions include hypothesis and future plans (ir a + inf), present subjunctive in main clauses (querer que, esperar que). "
+                        "Discourse shows varied connectors (aunque, mientras, entonces, por eso). "
+                        "No pluscuamperfecto subjunctive yet, limited register shifts.\n\n"
+                        "B2 → obligatory pluscuamperfecto de indicativo AND consistent imperfect subjunctive in typical triggers (emoción, duda, concesión). "
+                        "Lexicon includes abstract vocabulary (opinions, arguments, social issues). "
+                        "Functions include hypothesis, concession, nuanced argumentation, and production of common idioms/proverbs. "
+                        "Discourse shows rich markers (sin embargo, por lo tanto, además) and complex sentence linking. "
+                        "Rare literary tenses not required, register still neutral.\n\n"
+                        "C1 → presence of at least one rare tense (pretérito anterior, futuro perfecto, condicional perfecto, pluscuamperfecto de subjuntivo) used correctly. "
+                        "Lexicon includes cultured, idiomatic phrasing and less common idioms/collocations. "
+                        "Functions include register shifts (formal/informal), idiomatic expressions beyond common proverbs, nuanced argumentation. "
+                        "Discourse shows cohesive, sophisticated connectors and fluid paragraph-level cohesion. "
+                        "Respond ONLY with a JSON object of the form: "
+                        "{ \"cefr_level\": \"A1|A2|B1|B2|C1\", \"reasoning\": \"justification\" } "
+                    )
+                },
 
-                )},
+                {"role": "user","content": "Me llamo Ana. Tengo 25 años. Vivo en Madrid."},
+                {"role": "assistant","content": "{ \"cefr_level\": \"A1\", \"reasoning\": \"Only present tense, survival lexicon (introductions, age, residence). No modal or idiomatic expansions.\" }"},
 
-                # --- A1 anchors ---
-                {"role": "user", "content": "Tengo un gato."}, {"role": "assistant", "content": "A1"},
-                {"role": "user", "content": "Ella vive en Madrid."}, {"role": "assistant", "content": "A1"},
-                {"role": "user", "content": "Mi casa es pequeña."}, {"role": "assistant", "content": "A1"},
-                {"role": "user", "content": "El libro está en la mesa."}, {"role": "assistant", "content": "A1"},
-                {"role": "user", "content": "Él come una manzana."}, {"role": "assistant", "content": "A1"},
+                {"role": "user","content": "Tengo hambre y quiero comer una pizza."},
+                {"role": "assistant","content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"Idiomatic tener-phrase (hambre) and querer + inf show functional expansion beyond A1.\" }"},
 
-                # --- A2 anchors ---
-                {"role": "user", "content": "Tengo que limpiar mi habitación."}, {"role": "assistant", "content": "A2"},
-                {"role": "user", "content": "Tengo hambre después de correr."}, {"role": "assistant", "content": "A2"},
-                {"role": "user", "content": "Tengo frío en invierno."}, {"role": "assistant", "content": "A2"},
-                {"role": "user", "content": "Voy al supermercado cada sábado."}, {"role": "assistant", "content": "A2"},
-                {"role": "user", "content": "Me gusta bailar salsa."}, {"role": "assistant", "content": "A2"},
-                {"role": "user", "content": "¿Puedes ayudarme con la tarea?"}, {"role": "assistant", "content": "A2"},
-                {"role": "user", "content": "Necesito comprar un regalo."}, {"role": "assistant", "content": "A2"},
-                {"role": "user", "content": "Quiero aprender a tocar la guitarra."}, {"role": "assistant", "content": "A2"},
+                {"role": "user","content": "Ayer fui al cine con mis amigos y me gustó mucho."},
+                {"role": "assistant","content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"First use of pretérito indefinido with basic connector y.\" }"},
 
-                # --- B1 anchors ---
-                {"role": "user", "content": "Ayer fui al cine con mis amigos."}, {"role": "assistant", "content": "B1"},
-                {"role": "user", "content": "Mañana visitaré a mis abuelos."}, {"role": "assistant", "content": "B1"},
-                {"role": "user", "content": "He terminado mi tarea."}, {"role": "assistant", "content": "B1"},
-                {"role": "user", "content": "Este es el pueblo del que te hablé."}, {"role": "assistant", "content": "B1"},
-                {"role": "user", "content": "Comí caviar por primera vez."}, {"role": "assistant", "content": "B1"},
+                {"role": "user","content": "Cuando era pequeño, mi abuela me contaba cuentos antes de dormir."},
+                {"role": "assistant","content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"Correct contrast between imperfecto (era, contaba) and narrative context. Cohesive connector cuando.\" }"},
 
-                # --- B2 anchors ---
-                {"role": "user", "content": "Aunque estaba cansado, terminé el proyecto."}, {"role": "assistant", "content": "B2"},
-                {"role": "user", "content": "Prefiero que vengas temprano."}, {"role": "assistant", "content": "B2"},
-                {"role": "user", "content": "Es posible que llueva mañana."}, {"role": "assistant", "content": "B2"},
-                {"role": "user", "content": "Sin embargo, decidimos continuar."}, {"role": "assistant", "content": "B2"},
-                {"role": "user", "content": "Cuando termine el curso, buscaré trabajo."}, {"role": "assistant", "content": "B2"},
-                {"role": "user", "content": "No abras antes de que el tren se detenga."}, {"role": "assistant", "content": "B2"},
+                {"role": "user","content": "Espero que vengas mañana a mi casa."},
+                {"role": "assistant","content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"Present subjunctive (vengas) triggered by esperar que, typical of B1 functional expansion.\" }"},
 
-                # --- New idiomatic/discourse anchors ---
-                {"role": "user", "content": "No te puedes perder; está justo en el centro."}, {"role": "assistant", "content": "B2"},
-                {"role": "user", "content": "Es fácil encontrarlo; hay señales por todas partes."}, {"role": "assistant", "content": "B2"},
-                {"role": "user", "content": "No cabe duda; la ciudad ofrece muchas oportunidades."}, {"role": "assistant", "content": "B2"},
-                {"role": "user", "content": "Lo más probable es que llegues a tiempo; el tren suele ser puntual."}, {"role": "assistant", "content": "B2"},
-                {"role": "user", "content": "No te preocupes; siempre hay alguien dispuesto a ayudar."}, {"role": "assistant", "content": "B2"},
+                {"role": "user","content": "Si hubiera estudiado más, habría aprobado el examen."},
+                {"role": "assistant","content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"Use of pluscuamperfecto subjunctive (hubiera estudiado) and condicional perfecto (habría aprobado) in hypothesis.\" }"},
 
-                # --- C2 anchors ---
-                {"role": "user", "content": "La epistemología cuestiona los fundamentos del conocimiento humano."}, {"role": "assistant", "content": "C2"},
-                {"role": "user", "content": "La literatura posmoderna refleja la fragmentación de la identidad contemporánea."}, {"role": "assistant", "content": "C2"},
-                {"role": "user", "content": "La ontología estudia la naturaleza del ser y la existencia."}, {"role": "assistant", "content": "C2"},
-                {"role": "user", "content": "La segunda mitad de la vida de un hombre está compuesta únicamente por los hábitos que ha adquirido durante la primera mitad."}, {"role": "assistant", "content": "C2"},
-                {"role": "user", "content": "Estoy en contra de usar la muerte como castigo. También estoy en contra de usarla como recompensa."}, {"role": "assistant", "content": "C2"},
+                {"role": "user","content": "Aunque estaba cansado, seguí trabajando porque quería terminar el proyecto."},
+                {"role": "assistant","content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"Connector aunque with imperfecto, nuanced concession and causal discourse markers (porque).\" }"},
 
-                # --- New academic/abstract anchors ---
-                {"role": "user", "content": "Las personas ciegas a veces desarrollan una habilidad compensatoria para percibir la proximidad de los objetos que las rodean."}, {"role": "assistant", "content": "C2"},
-                {"role": "user", "content": "La neurociencia analiza cómo el cerebro procesa estímulos externos."}, {"role": "assistant", "content": "C2"},
-                {"role": "user", "content": "La ética examina las normas que regulan la conducta humana."}, {"role": "assistant", "content": "C2"},
-                {"role": "user", "content": "La sociología estudia las estructuras y dinámicas de las sociedades modernas."}, {"role": "assistant", "content": "C2"},
-                {"role": "user", "content": "La filosofía política reflexiona sobre la legitimidad del poder y la justicia social."}, {"role": "assistant", "content": "C2"},
-                    
+                {"role": "user","content": "De tal palo, tal astilla."},
+                {"role": "assistant","content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"Common proverb used appropriately; demonstrates idiomatic competence without rare tense or advanced register.\" }"},
+
+                {"role": "user","content": "Apenas hube cerrado la puerta, sonó el teléfono."},
+                {"role": "assistant","content": "{ \"cefr_level\": \"C1\", \"reasoning\": \"Rare tense pretérito anterior (hube cerrado) used correctly in literary register.\" }"},
+
+                {"role": "user","content": "Si hubiera sabido la verdad, no habría dicho nada, pero al fin y al cabo todos cometemos errores."},
+                {"role": "assistant","content": "{ \"cefr_level\": \"C1\", \"reasoning\": \"Pluscuamperfecto subjunctive with condicional perfecto, idiomatic connector 'al fin y al cabo' shows cultured phrasing and cohesive discourse.\" }"},
+
+                {"role": "user","content": "No hay mal que por bien no venga; a la postre, fue una decisión sensata."},
+                {"role": "assistant","content": "{ \"cefr_level\": \"C1\", \"reasoning\": \"Less common idiom plus cultured connector 'a la postre' shows advanced register and cohesive discourse.\" }"},
+
                 # --- Actual request ---
-                {"role": "user", "content": spanish_sentence},
-            ],
-            response_format={ "type": "json_object" },
-            temperature=0.0,
-            top_p=1.0,
-            reasoning_effort="default",
-            stream=False,
-            max_completion_tokens=1000,
-        )
+                {"role": "user", "content": spanish_sentence}
+            ]
+                response_format={ "type": "json_object" },
+                temperature=0.0,
+                top_p=1.0,
+                stream=False,
+                max_completion_tokens=500,
+            )
 
             raw_output = response.choices[0].message.content.strip()
             data = json.loads(raw_output)
-            
+
             cefr_level = data.get("cefr_level", "UNKNOWN").strip()
             reasoning = data.get("reasoning", "").strip()
-            
+
             # --- Strict validation ---
             if cefr_level not in valid_levels:
                 print(f"⚠️ Invalid CEFR level: {cefr_level} → forcing UNKNOWN")
@@ -159,11 +155,11 @@ def analyzer(spanish_sentence: str, max_retries: int = 10, pause: float = 0.5) -
             return cefr_level, reasoning
 
         except Exception as e:
-                print(f"⚠️ Attempt {attempt} failed on: {spanish_sentence} → {e}")
-                if attempt < max_retries:
-                    time.sleep(pause)
-                    continue
-                return "UNKNOWN"
+            print(f"⚠️ Attempt {attempt} failed on: {spanish_sentence} → {e}")
+            if attempt < max_retries:
+                time.sleep(pause)
+                continue
+            return "UNKNOWN", ""
 
 def package_result(english_sentence: str) -> dict:
     spanish = translator(english_sentence)

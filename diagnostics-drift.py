@@ -8,18 +8,22 @@ df = pd.read_csv("miscategorized.csv")  # columns: sentence, expected, predicted
 
 # Classification report
 report = classification_report(df["expected"], df["predicted"],
-                               labels=["A1","A2","B1","B2","C2"],
+                               labels=["A1","A2","B1","B2", "C1","C2"],
                                output_dict=True)
 report_df = pd.DataFrame(report).transpose()
 
-# Confusion matrix
-cm = confusion_matrix(df["expected"], df["predicted"], labels=["A1","A2","B1","B2","C2"])
+# Remove UNKNOWN cases
+df_clean = df[(df["expected"] != "UNKNOWN") & (df["predicted"] != "UNKNOWN")]
+
+# Recompute confusion matrix without UNKNOWN
+labels = ["A1","A2","B1","B2","C1","C2"]
+cm = confusion_matrix(df_clean["expected"], df_clean["predicted"], labels=labels)
 
 # --- Confusion Matrix Heatmap ---
 plt.figure(figsize=(6,5))
 sns.heatmap(cm, annot=True, fmt="d", cmap="Blues",
-            xticklabels=["A1","A2","B1","B2","C2"],
-            yticklabels=["A1","A2","B1","B2","C2"])
+            xticklabels=["A1","A2","B1","B2","C1","C2"],
+            yticklabels=["A1","A2","B1","B2","C1","C2"])
 plt.title("Confusion Matrix")
 plt.xlabel("Predicted")
 plt.ylabel("Expected")
@@ -29,7 +33,7 @@ plt.close()
 
 # --- Precision/Recall/F1 Bar Chart ---
 metrics = ["precision","recall","f1-score"]
-report_df.loc[["A1","A2","B1","B2","C2"], metrics].plot(kind="bar", figsize=(8,6))
+report_df.loc[["A1","A2","B1","B2","C1","C2"], metrics].plot(kind="bar", figsize=(8,6))
 plt.title("Per-Level Precision, Recall, F1")
 plt.xticks(rotation=0)
 plt.ylabel("Score")

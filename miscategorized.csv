@@ -1,375 +1,594 @@
-sentence,expected,predicted,reasoning
-"El que ríe último, ríe mejor",A2,B2,"The sentence uses the subjunctive mood in a relative clause ('ríe último'), which is a common context for B2 level. It also employs a proverbial structure, but the grammar aligns with B2's requirement for subjunctive in typical contexts."
-Más vale tarde que nunca,A2,A2,"The sentence is an idiomatic expression ('Más vale tarde que nunca'), which falls under A2 level as per the guidelines. It uses a common proverb without complex grammar or vocabulary."
-"De tal palo, tal astilla",A2,A2,"The phrase is an idiomatic expression (proverb) indicating a cause-effect relationship, which aligns with A2 level as it uses basic vocabulary and common figurative language."
-"A quien madruga, Dios le ayuda",A2,B1,"The sentence uses a relative clause ('quien madruga') to introduce a dependent clause, which is a structural feature typical of B1 level. While it is a proverb, the grammatical complexity of the relative clause and the generalization about cause-effect reasoning align with B1's focus on everyday reasoning and more complex sentence structures."
-"Quien busca, encuentra",A2,C2,"The sentence is an abstract and philosophical proverb, which aligns with C2-level content as per the guidelines."
-Roma no se construyó en un día,A2,B1,"The sentence uses the preterite tense ('se construyó'), which is a past tense form covered at B1 level. While the phrase is an idiom, the primary classification is based on the use of past tense grammar, which aligns with B1 criteria."
-El silencio otorga consentimiento,A2,C2,"The sentence is a philosophical statement discussing abstract concepts (silence granting consent), which aligns with C2-level content as per the guidelines. Even though the grammar is simple (present tense), the abstract and philosophical nature classifies it as C2."
-"Donde hay voluntad, hay un camino",A2,A2,"The sentence is a common idiom ('Donde hay voluntad, hay un camino'), which falls under A2 level as it involves idiomatic expressions. The grammar is simple present tense with basic vocabulary, but the idiomatic nature classifies it as A2."
-Dicen que el amor es ciego,A2,A2,"The sentence uses the idiomatic expression 'el amor es ciego' (love is blind) and the structure 'Dicen que' (they say that), which are common in A2 level Spanish. It involves a simple present tense and a reported statement, fitting the A2 criteria for idiomatic expressions and basic connectors."
-Una piedra que rueda no junta musgo,A2,C2,"The sentence is a proverb expressing an abstract philosophical concept (that constant movement prevents stagnation). While grammatically simple, its abstract and metaphorical nature aligns with C2-level content as per the guidelines."
-Es porque no quieres estar solo,A2,B1,"The sentence uses a simple connector 'porque' to express reasoning, which aligns with B1-level everyday reasoning. The grammar is straightforward with present tense and no complex structures like subjunctive or advanced connectors (e.g., 'aunque', 'sin embargo')."
-No puedo vivir ese tipo de vida,B1,A2,"The sentence uses a modal verb 'puedo' (can) and simple present tense, which aligns with A2 level grammar. The vocabulary is basic and there are no complex structures or idioms."
-Estoy sin palabras,A2,A1,"The sentence uses a simple present tense ('estoy') with basic vocabulary and no idiomatic expressions, connectors, or complex grammar. It fits the A1 level criteria."
-Nada es bello excepto la verdad,B1,C2,"The sentence uses abstract philosophical concepts ('bello', 'verdad') and makes a universal statement, which aligns with C2's focus on abstract/academic language. While the grammar is simple (present tense), the content's philosophical nature and abstract vocabulary justify the higher classification."
-La vida es hermosa,B1,A1,"The sentence uses a simple present tense structure with basic vocabulary ('vida' and 'hermosa'). There are no idioms, connectors, or complex grammatical structures, which aligns with A1 level criteria."
-Me haces soñar,B1,A1,"The sentence uses a simple present tense structure with basic vocabulary. It contains no idioms, modal verbs, or complex grammar, which aligns with A1 level."
-Es una pena cuando alguien muere,B1,A2,"The sentence contains the idiomatic expression 'es una pena' (it's a pity), which is a key indicator of A2 level. The structure is simple with a relative clause introduced by 'cuando', but the presence of the idiom classifies it as A2 rather than B1."
-Nuestra opinión es una idea que tenemos; nuestra convicción es una idea que nos tiene,B1,B2,"The sentence uses a semicolon to join two independent clauses, which is a B2-level structure. It also includes relative clauses ('que tenemos', 'que nos tiene'), but the primary indicator is the use of a semicolon to connect complex ideas."
-La vida es una enfermedad de transmisión sexual fatal,B1,C2,"The sentence uses a metaphorical and philosophical expression ('La vida es una enfermedad de transmisión sexual fatal'), which aligns with C2-level abstract or philosophical content, even though the grammatical structure is simple. The CEFR guidelines specify that abstract or philosophical sentences, even in simple present tense, are classified as C2."
-El todo es mayor que la suma de las partes,B1,C2,"The sentence expresses an abstract philosophical concept ('the whole is greater than the sum of its parts'), which aligns with C2-level content focused on abstract or academic ideas. While the grammar is simple (present tense), the thematic depth and philosophical nature of the statement qualify it for C2 classification."
-Este es el pueblo del que te hablé,B2,B1,"The sentence uses a relative clause ('del que te hablé') and the preterite tense ('hablé'), which are typical of B1 level grammar. It does not include connectors or subjunctive mood, which would classify it as B2 or higher."
-Este es el chico en el que pienso,B2,B1,"The sentence uses a relative clause ('en el que pienso'), which is a characteristic of B1 level grammar. It involves a basic subordinate clause without complex connectors or subjunctive mood, aligning with the B1 classification for everyday reasoning and complex sentences."
-Se le ha advertido en varias ocasiones,B2,B1,"The sentence uses the present perfect tense ('ha advertido') and passive voice ('se le ha'), which are typical of B1 level grammar. The vocabulary is basic and there are no complex connectors or subjunctive mood."
-Siempre me he preguntado cómo sería tener hermanos,B2,B1,"The sentence uses the present perfect tense ('me he preguntado') and the conditional ('sería'), both of which are covered in B1 level grammar. It expresses a hypothetical scenario without complex connectors or subjunctive mood, aligning with B1's focus on past and future tenses and everyday reasoning."
-Ella está preguntando cómo es eso posible,B2,B1,"The sentence uses the present continuous tense ('está preguntando') and a question structure ('cómo es eso posible'), which are typical of B1 level grammar. It does not include complex connectors, subjunctive mood, or abstract concepts that would classify it as B2 or higher."
-La última persona a la que le conté mi idea pensó que estaba loco,B2,B2,"The sentence contains a relative clause with a preposition ('a la que') and a past tense verb ('conté'), indicating a more complex structure typical of B2 level. It also uses a past perfect construction ('pensó que estaba loco'), which is common at B2 for expressing sequences of past events."
-Es una palabra para la que me gustaría encontrar un sustituto,B2,B2,"The sentence uses a conditional tense ('me gustaría') and a relative clause ('para la que'), which are typical of B2 level grammar. The vocabulary is not overly complex, but the structure requires understanding of more advanced grammatical constructions."
-No sé a qué te refieres,B2,A1,"The sentence uses simple present tense with basic vocabulary and structure. It does not contain idioms, modal verbs, or complex connectors, which aligns with A1 level."
-No sabía de dónde venía,B2,B1,"The sentence uses the imperfect tense ('sabía') and a past habitual action ('venía'), which are typical of B1 level grammar. There are no complex connectors or subjunctive mood, but the use of past tense for ongoing or habitual actions aligns with B1 criteria."
-¿Con quién estoy hablando?,B2,A2,"The sentence uses a question structure with the present continuous tense ('estoy hablando'), which is typical of A2 level. It does not include complex grammar, idioms, or connectors beyond basic question formation."
-Sabía que él aceptaría,B2,C1,"The sentence uses a complex conditional structure ('Sabía que él aceptaría'), which involves the past tense in the main clause and the conditional tense in the subordinate clause. This type of conditional construction is characteristic of C1 level grammar."
-"Si pudiera enviarte un malvavisco, lo haría",C1,C1,"The sentence uses the subjunctive mood in a conditional clause ('Si pudiera... lo haría'), which is a key indicator of C1 level grammar. The structure involves a hypothetical situation with the subjunctive in the 'si' clause and the conditional in the main clause, reflecting nuanced use of verb moods."
-"Si no hubiera dado respuesta, no habría hablado",C1,C2,"The sentence uses the third conditional (si + past perfect subjunctive + conditional perfect), which is a complex grammatical structure typically associated with C2 level. It involves hypothetical past situations and their consequences, requiring nuanced understanding of advanced conditional constructions."
-"Si no puedes tener hijos, siempre podrías adoptar",B2,B2,"The sentence uses a conditional structure ('si no puedes... podrías...') which is a key feature of B2 level grammar. It also includes a complex clause with a conditional conjunction ('si') and the conditional tense ('podrías'), which are typically introduced at B2. The vocabulary is basic, but the grammatical complexity of the conditional construction classifies it as B2."
-"Si no comes, mueres",B2,A2,"The sentence uses a first conditional structure ('si + present, present') with basic vocabulary. A2 includes conditional constructions and everyday reasoning, while A1 is limited to simple present tense without conditionals."
-"Si ves un error, por favor corrígelo",B2,B1,"The sentence uses a first conditional structure ('si' clause with present tense followed by imperative), which is typical of B1 level grammar. The vocabulary is basic but the conditional construction indicates a step beyond A2."
-"Si no tienes nada que hacer, mira el techo de tu habitación",B2,B1,"The sentence uses a conditional structure ('si' clause) with the present tense and an imperative command, which aligns with B1 level grammar for expressing hypothetical situations and giving advice."
-"Si levantas una ceja, puede significar…",B2,B1,"The sentence uses a conditional structure ('si' + present tense) to express a hypothetical situation and its possible outcome. This type of conditional is typically covered at the B1 level, which includes everyday reasoning and basic conditional constructions."
-"Si dos hombres siempre tienen la misma opinión, uno de ellos es innecesario",B2,C1,"The sentence uses a complex conditional structure ('si' clause) to express a nuanced, abstract philosophical idea about redundancy in agreement. While the grammar is straightforward, the abstract reasoning and conditional nuance align with C1-level complexity."
-"Si no hay solución, entonces no hay problema",B2,B1,"The sentence uses a first conditional structure ('si' + present tense, then present tense) which is typically introduced at B1 level. While the content is abstract, the grammar and vocabulary are straightforward, aligning with B1 criteria."
-Es mejor ser odiado por lo que eres que amado por lo que no eres,B1,C2,"The sentence is abstract and philosophical in nature, discussing complex ethical and existential concepts. It uses a comparative structure ('Es mejor... que...') and explores nuanced ideas about identity and authenticity, which align with C2-level content as per the guidelines."
-No es raro en absoluto vivir más de noventa años,B1,C2,"The sentence discusses a general demographic observation about human longevity, which is an abstract and societal topic. While the grammar is simple (present tense, negation), the content reflects a philosophical or statistical generalization, aligning with C2's focus on abstract or academic language."
-La educación en este mundo me decepciona,B1,A1,"The sentence uses a simple present tense structure with basic vocabulary. It lacks idioms, modal verbs, or complex connectors, which aligns with A1 criteria."
-Supongo que es diferente cuando lo piensas a largo plazo,B1,C2,"The sentence discusses an abstract concept ('a largo plazo') and reflects a philosophical or nuanced perspective on long-term implications, aligning with C2's focus on abstract or philosophical expressions."
-Creo que tengo una teoría al respecto,B1,A2,"The sentence uses the structure 'Creo que' (I think that), which is a common expression of opinion in A2 level Spanish. It combines a simple present tense verb with a basic clause, typical of A2 structures involving modal expressions."
-La inocencia es una cosa hermosa,B1,C2,"The sentence makes an abstract philosophical statement about innocence being beautiful, which aligns with C2's focus on abstract or philosophical content, even though the grammar is simple."
-Los humanos nunca estuvieron destinados a vivir para siempre,B1,B1,"The sentence uses the past tense (estuvieron) and passive voice (destinados), which are typically introduced at B1 level. The vocabulary is abstract but not overly complex, and the structure is a straightforward declarative statement without advanced connectors or subjunctive mood."
-La libertad consiste en poder hacer todo lo más inofensivo posible,B1,C2,"The sentence discusses an abstract philosophical concept (freedom as the ability to act harmlessly) using nuanced language and a complex noun phrase structure. While the grammar is not overtly advanced, the abstract, conceptual nature of the statement aligns with C2-level academic/philosophical discourse."
-Una verdad matemática no es ni simple ni complicada; simplemente es,B1,C2,"The sentence discusses abstract philosophical concepts about mathematical truths, which aligns with C2's focus on abstract or academic language. The structure is simple present tense, but the content is highly conceptual and theoretical."
-"Los matemáticos son poetas, excepto que tienen que probar lo que su fantasía crea",B1,C2,"The sentence presents an abstract, philosophical comparison between mathematicians and poets, using nuanced language ('excepto que tienen que probar lo que su fantasía crea') and abstract concepts. While the grammar is simple (present tense), the content reflects academic/philosophical depth typical of C2 level."
-Estoy embarazada de cuatro meses,A2,A1,"The sentence uses simple present tense with basic vocabulary ('embarazada', 'cuatro meses') and no complex grammar or idioms. It follows a straightforward subject-verb-time structure typical of A1 level."
-"Poco a poco, notarás mejoras en tus escritos",B2,B1,"The sentence uses the future tense ('notarás'), which is a B1-level grammatical structure. The vocabulary is basic and the sentence structure is simple, with no use of complex connectors or subjunctive mood."
-¿Cómo puedes tener una laptop y no un teléfono celular?,B2,A2,"The sentence uses a modal verb ('puedes') in a question structure, which is characteristic of A2 level. It does not contain complex grammar, idioms, or connectors beyond basic modal verb usage."
-Voy a dispararle,B2,B1,"The sentence uses the future tense construction 'Voy a' (I am going to), which is a B1-level grammatical structure. The vocabulary is basic, but the use of future tense and direct object pronoun 'le' indicates a B1 level."
-Voy a llevar mi coche,B2,B1,"The sentence uses the future tense construction 'Voy a' (I am going to), which is a B1-level grammatical structure. There are no complex connectors, subjunctive mood, or advanced vocabulary, but the use of future tense places it at B1."
-Voy a tomar un baño,B2,B1,"The sentence uses the future tense construction 'voy a + infinitive' (I am going to take a bath), which is a key feature of B1 level grammar. There are no connectors, subjunctive, or complex structures present."
-Pensé que era verdad,B2,B1,"The sentence uses past tenses (pretérito perfecto simple 'Pensé' and pretérito imperfecto 'era') and a subordinate clause introduced by 'que', which aligns with B1 level grammar. It does not include connectors like 'aunque' or subjunctive mood, which would indicate B2 or higher."
-Ellos discutieron,B2,B1,"The sentence uses the preterite tense ('discutieron'), which is part of B1 level grammar as it involves past tense usage. The vocabulary is basic but the tense complexity places it at B1."
-Tomaste la llave equivocada,B2,B1,"The sentence uses the preterite tense ('tomaste'), which is part of B1 level grammar as it involves past tense usage. The vocabulary is basic, but the tense complexity places it at B1."
-Logré entrar,B2,B1,"The sentence uses the preterite tense ('logré'), which is part of B1 level grammar. It expresses a completed past action with simple vocabulary."
-Estuve en las montañas,B2,B1,"The sentence uses the preterite tense ('estuve'), which is introduced at B1 level according to the guidelines. It's a simple past tense statement without complex structures or connectors."
-Nunca me gustó la biología,B2,A2,"The sentence uses the verb 'gustar' (to like) in the past tense, which is a key A2-level structure for expressing preferences. The structure 'me gustó' (I liked) is a fundamental A2 construction, and the sentence contains no complex grammar or vocabulary beyond basic A2 level."
-Una vez quise ser astrofísico,B2,B1,"The sentence uses the simple past tense ('quisé'), which is a key feature of B1 level grammar. It also includes a compound noun ('astrofísico') but no complex connectors, subjunctive, or idiomatic expressions. The structure is a single clause without advanced syntax, aligning with B1's focus on past tense usage."
-No me gustó,B2,B1,"The sentence uses the past tense of the verb 'gustar' (gustó), which is part of B1 level grammar as it involves past tense usage. While 'gustar' itself is an A2-level preference verb, the past tense construction elevates it to B1."
-Ganamos la batalla,B2,B1,"The sentence uses the past tense ('ganamos'), which is a key feature of B1 level grammar. It is a simple declarative sentence without complex structures or academic vocabulary."
-Fui al zoológico ayer,B2,B1,"The sentence uses the preterite tense ('fui'), which is part of B1 level grammar. It is a simple past tense statement without complex structures or advanced vocabulary."
-Vi televisión esta mañana,B2,B1,"The sentence uses the preterite tense ('Vi') to describe a completed action in the past, which is a key feature of B1 level grammar. The vocabulary is basic and there are no complex structures or connectors."
-Dormí un poco durante el almuerzo porque estaba muy cansado,B2,B1,"The sentence uses the preterite tense ('Dormí') and a causal connector ('porque'), which aligns with B1 level requirements for past tense usage and everyday reasoning."
-Empecé a aprender chino la semana pasada,B2,B1,"The sentence uses the preterite tense ('Empecé') to describe a completed action in the past, which is a key feature of B1 level. The vocabulary is basic and the structure is straightforward, with a time phrase ('la semana pasada') indicating habitual or completed actions."
-",Algún día compraré una máquina de algodón de azúcar",B2,B1,"The sentence uses the future tense 'compraré' (I will buy), which is a B1-level grammatical structure. The vocabulary is basic but the use of future tense places it beyond A2, which focuses on present tense and modal verbs."
-El comunismo nunca se alcanzará en mi vida,B1,C2,"The sentence uses a future passive construction ('se alcanzará') and discusses an abstract, ideological concept (communism) with a philosophical tone. The negation 'nunca' and the speculative nature of the statement align with C2-level abstraction and nuanced expression."
-El creacionismo es una pseudociencia,B1,A1,"The sentence uses a simple present tense structure with a basic vocabulary. While 'pseudociencia' is an advanced term, the sentence lacks complex grammar, connectors, or abstract reasoning. It follows a straightforward subject-verb-object pattern typical of A1 level."
-"Las matemáticas son como el amor: una idea simple, pero puede volverse complicada",B1,C2,"The sentence uses an abstract metaphor comparing mathematics to love, reflecting philosophical or conceptual ideas. While the grammar is simple, the abstract and nuanced comparison aligns with C2's focus on abstract or philosophical content."
-La mayoría de los avances científicos no son más que el descubrimiento de lo obvio,B1,C2,"The sentence presents an abstract philosophical statement about scientific advances, using complex vocabulary ('avances científicos', 'descubrimiento de lo obvio') and nuanced reasoning. While the grammar is simple present tense, the abstract and academic nature of the content aligns with C2 criteria."
-El cerebro es solo una máquina complicada,B1,A1,"The sentence uses a simple present tense structure with basic vocabulary. It contains no idioms, connectors, or complex grammar, fitting the A1 level criteria."
-Un metro cúbico corresponde a 1000 litros,B1,A1,"The sentence uses a simple present tense ('corresponde') with basic vocabulary and factual information. It lacks idioms, connectors, or complex grammar structures, fitting the A1 level criteria."
-La discrepancia entre las versiones…,B1,C2,"The sentence uses abstract and academic vocabulary ('discrepancia') and discusses a complex concept, aligning with C2's focus on abstract or academic language."
-La formación y el movimiento de los huracanes…,B1,C2,"The sentence discusses an abstract and academic topic (formation and movement of hurricanes) using advanced vocabulary. Although it is a noun phrase fragment, the subject matter aligns with C2-level abstract or scientific discourse."
-La ceguera es responsable de un asombroso costo…,B1,B2,"The sentence uses a relative clause ('de un asombroso costo') and discusses a cause-effect relationship in a general context. While the vocabulary is more advanced than basic levels, the grammar remains straightforward without complex connectors or abstract philosophical content typical of C2."
-Las universidades y colegios privados de Estados Unidos son autónomos,B1,C2,"The sentence discusses an academic topic (autonomy of private universities and colleges in the US), which aligns with C2-level content as it involves abstract, institutional, and educational concepts. While the grammar is simple (present tense), the academic/philosophical nature of the subject matter classifies it as C2."
-Es inútil seguir pensando más,B1,A2,"The sentence uses the idiom 'Es inútil' (It is useless), which is classified under A2 due to the use of idiomatic expressions. The structure is simple present tense with basic vocabulary, but the presence of an idiom elevates it beyond A1."
-¿Realmente necesitas hacer la pregunta para saber la respuesta?,B1,A2,"The sentence uses a modal verb ('necesitas') and a question structure, which aligns with A2 level grammar. It does not include connectors, subjunctive mood, or complex tenses, which would indicate higher levels like B1 or above."
-¡No esperes que otros piensen por ti!,B1,B2,"The sentence uses the subjunctive mood ('piensen') in a command structure ('esperes'), which is a common context for subjunctive use at B2 level. The imperative form with subjunctive is a key indicator of B2 complexity."
-Es presuntuoso que los humanos asuman que nuestra tarea es hacer lo que solo Dios puede hacer,B1,B2,"The sentence uses the subjunctive mood ('asuman') in a common context of expressing an opinion, which is characteristic of B2 level. It also includes complex clauses with abstract concepts but does not reach the nuanced or conditional subjunctive typical of C1/C2."
-La justicia es costosa,B1,A1,"The sentence uses a simple present tense structure with basic vocabulary ('justicia' and 'costosa'). There are no idioms, connectors, or complex grammatical structures, which aligns with A1 level criteria."
-La pasión crea sufrimiento,B1,A1,"The sentence uses a simple present tense structure with basic vocabulary. There are no idioms, connectors, or complex grammatical structures, which aligns with A1 level."
-Nada se logra sin esfuerzo,B1,B1,"The sentence is a general statement expressing a common truth, using simple present tense and basic vocabulary. It reflects everyday reasoning about effort and achievement, which aligns with B1 level as it involves making generalizations and expressing opinions."
-Muchas personas navegan por la vida sin un propósito,B1,C2,"The sentence uses an abstract metaphor ('navegar por la vida') to express a philosophical concept about life, which aligns with C2-level abstract or philosophical language. While the grammar is simple, the nuanced metaphor and existential theme classify it at the highest CEFR level."
-La vida sin amor es completamente inútil,B1,C2,"The sentence is a philosophical statement expressing an abstract concept about life and love. According to the guidelines, abstract or philosophical content qualifies for C2 even if the grammar is simple."
-",Creo que los exámenes están arruinando la educación",B1,B1,"The sentence uses the present continuous tense ('están arruinando') and a common opinion structure ('Creo que'), which are typical of B1 level. It discusses a general opinion on education, but the grammar remains within B1 complexity without subjunctive or advanced connectors."
-Es una pena que no se puedan comprar milagros como se compran patatas,B1,C2,"The sentence contains an abstract philosophical comparison (milagros vs. patatas) and uses the subjunctive mood in a hypothetical context ('se puedan comprar'), which aligns with C2-level abstract reasoning and nuanced grammatical structures."
-"La mayoría de las escuelas fueron diseñadas no para transformar la sociedad, sino para reproducirla",B1,B2,"The sentence uses a complex structure with the contrastive conjunction 'no...sino...' and a passive voice construction ('fueron diseñadas'), which are typical of B2 level. While the content is abstract, the grammatical complexity aligns with B2 rather than C2, which requires more nuanced subjunctive or academic language."
-El viento se calmó,B1,B1,"The sentence uses the preterite tense ('calmó') to describe a completed past action, which is a key feature of B1 level grammar. The structure is simple but involves past tense conjugation, which is introduced at B1."
-Es práctico tener una laptop,B1,A2,"The sentence uses a simple structure with the verb 'tener' in the infinitive after the adjective 'práctico', which is a common A2-level construction. It does not include complex grammar, idioms, or abstract concepts, aligning with basic vocabulary and sentence structures typical of A2."
-Es bastante difícil dominar el francés en 2 o 3 años,B1,B1,"The sentence uses the present tense and a simple structure to express an opinion about the difficulty of mastering French. It does not include complex grammar, idioms, or academic language, which would place it at a higher level. The vocabulary is common and the structure is straightforward, typical of B1 level."
-Es imposible para mí explicártelo,B1,B2,"The sentence uses a complex structure with a prepositional phrase ('para mí') followed by an infinitive verb ('explicártelo') containing attached object pronouns. This construction, while not involving connectors or subjunctive mood, demonstrates a more advanced grammatical structure typical of B2 level, which includes nuanced use of infinitives and pronoun placement."
-No quiero pasar el resto de mi vida arrepintiéndome de ello,B1,C2,"The sentence expresses a philosophical or emotional reflection on life and regret, which aligns with C2's focus on abstract or introspective content. While the grammar is simple (present tense and gerund), the thematic depth and abstract nature of the statement (concerning existential regret) justify the C2 classification."
-Sería divertido ver cómo cambian las cosas a lo largo de los años,B1,C1,"The sentence uses the conditional mood ('sería') to express a hypothetical scenario, which is a key feature of C1 level grammar. The structure involves a complex conditional construction ('Sería divertido ver cómo...') and abstract reasoning about future changes, aligning with C1's focus on nuanced conditional expressions."
-Estoy fuera de mí de alegría,B1,A2,"The sentence contains the idiom 'fuera de mí' (out of my mind), which is characteristic of A2 level. It uses simple present tense and basic vocabulary, but the idiomatic expression elevates it beyond A1."
-Es la verdad absoluta,B1,A1,"The sentence uses a simple present tense ('es') with basic vocabulary ('verdad absoluta'). There are no idiomatic expressions, modal verbs, or complex structures, which aligns with A1 level."
-"sentence,expected,predicted
-""Tengo sed",A1,A1,"The sentence uses a simple present tense verb ('tengo') with basic vocabulary ('sed'), which aligns with A1 criteria for straightforward present tense statements."
-",Cuando les pregunto a las personas qué es lo que más lamentan de la escuela secundaria, casi todos dicen lo mismo: que desperdiciaron tanto tiempo.",B2,B2,"The sentence uses a subordinating conjunction 'cuando' to link clauses, a relative clause 'qué es lo que más lamentan', and a colon to introduce an explanation. These structural elements, along with the complexity of connecting multiple ideas in a single sentence, align with B2 level requirements."
-",Cuando no puedes hacer lo que quieres, haces lo que puedes.",C2,B2,"The sentence uses the connector 'cuando' to link two independent clauses, forming a complex conditional structure. This aligns with B2 criteria for sentences with connectors like 'cuando' and multiple clauses joined by punctuation or conjunctions."
-Dale una pulgada y tomará una yarda,A2,A2,"The sentence is an idiomatic expression (similar to 'Give a man an inch and he'll take a mile'), which falls under A2 criteria. It uses simple future tense ('tomará') but lacks complex grammar or abstract reasoning."
-¡Lo hiciste intencionadamente!,B1,B1,"The sentence uses the past tense ('hiciste') and is a common conversational expression, which aligns with B1 level grammar. It does not contain complex structures or academic vocabulary."
-¿No le dijiste nada?,B1,B1,"The sentence uses the preterite tense ('dijiste') to describe a past action, which is a key feature of B1 level grammar. It does not include connectors, subjunctive mood, or complex structures, but the use of past tense places it above A2."
-Me hiciste perder la cabeza,A2,A2,"The sentence uses an idiom ('perder la cabeza') and the past tense ('hiciste'), which aligns with A2 level as it involves idiomatic expressions and habitual actions. The structure is simple and does not include complex connectors or subjunctive mood."
-Eres mi tipo,A1,A1,"The sentence uses a simple present tense ('eres') with basic vocabulary ('mi tipo'). There are no idioms, connectors, or complex grammatical structures, which aligns with A1 level."
-Eres irresistible,A1,A1,"The sentence uses a simple present tense verb ('eres') and a basic adjective ('irresistible') without any idioms, connectors, or complex grammar. It aligns with A1 criteria for simple present tense and basic vocabulary."
-"¿Podrías llamar más tarde, por favor?",B2,B1,"The sentence uses the conditional tense ('Podrías'), which is typically introduced at B1 level. It also includes a polite request structure ('por favor'), but no advanced connectors or subjunctive mood."
-¿Con quién estoy hablando?,B1,B1,"The sentence uses the present continuous tense ('estoy hablando'), which is introduced at B1 level. The structure is a straightforward question with a preposition ('con') and question word ('quién'), but the use of the present continuous tense places it at B1."
-"Acepto, pero solo bajo una condición.",B2,B1,"The sentence uses a simple conditional structure with 'pero' (but) to express a condition. It involves everyday reasoning and does not include complex connectors or subjunctive mood, which aligns with B1 level."
-"¡Sonríe ahora, llora después!",C2,C2,"The sentence is a proverb or philosophical saying, which falls under C2 as it conveys an abstract concept and moral reflection, even though the grammar is simple."
-"A la edad de seis años, había aprendido a usar la máquina de escribir y le dijo a la maestra que no necesitaba aprender a escribir a mano.",B2,B1,"The sentence uses past tenses (había aprendido, le dijo) and combines two independent clauses with a conjunction (y). It reflects everyday reasoning about past events but does not include complex connectors (e.g., aunque, sin embargo) or subjunctive mood, which would classify it as B2 or higher."
-La vida es hermosa,C2,A1,"The sentence uses a simple present tense structure with basic vocabulary ('vida', 'es', 'hermosa'). There are no idioms, connectors, or complex grammatical structures, which aligns with A1 level criteria."
-Hay días en los que siento que mi cerebro quiere abandonarme,C2,B2,"The sentence uses a relative clause introduced by 'en los que' and a metaphorical expression ('mi cerebro quiere abandonarme'), which are typical of B2 level complexity. The structure involves a main clause with a subordinate clause, indicating a higher level of grammatical sophistication than A2 but not reaching the abstract or academic complexity of C1/C2."
-¡No puedo cortarme las uñas y planchar al mismo tiempo!,A2,A2,"The sentence uses a modal verb 'puedo' (can) in a simple present tense structure, which is characteristic of A2 level. It expresses a personal inability to perform two actions simultaneously, using basic vocabulary and a straightforward negation ('No puedo'). There are no complex grammatical structures or abstract concepts."
-¡No puedo más! ¡No he dormido en tres días!,B1,B1,"The sentence uses the present perfect tense ('he dormido') and simple present tense ('puedo'), which are covered in B1. The vocabulary is basic and the structure is straightforward, without complex connectors or abstract concepts."
-Él no quiere que le hables sobre tu vida sexual,B2,B2,"The sentence uses the subjunctive mood ('hables') after 'no quiere que', which is a common subjunctive construction in B2 level contexts. The structure reflects a desire or command, typical of B2 grammar."
-¿Alguna vez has comido un pastel de plátano?,B1,B1,"The sentence uses the present perfect tense ('has comido'), which is a key feature of B1 level grammar. The vocabulary is basic, and there are no complex connectors, subjunctive mood, or abstract concepts. The structure is a straightforward question about a personal experience."
-¿Por qué te casarías con una mujer si te gustan los hombres?,C2,C2,"The sentence addresses abstract reasoning about personal identity and societal norms, which aligns with C2's focus on philosophical or nuanced topics. While the conditional structure ('casarías') is B2-level grammar, the content's abstract nature (questioning societal expectations) classifies it as C2."
-"Si no puedes tener hijos, siempre podrías adoptar.",B2,B2,"The sentence uses the conditional tense ('podrías') and a hypothetical scenario introduced by 'si', which are typical of B2 level grammar. It does not include abstract or philosophical content, which would classify it as C2."
-¿Estás a favor o en contra del aborto?,C2,A2,"The sentence is a direct question using common vocabulary and simple present tense. It does not contain idioms, connectors, or complex grammar, aligning with A2 level structures like preference or opinion questions."
-¿Qué te hizo cambiar de opinión?,B1,B1,"The sentence uses the past tense ('hizo') and a straightforward question structure, which aligns with B1 level grammar. It does not include complex connectors, subjunctive mood, or abstract concepts that would classify it as B2 or higher."
-"¡Mira, un mono de tres cabezas!",A1,A1,"The sentence uses simple present tense with basic vocabulary ('mono', 'cabezas') and an exclamation mark. It lacks complex grammar, idioms, or abstract concepts, fitting the A1 level criteria."
-Es una pena que no se puedan comprar milagros como se compran patatas,C2,C2,"The sentence expresses a philosophical or abstract idea (the impossibility of buying miracles like potatoes) and uses the subjunctive mood ('puedan') in a context that reflects nuanced reasoning, which aligns with C2-level abstract or philosophical content."
-Me encanta la lasaña,A2,A2,"The sentence uses the preference verb 'encantar' (Me encanta), which is a key indicator of A2 level. The structure is simple and follows the pattern 'Me encanta + noun', typical of basic expressions of preference at this level."
-"Si sabes que algo desagradable va a suceder, como ir al dentista, por ejemplo, o a Francia, entonces eso no es bueno.",B1,B2,"The sentence uses a conditional structure ('Si... entonces...') and includes examples with 'como... por ejemplo...', which are typical of B2 level complexity. It also employs a list with 'o a Francia' to elaborate on the examples, indicating more advanced sentence structure than basic levels."
-"Los números primos son como la vida; son completamente lógicos, pero es imposible encontrar las reglas, incluso si pasas todo tu tiempo pensando en ello.",C2,B2,"The sentence uses a semicolon to join two independent clauses and includes a subordinate clause introduced by 'incluso si', which aligns with B2-level complexity. The structure involves multiple clauses and connectors, typical of B2, even though the abstract comparison might suggest higher levels."
-"Si levantas una ceja, puede significar 'Quiero tener sexo contigo', pero también 'Encuentro que lo que acabas de decir es completamente idiota.'",B2,B2,"The sentence uses the conditional tense ('puede significar') and the conjunction 'pero también' to contrast two possible meanings. It also includes quotation marks to highlight specific phrases, indicating a more complex structure typical of B2 level, which involves connectors and nuanced explanations."
-El cerebro es solo una máquina complicada,C2,A1,"The sentence uses a simple present tense structure with basic vocabulary. It contains no idioms, connectors, or complex grammar. The vocabulary is straightforward and the sentence structure is elementary, fitting the A1 level criteria."
-"Un horario es una tarjeta de identidad para el tiempo, pero, si no tienes un horario, el tiempo no está.",C2,C2,"The sentence uses abstract and philosophical reasoning about time and schedules, employing metaphors ('una tarjeta de identidad para el tiempo') and paradoxical logic ('si no tienes un horario, el tiempo no está'). This level of conceptual depth and abstract thinking aligns with C2 criteria, despite the simple grammatical structure."
-¡Este pingüino bebé es demasiado lindo!,A1,A1,"The sentence uses simple present tense with basic vocabulary ('pingüino bebé', 'demasiado lindo') and no complex grammar or idioms. It is a straightforward exclamation without connectors or advanced structures."
-Estoy en el hospital. Me cayó un rayo,B1,B1,"The sentence uses the preterite tense ('cayó') to describe a past event, which is a B1-level grammar structure. The first clause uses the present tense ('Estoy'), which is A1, but the highest level is determined by the most advanced element, which is the past tense in the second clause."
-"Seamos realistas, es imposible. Nunca lo vamos a lograr.",C2,C2,"The sentence expresses an abstract philosophical or critical perspective on realism and impossibility, which aligns with C2-level content focused on abstract or philosophical ideas. The use of the subjunctive in 'Seamos realistas' and the declarative structure reinforce this classification."
-¿Cuál es tu mayor fuente de inspiración?,A2,A2,"The sentence is a simple question using basic grammar structures and vocabulary. It does not contain complex tenses, connectors, or abstract concepts. The phrase 'mayor fuente de inspiración' uses comparative vocabulary but remains within the scope of everyday language typical of A2 level."
-"No te casas con alguien con quien puedes vivir, te casas con la persona sin la cual no puedes vivir.",C2,C2,"The sentence presents an abstract philosophical concept about marriage, using complex relative clauses ('con quien', 'sin la cual') and contrasts hypothetical scenarios. While the grammar is advanced, the primary classification factor is the abstract, philosophical nature of the statement, which aligns with C2's focus on abstract or academic language."
-"En teoría, no hay diferencia entre la teoría y la práctica. Pero, en la práctica, sí la hay.",C2,C2,"The sentence presents an abstract philosophical contrast between theory and practice, using nuanced expressions ('en teoría', 'en la práctica') and a paradoxical structure. While grammatically simple, its conceptual depth and abstract nature align with C2-level academic/philosophical discourse."
-"No te quedes en la cama, a menos que puedas ganar dinero en ella.",C2,C2,"The sentence contains an abstract, philosophical implication suggesting that staying in bed is only justified if it leads to financial gain. This metaphorical reasoning and nuanced advice align with C2-level complexity, despite the grammatical structures (conditional clause with 'a menos que') being at B2."
-Hay personas en el mundo tan hambrientas que Dios no puede aparecer ante ellas más que en forma de pan,C2,C2,"The sentence uses abstract and philosophical language ('Dios no puede aparecer ante ellas más que en forma de pan') with a metaphorical comparison ('tan hambrientas que...'), which aligns with C2-level complexity involving nuanced, abstract concepts and advanced syntactic structures."
-Todo lo que es demasiado estúpido para ser hablado se canta,C2,B2,"The sentence uses a relative clause ('Todo lo que es demasiado estúpido para ser hablado') and a passive infinitive ('ser hablado'), which are typical of B2 level grammar. The structure is complex but does not require advanced subjunctive usage or abstract philosophical concepts, which would push it to C1/C2."
-Se necesita sabiduría para entender la sabiduría: la música no es nada si el público es sordo,C2,C2,"The sentence uses abstract concepts (wisdom, music, audience) and a complex structure with a colon to connect two independent clauses. The philosophical nature and nuanced reasoning about the relationship between wisdom and music, as well as the conditional structure 'si el público es sordo,' align with C2-level abstract and academic language."
-Estaba releyendo las cartas que me enviaste,B1,B1,"The sentence uses past tenses (imperfect 'estaba releyendo' and preterite 'enviaste') and a relative clause ('que me enviaste'), which aligns with B1 level grammar. It does not include complex connectors or subjunctive mood, which would indicate B2 or higher."
-No quiero ir a la escuela,A2,A2,"The sentence uses the modal verb 'querer' (want) in its present tense form, which is a key indicator of A2 level according to the guidelines. The structure is simple and does not include complex grammar or advanced vocabulary."
-Se acabó entre nosotros. ¡Devuélveme mi anillo!,A2,A2,"The sentence uses the imperative form 'Devuélveme' (return to me) and the reflexive verb 'Se acabó' (it's over), both of which are typical of A2 level grammar. The vocabulary is basic, and there are no complex structures or connectors that would indicate a higher CEFR level."
-Está lloviendo,A1,A1,"The sentence uses the simple present tense ('está') with basic vocabulary ('lloviendo') to describe a current action. It does not include idioms, modal verbs, or complex structures, aligning with A1 criteria."
-"Estaba planeando ir a la playa hoy, pero luego empezó a llover.",B2,B2,The sentence uses a connector (pero) to contrast two events and combines two independent clauses with different tenses (imperfect and preterite) to describe a sequence of actions. This structure aligns with B2-level complexity involving connectors and multi-clause sentences.
-"Ella es realmente inteligente, ¿verdad?",A2,A1,"The sentence uses a simple present tense ('es') with basic vocabulary ('ella', 'realmente', 'inteligente') and a tag question ('¿verdad?'), which is a common structure in A1 level Spanish. There are no idioms, connectors, or complex grammar features beyond basic present tense usage."
-Una opinión es impactante solo si es una convicción,C2,C2,"The sentence discusses abstract philosophical concepts (opinions, convictions) and uses a conditional structure to express a nuanced relationship between them. The content is abstract and analytical, fitting the C2 level criteria for philosophical or academic language."
-"Las personas que aman no dudan de nada, o dudan de todo.",C2,C2,"The sentence presents a philosophical paradox about love and doubt, using abstract reasoning and nuanced contrast ('no dudan de nada, o dudan de todo'). While the grammar is structurally simple (present tense, relative clause), the abstract and philosophical nature of the statement aligns with C2-level content, which includes academic/philosophical language."
-La justicia es costosa,C2,C2,"The sentence contains abstract philosophical concepts ('justicia' and 'costosa') and makes a nuanced statement about justice, which aligns with C2-level abstract/philosophical language as per the guidelines."
-La libertad consiste en poder hacer todo lo más inofensivo posible,C2,C2,"The sentence discusses an abstract philosophical concept of freedom in a nuanced way, using advanced vocabulary and expressing a complex idea about the nature of freedom. While the grammatical structure is relatively simple, the abstract and conceptual nature of the statement aligns with C2-level academic or philosophical discourse."
-El más lento en hacer una promesa es el más fiel en cumplirla,C2,B2,"The sentence uses comparative superlatives ('el más lento', 'el más fiel') and prepositional phrases ('en hacer', 'en cumplirla'), which are characteristic of B2 level grammar. While the content is philosophical, the grammatical complexity aligns with B2 rather than C2, which requires nuanced subjunctive or abstract academic language."
-",Cada opinión es una mezcla de verdad y errores",C2,C2,"The sentence is abstract and philosophical in nature, discussing the nature of opinions as a mix of truth and errors. According to the guidelines, abstract or philosophical content qualifies as C2, even if expressed in simple present tense."
-La vida es una enfermedad de transmisión sexual fatal,C2,C2,"The sentence uses a metaphorical and philosophical comparison (life as a fatal sexually transmitted disease), which aligns with C2-level abstract or philosophical expressions. While the grammar is simple, the conceptual depth and metaphorical language classify it at the highest CEFR level."
-"Si dos hombres siempre tienen la misma opinión, uno de ellos es innecesario.",C2,C2,"The sentence is a philosophical statement with abstract content, discussing the redundancy of agreement between individuals. While the grammatical structure is a first conditional (present tense in both clauses), the abstract and philosophical nature of the content aligns with C2 level as per the guidelines, which prioritize abstract or philosophical language over simpler grammatical structures."
-Nuestra opinión es una idea que tenemos; nuestra convicción es una idea que nos tiene,C2,B2,"The sentence uses a semicolon to join two independent clauses with relative pronouns ('que tenemos', 'que nos tiene'), which aligns with B2 criteria for complex sentence structures. The abstract concepts and nuanced reflexive construction ('nos tiene') also suggest a higher intermediate level, but the grammar remains within B2 without reaching C1/C2 complexity."
-Mañana voy a estudiar en la biblioteca,B1,B1,"The sentence uses the future tense 'voy a estudiar' (I am going to study), which is a key feature of B1 level grammar. It also includes a time adverb 'mañana' (tomorrow) and a location 'en la biblioteca' (in the library), but no complex connectors or subjunctive mood."
-Demasiado tarde,A1,A1,The sentence uses a simple present tense with basic vocabulary and no complex grammar or idiomatic expressions.
-Fui al zoológico ayer,B1,B1,"The sentence uses the preterite tense ('fui'), which is a key feature of B1 level grammar. It also includes a simple past action with a time marker ('ayer'), aligning with B1's focus on past tense usage."
-Ganamos la batalla,B1,B1,"The sentence uses the past tense ('ganamos'), which is a key feature of B1 level grammar. It is a simple declarative sentence without complex structures or advanced vocabulary."
-¿Hola? ¿Sigues aquí?,A1,A1,"The sentence uses a simple present tense question with basic vocabulary. It does not include idioms, connectors, or complex grammar structures, which aligns with A1 level."
-Hago el almuerzo todos los días,A1,A1,"The sentence uses the simple present tense ('hago') with basic vocabulary to describe a daily routine. There are no idioms, modal verbs, or complex structures, which aligns with A1 criteria."
-Vi televisión esta mañana,B1,B1,"The sentence uses the preterite tense ('Vi') to describe a completed action in the past, which is a key feature of B1 level grammar. The vocabulary is basic and there are no complex structures or connectors."
-Leí un libro mientras comía,B2,B2,"The sentence uses the conjunction 'mientras' to connect two past actions (preterite and imperfect tenses), which aligns with B2-level grammar for coordinating simultaneous actions with connectors."
-Dormí un poco durante el almuerzo porque estaba muy cansado,B1,B1,"The sentence uses the preterite tense ('Dormí') and the imperfect tense ('estaba') to describe a past event and its reason, which aligns with B1 level requirements for past tenses and everyday reasoning."
-Empecé a aprender chino la semana pasada,B1,B1,"The sentence uses the preterite tense ('Empecé') to describe a completed action in the past, which is a key feature of B1 level. The vocabulary is basic but the use of past tense and a time phrase ('la semana pasada') aligns with B1's focus on past and future tenses."
-Es más fácil ligar con gente por Internet que en la calle,B1,B1,"The sentence uses a comparison structure ('Es más fácil... que...') which indicates everyday reasoning and the use of present tense for general statements, aligning with B1 level. It does not include complex connectors or subjunctive mood, which would push it to B2 or higher."
-"Vivo cerca del mar, así que a menudo puedo ir a la playa.",B2,B2,"The sentence uses the connector 'así que' to link two independent clauses, which is a characteristic of B2 level. It also employs present tense and basic vocabulary, but the use of a causal connector and a compound sentence structure classifies it at B2."
-Algún día compraré una máquina de algodón de azúcar,B1,B1,"The sentence uses the future tense 'compraré', which is introduced at B1 level. The structure is simple and does not include complex connectors or subjunctive mood."
-Es práctico tener una laptop,A2,B1,"The sentence uses the structure 'Es + adjective + infinitive' (Es práctico tener...), which is a common B1-level construction for expressing general opinions. It does not include subjunctive mood or complex connectors, but it reflects everyday reasoning and abstract concepts typical of B1."
-Tus gafas cayeron al suelo,B1,B1,"The sentence uses the past tense ('cayeron'), which is a key feature of B1 level according to the guidelines. It is a simple declarative statement without complex connectors or subjunctive mood."
-¿Cuántas veces al día te miras en el espejo?,A2,A1,"The sentence is a simple present tense question with basic vocabulary and no idioms, connectors, or modal verbs, fitting the A1 level criteria."
-Fuimos a Londres el año pasado,B1,B1,"The sentence uses the preterite tense ('fuimos') to describe a completed action in the past, which aligns with B1 level requirements (past tense usage). The structure is simple and does not include complex connectors, subjunctive mood, or advanced vocabulary."
-Ella no quiere hablar de eso,A2,A2,"The sentence uses the modal verb 'querer' (want) in a negative form ('no quiere'), which is a key indicator of A2 level. It expresses a preference or desire, which aligns with A2 criteria. The structure is simple and does not include complex grammar or connectors."
-He perdido mi inspiración,B1,B1,"The sentence uses the present perfect tense ('he perdido'), which is a B1-level grammatical structure. The vocabulary is simple, but the tense construction (haber + past participle) indicates a B1 level."
-"Si no tienes nada que hacer, mira el techo de tu habitación.",B1,B2,"The sentence uses a conditional structure ('Si no tienes...') which is a B2-level feature. It also includes a suggestion ('mira el techo') and a dependent clause, indicating a more complex grammatical structure than A2/B1. The vocabulary is basic but the conditional construction places it at B2."
-¡No significa nada!,A1,C2,"The sentence is a short, abstract statement denying meaning or significance, which aligns with C2-level philosophical or abstract expressions. While grammatically simple (present tense, negation), its conceptual depth and lack of concrete context fit the C2 criteria for abstract language."
-"Por favor, ten paciencia. Toma tiempo.",A2,A2,"The sentence uses a common polite expression ('por favor') and the imperative form ('ten paciencia'), which are typical of A2 level. The vocabulary is basic and the structure is simple, without complex grammar or connectors."
-Cierra la puerta cuando salgas,B2,B2,"The sentence uses the subjunctive mood ('salgas') in a conditional clause introduced by 'cuando', which is a B2-level grammatical structure. The imperative 'Cierra' is A2, but the subjunctive usage elevates the classification to B2."
-Esta es una historia tan triste,A1,A1,"The sentence uses simple present tense with basic vocabulary ('esta', 'historia', 'triste') and no complex grammar or idiomatic expressions. It is a straightforward statement without connectors, modal verbs, or abstract concepts."
-Mi hermanito está viendo la televisión,B1,B1,"The sentence uses the present continuous tense ('está viendo'), which is a B1-level grammatical structure. It combines the present tense of 'estar' with the gerund form of the verb, indicating an ongoing action. The vocabulary is basic, but the grammatical construction places it at B1."
-Es presuntuoso que los humanos asuman que nuestra tarea es hacer lo que solo Dios puede hacer,C2,C2,"The sentence contains abstract philosophical content ('presuntuoso', 'tarea es hacer lo que solo Dios puede hacer'), advanced connectors ('que'), and complex subjunctive usage ('asuman'). It discusses ethical and existential concepts, aligning with C2's focus on abstract/philosophical discourse."
-"Un lector astuto debería estar dispuesto a sopesar todo lo que lee, incluidas las fuentes anónimas.",C2,C2,"The sentence discusses abstract concepts related to critical reading and source evaluation, using advanced vocabulary like 'lector astuto' (discerning reader) and 'sopesar' (weigh). It addresses a nuanced academic or philosophical idea about the responsibility of readers, which aligns with C2-level complexity despite grammatical simplicity."
-"Negando ser anarquista, Katja sostenía que solo deseaba hacer cambios en nuestro gobierno, no destruirlo.",C2,C2,"The sentence discusses abstract political concepts (anarchism, government reform) and uses complex clause structures with a participle phrase ('Negando ser anarquista') and a reported statement ('sostenía que...'). The nuanced argumentation about ideological distinctions (change vs. destruction) aligns with C2's focus on abstract and philosophical discourse."
-"La ceguera es responsable de un asombroso costo en salud deficiente, sufrimiento, pérdida de dignidad y disminución en la calidad de vida de las personas en todo el mundo.",C2,C2,"The sentence discusses abstract and academic concepts (e.g., 'pérdida de dignidad', 'disminución en la calidad de vida') and uses complex vocabulary related to global health and societal impact. While the grammar is in simple present tense, the content is abstract and academic, which aligns with C2 criteria."
-"La formación y el movimiento de los huracanes son caprichosos, incluso con nuestra tecnología actual.",C2,C2,"The sentence discusses an abstract scientific concept (hurricane formation and movement) and uses nuanced vocabulary ('caprichosos', 'tecnología actual') to express a philosophical observation about unpredictability despite technological advancements. This aligns with C2's focus on abstract/academic language."
-"Cuando envías un telegrama, la brevedad es esencial porque te cobrarán por cada palabra.",B2,B2,"The sentence uses connectors ('cuando', 'porque') to link clauses and explains a cause-effect relationship in a practical context. It involves everyday reasoning and multiple clauses joined by 'porque', which aligns with B2 criteria. The vocabulary is concrete and the structure is clear, without abstract or academic language."
-"David tiene un gran interés en la estética: las cualidades que hacen que una pintura, escultura, composición musical o poema sean agradables a la vista, al oído o a la mente.",C2,B2,"The sentence uses a relative clause with the subjunctive 'sean' after 'hagan que,' which is a B2-level grammatical structure. It also includes a colon to introduce a detailed explanation, a feature common in B2-level sentences. The vocabulary is academic but not overly complex, and the sentence structure is more advanced than A2/B1 but does not reach the complexity of C1/C2."
-"A pesar de las constantes afirmaciones de amor de Trang, Spenser sigue temiendo que algún día ella deje de amarlo.",C2,B2,"The sentence uses the connector 'a pesar de' and includes a complex subordinate clause with the subjunctive mood ('deje de amarlo'), which aligns with B2 level grammar. While the content touches on emotional complexity, the structure remains within B2's scope of connectors and common subjunctive usage."
-¿Lo conociste en la universidad?,B1,B1,"The sentence uses the preterite tense (conociste) to describe a past action, which aligns with B1 level requirements for past tense usage. It contains no complex connectors, subjunctive mood, or abstract concepts that would warrant a higher classification."
-¡Aaah! ¡Mi computadora está rota!,A1,A1,"The sentence uses a simple present tense ('está') with basic vocabulary ('computadora', 'rota'). It contains an exclamation mark but no complex grammar, idioms, or connectors. The structure is straightforward and typical of A1 level."
-Las universidades y colegios privados de Estados Unidos son autónomos,C2,C2,"The sentence discusses an abstract academic topic (autonomy of private educational institutions in the US) using specific terminology. While grammatically simple (present tense), the subject matter aligns with C2's focus on abstract/academic content."
-"Cada vez que me uno a un nuevo juego de Warcraft, me enfrento a un nuevo equipo de adversarios.",B2,B2,"The sentence uses a time connector ('cada vez que') to link two independent clauses, forming a complex structure typical of B2 level. It involves habitual actions and specific vocabulary related to gaming ('juego de Warcraft'), but does not include abstract concepts or advanced grammatical features like subjunctive mood or complex conditionals."
-"Desde el momento en que supe que la universidad existía, he querido ir allí.",B2,B2,"The sentence uses a temporal conjunction ('Desde el momento en que') and a present perfect tense ('he querido'), forming a complex structure with a subordinate clause. This aligns with B2 criteria for sentences with connectors and multiple clauses."
-Mi apatía hacia votar proviene de mi desagrado por la política,C2,B1,"The sentence uses abstract nouns (apatía, desagrado) and a cause-effect structure ('provienen de'), which are typical of B1 level reasoning. It does not include complex grammar or academic vocabulary, but the abstract concepts and reasoning align with B1."
-La ascendencia de los monarcas es lo que mantiene a sus súbditos alejados de la rebelión,C2,C2,"The sentence discusses abstract political concepts (monarchs' lineage, rebellion) and uses sophisticated vocabulary ('ascendencia', 'súbditos', 'rebelión'). While the grammatical structure is relatively simple, the content is philosophical and academic in nature, aligning with C2's focus on abstract or academic language."
-Sarah fue lo suficientemente perspicaz como para darse cuenta de que sus amigos estaban tratando de hacerle una broma,B2,B2,"The sentence uses a complex structure with a subordinate clause introduced by 'que' and the phrase 'lo suficientemente... como para...', which are typical of B2 level. It also includes past continuous tense ('estaban tratando') and advanced vocabulary ('perspicaz'), but lacks abstract or philosophical content that would classify it as C2."
-La orquesta hace ruidos discordantes al afinar,B2,B1,"The sentence uses the gerund phrase 'al afinar' to indicate simultaneous action, which is a B1 structure. The vocabulary is basic, but the grammatical construction involving the gerund (afinando) in a time clause is characteristic of B1 level Spanish."
-La discrepancia entre las versiones de las dos partes involucradas en el accidente era tan grande que las autoridades tuvieron dificultades para decidir cuál de los lados decía la verdad,C2,C2,"The sentence uses complex connectors ('tan... que...'), multiple subordinate clauses, and abstract vocabulary ('discrepancia', 'versiones', 'autoridades'). It discusses a nuanced, real-world scenario with formal language and intricate grammatical structures, typical of C2-level academic or analytical discourse."
-"Sí, sucede de vez en cuando.",A2,A2,"The sentence uses the idiomatic expression 'de vez en cuando' (occasionally), which is a fixed phrase indicating frequency. A2 level includes idiomatic expressions and simple present tense, which aligns with this sentence's structure and vocabulary."
-Es bueno tener ideales... ¿no crees?,A2,B1,"The sentence uses a tag question ('¿no crees?') to seek agreement, which indicates conversational interaction and everyday reasoning typical of B1 level. The structure is simple but includes interactive elements beyond basic statements."
-La vida es hermosa,A1,A1,"The sentence uses a simple present tense structure with basic vocabulary. There are no idioms, connectors, or complex grammar features, which aligns with A1 level."
-Estaba cansado de ser vilipendiado todo el tiempo por personas que tenían celos de su habilidad,B1,B2,"The sentence uses a complex structure with a relative clause ('por personas que tenían celos de su habilidad') and passive voice ('ser vilipendiado'), which aligns with B2 level grammar. While the vocabulary is advanced, the primary classification is based on grammatical complexity, which fits B2 according to CEFR guidelines."
-Siempre había demasiada escritura superflua en sus ensayos,B1,B1,"The sentence uses the imperfect tense ('había') to describe a past habitual situation, which is a key feature of B1 level grammar. The vocabulary is straightforward but includes a slightly advanced term ('superflua'), though the overall structure remains simple and does not involve complex connectors or subjunctive mood."
-"Su ensayo ofreció solo un análisis superficial del problema, por lo que fue una verdadera sorpresa para él cuando obtuvo la mejor calificación de la clase.",B1,B2,"The sentence uses a complex structure with a causal connector ('por lo que') and a subordinate clause introduced by 'cuando', which aligns with B2 criteria for sentences containing connectors and multiple clauses."
-Los fiscales en el tribunal deben fundamentar sus afirmaciones para demostrar que un sospechoso es culpable,B2,B2,The sentence uses the subjunctive mood ('es culpable') in a common context (after 'para demostrar que') and includes a complex structure with a relative clause ('que un sospechoso es culpable'). These features align with B2 level requirements for subjunctive use and multi-clause sentences.
-Las ideas de Freud sobre el comportamiento humano lo llevaron a ser reconocido como un pensador profundo,B2,B1,"The sentence uses the preterite tense ('llevaron') and a passive construction ('ser reconocido como'), which are typical of B1 level grammar. While the vocabulary is academic (referring to Freud and his ideas), the sentence structure does not include connectors or subjunctive mood required for B2. The complexity is primarily in the past tense and passive voice, aligning with B1 criteria."
-La comida y la bebida se sirvieron en tal profusión en la boda que la novia y el novio comenzaron a preguntarse si no deberían haber invitado a más invitados,B2,B2,"The sentence uses complex connectors (en tal... que) and a conditional perfect tense (deberían haber invitado), which are characteristic of B2 level grammar. It also combines multiple clauses with a hypothetical past scenario, indicating advanced structural complexity typical of B2."
-La proliferación del uso de Internet ha dado lugar a una nueva generación de jóvenes,B2,B1,"The sentence uses the present perfect tense ('ha dado lugar') and discusses a cause-effect relationship, which aligns with B1 level grammar and vocabulary. While the topic is somewhat abstract, the grammatical structures remain within B1 complexity."
-Las personas ciegas a veces desarrollan una habilidad compensatoria para percibir la proximidad de los objetos que las rodean,B2,C2,"The sentence discusses a complex psychological/medical concept (compensatory abilities in blind individuals) using academic vocabulary ('compensatoria', 'percebir la proximidad'). While grammatically simple, the abstract and specialized content aligns with C2's focus on abstract/academic topics."
-"Un avaro acumula dinero no porque sea prudente, sino porque es codicioso.",B1,C2,"The sentence presents an abstract philosophical distinction between prudence and greed, using complex connectors ('no...sino...') and abstract reasoning about human behavior. The content is conceptual and nuanced, aligning with C2's focus on abstract/philosophical topics."
-El abogado defensor estaba seguro de que podría responder a los argumentos del fiscal en su réplica,B2,B2,"The sentence uses the conditional tense ('podría') and a subordinate clause introduced by 'de que', which are typical of B2 level grammar. It also demonstrates complex sentence structure with a main clause and a dependent clause."
-Los maestros deben cansarse de corregir los mismos errores una y otra vez en los trabajos de sus estudiantes,B1,B2,"The sentence uses a modal verb construction ('deben cansarse') and discusses a habitual action with repetition ('una y otra vez'), which aligns with B2 complexity. While it touches on an educational topic, it lacks the abstract or philosophical depth typical of C2. The structure is more advanced than A2/B1 but does not reach the nuanced or academic complexity of C2."
-Los testigos pudieron refutar el falso testimonio del sospechoso,B2,A2,"The sentence uses the past tense of the modal verb 'poder' (pudieron), which is a key indicator of A2 level. It contains basic vocabulary and a straightforward structure without complex grammar or connectors."
-El líder del gremio relegó a Vince a un cargo menor porque estaba abusando de su poder,B2,B2,"The sentence uses a causal connector 'porque' to link two clauses, indicating a more complex structure typical of B2 level. It also employs past tenses (preterite and imperfect) to describe a sequence of events, which aligns with B2's focus on connectors and nuanced temporal expressions."
-Juana de Arco se negó a renunciar a su creencia de que la voz que escuchaba era de Dios y de nadie más,B2,B2,"The sentence uses a relative clause with the subjunctive mood ('escuchaba') in a context of expressing belief, which is a B2-level structure. While the content touches on abstract belief, the grammar aligns with B2 rather than C2, which requires more complex academic or philosophical language."
-"Conmovidos por los eventos del 11 de septiembre, los políticos de todo el mundo condenaron a los terroristas por su acto reprobable.",B2,C2,"The sentence uses formal vocabulary ('conmovidos', 'acto reprobable'), complex structure with a participle phrase at the beginning, and discusses a global political event in an abstract, academic context. The combination of advanced grammar and formal, abstract content aligns with C2 level."
-"Para evitar que su idea original fuera copiada, Henry recurrió a la reticencia.",B2,B2,"The sentence uses a subordinate clause with the subjunctive mood ('fuera copiada') introduced by 'para evitar que,' which is a common B2 structure. The vocabulary is not abstract or academic, and the sentence structure, while complex, does not reach the nuanced or abstract level required for C2."
-Me gustaría retractarme de mi declaración anterior,B2,B1,"The sentence uses the conditional tense 'gustaría' (would like), which is typically introduced at B1 level. It expresses a polite intention without complex connectors or subjunctive mood."
-"Para ganar a su audiencia, el orador recurrió a utilizar técnicas retóricas que aprendió en sus cursos de comunicación.",B2,B2,"The sentence contains a relative clause ('que aprendió en sus cursos de comunicación') and uses complex connectors ('para ganar a su audiencia, el orador recurrió a utilizar'). It also includes advanced vocabulary like 'técnicas retóricas' and 'cursos de comunicación,' which aligns with B2-level complexity involving multiple clauses and nuanced expressions."
-Su padre nunca aprobaría su compromiso con una chica que no compartiera las mismas creencias religiosas que su familia,B2,C1,"The sentence uses the conditional tense (aprobaría) and the subjunctive mood (compartiera) in a complex hypothetical context, which aligns with C1-level grammar. It also includes a relative clause with a dependent clause, demonstrating nuanced grammatical structures typical of advanced proficiency."
-"Todos los súbditos del rey, temiendo su ira, a menudo actuaban de manera bastante servil.",B2,C2,"The sentence uses abstract and historical vocabulary ('súbditos', 'ira', 'servil') and discusses a complex social dynamic, which aligns with C2's focus on academic/philosophical content. The structure with gerund phrase ('temiendo su ira') and nuanced adverbial clauses reflects advanced grammatical complexity."
-Las personas suelen ser bastante escépticas sobre las cosas a menos que se les presente una prueba creíble,B2,B2,"The sentence uses the conditional conjunction 'a menos que' (unless) with the subjunctive mood 'se les presente', which is characteristic of B2 level grammar. It also contains a complex structure with a main clause and a subordinate clause connected by a conjunction, typical of B2."
-Las personas censuradoras se deleitan en echar la culpa,B1,B2,"The sentence uses a reflexive verb structure ('se deleitan') and a participle adjective ('censuradoras'), indicating a more complex grammatical structure than A2/B1. While the vocabulary touches on abstract concepts (censorship, blame), the sentence lacks academic or philosophical depth typical of C2. The structure aligns with B2-level complexity involving nuanced verb forms and abstract ideas."
-Los artistas pop prosperan gracias a la adoración de sus leales fans,B1,B2,"The sentence uses the connector 'gracias a' (thanks to), which is a B2-level structure. It also includes a cause-effect relationship and compound noun phrases ('la adoración de sus leales fans'), indicating a more complex syntactic structure than A2/B1 levels."
-Debemos aprender a enfrentar la adversidad con gracia,B1,C2,"The sentence expresses an abstract philosophical concept about handling adversity gracefully, which aligns with C2-level content as per the guidelines. While the grammar is simple, the abstract and nuanced meaning classifies it at the highest level."
-Su tono severo y su voz fuerte ocultaban su sensibilidad interior y su naturaleza cariñosa,B1,C2,"The sentence explores abstract psychological and emotional contrasts (external severity vs. internal sensitivity), which aligns with C2's focus on abstract or philosophical content. While the grammar is simple, the thematic depth and nuanced characterization of human traits are indicative of advanced language use."
-El joven rico y hedonista se sentía extrañamente atraído por la vida estricta y ascética que llevaban los miembros de algunas órdenes monásticas,B2,B2,"The sentence contains a complex relative clause ('que llevaban los miembros de algunas órdenes monásticas') and uses advanced vocabulary like 'hedonista', 'ascética', and 'órdenes monásticas'. While the grammar is more complex than A2/B1, it lacks the nuanced subjunctive or abstract philosophical depth typical of C1/C2. The structure aligns with B2's use of relative clauses and descriptive complexity."
-¿Qué criterio utilizaste al elegir este ensayo como el ganador?,B1,B1,"The sentence uses the preterite tense ('utilizaste') and a subordinate clause ('al elegir...'), which are typical of B1 level grammar. It involves past tense and everyday reasoning, fitting the B1 criteria."
-Los estafadores se aprovechan de la credulidad de los inversores inexpertos y los engañan para robarles su dinero,B2,B2,"The sentence uses a compound structure with two independent clauses joined by 'y', which is a B2-level feature. It also includes a relative clause ('de los inversores inexpertos') and advanced vocabulary related to financial deception, but lacks complex conditionals or nuanced subjunctive typical of C1/C2."
-"Incluso si tus oraciones fueran realmente sin sentido, al menos tienes la suerte de poder formar oraciones hermosas.",B1,C1,"The sentence uses a complex conditional structure ('Incluso si tus oraciones fueran...') with the subjunctive mood ('fueran'), which is characteristic of C1 level grammar. It also includes nuanced hypothetical reasoning and abstract concepts, aligning with advanced language use."
-Había una sensación de restricción en la sala; nadie se atrevía a decirle al rey lo tonto que era su decisión,B2,B2,"The sentence uses the imperfect tense ('Había'), the imperfect subjunctive ('se atrevía'), and a semicolon to connect two independent clauses. These features align with B2 level grammar, which includes past tenses, subjunctive in common contexts, and complex sentence structures with punctuation."
-El consenso indica que estamos en contra de la idea propuesta,B1,B2,"The sentence uses a relative clause introduced by 'que' (""que estamos en contra de la idea propuesta"") and the phrase 'estamos en contra de' (we are against), which indicates a level of complexity beyond basic vocabulary and simple tenses. While it does not use advanced connectors like 'aunque' or 'sin embargo,' the structure and vocabulary align with B2-level grammar and reasoning."
-Un pequeño incendio forestal puede propagarse fácilmente y convertirse rápidamente en una gran conflagración,B1,C2,"The sentence discusses a complex environmental phenomenon (forest fire escalation) using advanced vocabulary like 'conflagración' and presents a cause-effect relationship typical of academic or technical contexts. While grammatically simple, the abstract and specialized content aligns with C2's focus on abstract/academic topics."
-",A pesar de haber cumplido su condena en prisión, el asesino nunca fue del todo perdonado por el público por su crimen.",B2,C2,"The sentence discusses a complex societal issue (forgiveness of a criminal) using abstract concepts and passive voice ('fue perdonado'). The structure combines multiple clauses with advanced connectors ('a pesar de') and academic vocabulary ('asesino', 'condena', 'crimen'), aligning with C2's focus on abstract/philosophical content and nuanced grammar."
-Encuentro que las palabras con definiciones concisas son las más fáciles de recordar,B1,B2,"The sentence uses a relative clause ('que las palabras con definiciones concisas') and a superlative structure ('las más fáciles de recordar'), indicating B2-level complexity. The vocabulary is abstract and discusses conceptual relationships, but lacks C1/C2-level nuance or academic abstraction."
-Un examen superficial de sus dientes indicó que tenía gingivitis,B1,B2,"The sentence contains a main clause ('Un examen superficial de sus dientes indicó') and a subordinate clause ('que tenía gingivitis') connected by the relative pronoun 'que'. This structure, along with the use of past tense and specific medical vocabulary ('gingivitis'), aligns with B2-level complexity as per the guidelines."
-"El artículo de noticias retrató al acusado como un hombre culpable, a pesar de que se había demostrado su inocencia.",B2,B2,"The sentence uses the connector 'a pesar de que' to join two clauses, which is a B2-level structure. It also employs the past perfect tense ('se había demostrado'), indicating a more complex grammatical construction typical of B2."
-El político impulsó la reforma denunciando la corrupción de los funcionarios del gobierno,B2,B1,"The sentence uses the past tense ('impulsó') and a gerund phrase ('denunciando la corrupción'), which aligns with B1 level grammar (past tense and everyday reasoning). It does not include connectors, subjunctive, or complex structures typical of higher levels."
-La depravación de los actos del rey llevó al pueblo a creer que no era más que un tirano que necesitaba ser derrocado,B2,C2,"The sentence uses abstract concepts ('depravación', 'tirano', 'derrocado'), complex relative clauses ('que necesitaba ser derrocado'), and discusses philosophical/political ideas about power and morality. The vocabulary and nuanced expression of cause-effect relationships (llevó al pueblo a creer) are characteristic of C2-level academic or literary Spanish."
-"Cuando somos pequeños, todo parece tan grande.",B1,C2,"The sentence expresses a philosophical reflection on perception and perspective, using a metaphor to convey abstract concepts. While the grammar is simple (present tense), the abstract and metaphorical nature aligns with C2 criteria for abstract or philosophical content."
-No me rebajaré a su nivel,B1,B1,"The sentence uses the future tense ('rebajaré'), which is typically introduced at B1 level. It is a straightforward declarative statement without complex connectors or subjunctive mood."
-"Dirás y harás cosas que tus padres dijeron e hicieron, incluso si juraste que nunca lo harías.",B1,B2,"The sentence uses the connector 'incluso si' (even if) to introduce a hypothetical contrast, which is a B2-level structure. It combines future tense ('Dirás y harás'), past tense ('dijeron e hicieron'), and conditional ('harías'), demonstrating complex clause linkage typical of B2. The sentence structure with embedded clauses and conditional reasoning aligns with B2 complexity."
-Estoy vivo aunque no estoy dando ninguna señal de vida,B1,B2,"The sentence uses the subordinating conjunction 'aunque' (although) to connect two clauses, which is a B2-level structure. The vocabulary includes idiomatic expressions like 'señal de vida' (sign of life) and the present continuous tense, which are typical of B2 proficiency. There is no use of complex conditionals, subjunctive, or abstract concepts that would warrant a higher level."
-Nunca intentes morir,B1,B2,"The sentence uses the subjunctive mood ('intentes') in a negative imperative structure, which is a key feature of B2 level grammar. The vocabulary is basic, but the grammatical complexity of the subjunctive in this context classifies it as B2."
-Soy demasiado viejo para este mundo,B1,A2,"The sentence uses the idiomatic expression 'demasiado viejo' (too old) and a simple present tense structure. While the grammar is basic, the inclusion of an idiomatic phrase aligns with A2 criteria, which includes idiomatic expressions and simple reasoning."
-La vida comienza cuando nos damos cuenta de quiénes somos realmente,B1,C2,"The sentence is abstract and philosophical, discussing the concept of life beginning when one realizes their true self. It uses complex connectors and abstract vocabulary, which aligns with C2 level as it reflects nuanced, existential ideas rather than everyday language."
-La vida comienza cuando decides qué esperas de ella,B1,B2,"The sentence uses a complex structure with a subordinate clause introduced by 'cuando' and a relative pronoun 'qué', which are typical of B2 level. It involves connecting ideas through clauses and uses abstract concepts, but lacks the nuanced subjunctive or advanced connectors required for C1/C2."
-La vida comienza cuando pagas impuestos,B1,B2,"The sentence uses the connector 'cuando' (when), which is specified in the guidelines as a B2-level connector. While the rest of the grammar is simple (present tense), the presence of this connector elevates the classification to B2."
-Lo que no tienes es mejor que lo que sí tienes,B1,C2,"The sentence expresses an abstract philosophical idea, comparing the value of what one does not have versus what one does have. While the grammar is simple (present tense, relative clauses), the content is abstract and philosophical, aligning with C2's focus on abstract or nuanced concepts."
-La vida comienza cuando estás listo para vivirla,B1,A2,"The sentence uses simple present tense and basic vocabulary. It contains a relative pronoun ('la') and a common conjunction ('cuando'), which are typical of A2 level. The structure is straightforward without complex grammar or abstract concepts beyond basic comprehension."
-Nunca es demasiado tarde para aprender,B1,A1,"The sentence uses simple present tense with basic vocabulary and no idiomatic expressions, modal verbs, or complex structures. It follows the pattern of A1 level sentences as per the guidelines."
-Me pregunto si estoy hecho para este mundo,B1,B2,"The sentence uses a subordinate clause introduced by 'si' (if/whether) and the phrase 'estar hecho para' (to be made for), which indicates a hypothetical or reflective context. This structure and the use of abstract concepts align with B2 level complexity, as it involves connecting clauses and expressing nuanced ideas, though it does not reach the abstract or academic depth of C2."
-"Un niño no es un recipiente para llenar, sino un fuego que encender.",B1,C2,"The sentence uses abstract metaphors ('un recipiente para llenar', 'un fuego que encender') to express a philosophical concept about education, which aligns with C2's focus on abstract/philosophical ideas. The structure is simple but the conceptual depth and metaphorical language are characteristic of advanced academic/philosophical discourse."
-"Lamentablemente, muchas personas creerán cosas que se les dicen a través de un correo electrónico que encontrarían implausibles en persona.",B2,B2,"The sentence contains multiple relative clauses ('que se les dicen a través de un correo electrónico' and 'que encontrarían implausibles en persona') and complex sentence structure, which aligns with B2 criteria for sentences with multiple dependent clauses and connectors. There is no use of subjunctive or advanced conditionals, which would push it to C1/C2."
-"Puede sonar descabellado, pero este es un problema real.",B1,C2,"The sentence discusses abstract concepts (perception vs. reality) and uses nuanced modal verbs ('puede') with subjunctive ('sonar'), which aligns with C2's focus on abstract or philosophical themes. The structure contrasts a subjective perception with an objective reality, typical of higher-level discourse."
-Alguien robó mi espada mágica.,B2,B1,"The sentence uses the preterite tense ('robó') to describe a completed action in the past, which aligns with B1 level grammar. The vocabulary is basic but the use of past tense places it above A2."
-Es difícil tener grandes ideas,B1,B1,"The sentence uses a common structure 'Es difícil + infinitive' to express a general opinion, which is typical of B1 level. It involves present tense and descriptive statements without complex connectors or subjunctive mood."
-Los datos sugieren que la duración óptima de una conferencia puede ser de 30 en lugar de 60 minutos,B2,C2,"The sentence contains academic vocabulary ('datos', 'duración óptima', 'conferencia') and discusses technical/analytical content, which aligns with C2's focus on abstract or academic language. While the grammar is simple, the context and terminology indicate a higher CEFR level."
-Smith ha pasado años estudiando los efectos del sueño y la falta de sueño en la memoria y el aprendizaje,B2,B1,"The sentence uses the present perfect tense ('ha pasado') and a gerund ('estudiando'), which are typical of B1 level. The vocabulary is academic but not abstract or philosophical, and there are no complex connectors or subjunctive mood. The structure is a single clause with a clear cause-effect relationship, fitting within B1's focus on everyday reasoning and past/future tenses."
-No puede haber progreso sin comunicación,B1,A2,"The sentence uses a modal verb 'puede' (can/must) in a negative construction, which aligns with A2 level grammar. It does not include complex structures or connectors beyond basic modal verb usage."
-Todo el mundo quisiera creer que los sueños pueden hacerse realidad,B1,B2,"The sentence uses the conditional tense 'quisiera' (B2 level) and a complex structure with a subordinate clause. While the topic is abstract, the grammar aligns with B2 rather than C2, which requires nuanced subjunctive or complex conditionals."
-La mejor manera de hacer realidad tus sueños es despertarte,B1,C2,"The sentence uses a metaphorical expression ('despertarte' as a metaphor for taking action) and abstract reasoning, which aligns with C2-level complexity. The phrasal verb 'hacer realidad' and the nuanced, philosophical implication of the statement also indicate advanced language use."
-El mundo no gira a tu alrededor,B1,A1,"The sentence uses a simple present tense ('gira') with basic vocabulary and no complex structures. It contains a straightforward negation ('no') and prepositional phrase ('a tu alrededor'), typical of A1-level Spanish."
-El mundo está lleno de tontos,B1,A1,"The sentence uses simple present tense with basic vocabulary. 'Tontos' is a common noun, and the structure is straightforward without idioms, connectors, or complex grammar."
-Espero con interés conocer tus opiniones sobre este asunto,B2,C2,"The sentence expresses a formal and polite intention to learn someone's opinions, which is typical in academic or professional contexts. While the grammar is simple, the content reflects abstract communication and formality, aligning with C2's focus on academic or philosophical language."
-¿Y qué si soy gay? ¿Es un crimen?,B1,C2,"The sentence addresses abstract social and philosophical themes (identity, societal judgment) and uses rhetorical questioning to challenge norms, which aligns with C2-level abstract discourse despite simple grammatical structures."
-Mi vida es vacía sin él,B1,A1,"The sentence uses a simple present tense structure with basic vocabulary. It contains no idioms, connectors, or complex grammar, which aligns with A1 level criteria."
-Deberías haber rechazado una propuesta tan injusta,B2,B2,"The sentence uses the conditional perfect tense ('deberías haber rechazado'), which involves a compound verb structure (conditional + past participle). This tense is typically introduced at B2 level, as it requires understanding of both conditional and perfect constructions, which are more advanced than simple tenses or present perfect."
-Las matemáticas no son solo la memorización de fórmulas,B2,C2,"The sentence discusses an abstract concept about the nature of mathematics, implying a philosophical or academic perspective. While the grammar is simple (present tense), the content is abstract and intellectual, aligning with C2's focus on abstract or academic language."
-Estoy enfermo y cansado de estar enfermo y cansado,B1,B1,"The sentence uses the present tense and a simple structure to express a state of being, with repetition for emphasis. It does not include complex connectors, subjunctive mood, or abstract concepts, which would place it at a higher level. The phrase 'cansado de estar enfermo y cansado' reflects a nuanced expression of frustration, typical of B1-level reasoning."
-La esencia de las matemáticas es la libertad,B2,C2,"The sentence makes an abstract philosophical statement about mathematics, using the term 'esencia' (essence) and 'libertad' (freedom), which aligns with C2's focus on abstract or academic language. Despite the simple grammatical structure, the conceptual depth and philosophical nature of the statement qualify it for C2."
-¿Puedes imaginar cómo sería nuestra vida sin electricidad?,B2,C2,"The sentence is abstract and philosophical, prompting reflection on a hypothetical scenario (life without electricity). While the grammar is not extremely complex, the content and hypothetical nature align with C2's focus on abstract or philosophical topics."
-"Si le prestas a alguien 20 dólares y nunca vuelves a ver a esa persona, probablemente valió la pena.",B2,C2,The sentence uses a complex conditional structure ('Si le prestas... y nunca vuelves a ver...') to express a philosophical reflection on human behavior and trust. The abstract evaluation of 'valió la pena' (was worth it) and the hypothetical scenario involving social dynamics align with C2-level abstract reasoning and nuanced conditional usage.
-La esencia de la libertad es la matemática,B2,C2,"The sentence uses abstract and philosophical language ('esencia de la libertad', 'matemática') to express a complex, abstract concept. While the grammar is simple (present tense), the content aligns with C2's focus on abstract or philosophical ideas."
-Su historia era demasiado ridícula para que alguien la creyera,B1,B2,"The sentence uses the subjunctive mood ('creyera') in a common context after 'para que', which is a B2-level structure. The vocabulary is basic, but the grammatical construction involving the subjunctive places it at B2."
-",Cada persona es un mundo",B1,A1,"The sentence uses a simple present tense structure with basic vocabulary ('cada persona', 'es', 'un mundo'). There are no idioms, connectors, or complex grammatical structures, which aligns with A1 level."
-¿Crees que la humanidad colonizará algún día la Luna?,B2,B1,"The sentence uses the future tense ('colonizará') and a question structure ('¿Crees que...?'), which aligns with B1 level grammar. While the vocabulary is more advanced, the sentence structure remains straightforward without complex connectors or subjunctive usage."
-No sé qué es peor,B1,B1,"The sentence uses a relative clause ('qué es peor') to express uncertainty, which aligns with B1-level grammar involving everyday reasoning and embedded clauses. While the vocabulary is basic, the structure reflects B1 complexity."
-La vida en prisión es peor que la vida de un animal,B1,B1,"The sentence uses a comparison structure ('es peor que') and present tense, which aligns with B1 level grammar for expressing everyday reasoning and comparisons."
-La belleza está en los ojos de quien la mira,B1,B2,"The sentence uses a relative clause ('quien la mira') and expresses an abstract concept, which aligns with B2 level complexity involving nuanced expressions and connectors. While it is a proverb, the grammatical structure (relative clause) and abstract idea place it above A2/B1 but below C1/C2, which require more complex conditionals or philosophical depth."
-¿Quién compra este tipo de arte?,B1,A1,"The sentence uses a basic question structure with present tense verb 'compra' and simple vocabulary. It lacks idioms, modal verbs, or complex grammar, aligning with A1 criteria."
-¿Por qué no podemos hacernos cosquillas a nosotros mismos?,B1,C2,"The sentence poses an abstract, scientific question about human physiology (why we cannot tickle ourselves), which aligns with C2's focus on academic/philosophical topics. While the grammar is simple (present tense), the content's abstract nature and scientific implication justify the C2 classification."
-La respuesta nos lleva a un círculo vicioso,B1,C2,"The sentence contains abstract and philosophical vocabulary ('círculo vicioso' meaning 'vicious circle'), which aligns with C2-level content focused on abstract or conceptual ideas. While the grammar is simple (present tense), the CEFR guidelines prioritize abstract/philosophical language for C2 classification."
-Siento que soy libre,B1,B1,"The sentence uses a main clause in the present tense ('siento') followed by a subordinate clause ('que soy libre') expressing a personal feeling or opinion. This structure reflects everyday reasoning and the use of subordinate clauses, which aligns with B1 level as it involves expressing thoughts and opinions with some complexity."
-La libertad no es gratuita,B1,C2,"The sentence is a philosophical statement discussing the concept of freedom and its cost, which aligns with C2's criteria for abstract or philosophical content, even though it uses simple present tense."
-",A este ritmo, es poco probable que terminemos antes de que acabe la semana.",B2,B2,"The sentence uses the subjunctive in a common context ('es poco probable que') and includes a complex time clause ('antes de que acabe la semana'), which aligns with B2 criteria for subjunctive use and connectors."
-Supongo que mi perspectiva sobre la amistad es bastante sombría porque nunca he tenido que depender de nadie para nada,B2,B2,"The sentence uses a complex structure with a subordinate clause introduced by 'porque' to express cause and effect, which is characteristic of B2 level. It also includes a dependent clause ('mi perspectiva sobre la amistad es bastante sombría') and a reason clause ('porque nunca he tenido que depender de nadie para nada'), demonstrating the ability to connect ideas with causal connectors, a key B2 feature."
-Tiene una cara como un mes de domingos lluviosos,B1,A2,"The sentence uses an idiomatic expression ('una cara como un mes de domingos lluviosos'), which is characteristic of A2 level. While the structure is simple (present tense), the inclusion of a fixed idiomatic phrase elevates it beyond A1."
-No necesariamente confío en las traducciones,B1,A1,"The sentence uses a simple present tense structure with a negation and an adverb ('no necesariamente'), which aligns with A1-level grammar and vocabulary. There are no idioms, modal verbs, or complex connectors, and the vocabulary is basic."
-",Compartir la pasión de uno es vivirla plenamente",B1,B1,"The sentence uses a general statement with an abstract concept ('Compartir la pasión de uno es vivirla plenamente'), which aligns with B1-level reasoning about everyday ideas. The grammar is simple (infinitive constructions) but the abstract nature of the statement and the use of 'es... vivirla' (a structure common in B1 for expressing equivalences) justify this classification. It does not include complex connectors, subjunctive, or academic language typical of higher levels."
-"Si te mostrara mi casa, mi vecindario de entonces, ¿entenderías de dónde soy?",B2,C2,"The sentence uses a complex conditional structure ('Si te mostrara...') and explores abstract, introspective themes about identity and origin, which align with C2-level abstract and philosophical language."
-"¡La vida no es larga, es ancha!",B1,C2,"The sentence is a philosophical statement using metaphor to express an abstract concept about life's value, which aligns with C2-level abstract/philosophical language despite its simple grammatical structure."
-",Cuando tenía tu edad, Plutón era un planeta.",B1,B2,"The sentence uses a time connector ('Cuando') to link two clauses, which is a B2-level structure. It also employs past tenses ('tenía', 'era') and references a factual historical context (Pluto's planetary status), indicating a more complex use of language than basic A1/A2 levels but not reaching the abstract or nuanced grammar of C1/C2."
-Ella está al borde de un colapso nervioso,B1,B1,"The sentence uses the present tense and a metaphorical expression ('al borde de un colapso nervioso'), which indicates an abstract concept but is grammatically simple. While the vocabulary is more advanced, the structure aligns with B1 level reasoning about psychological states."
-"El queso es un alimento sólido hecho de la leche de vacas, cabras, ovejas y otros mamíferos.",A1,A1,"The sentence uses simple present tense with basic vocabulary to describe cheese as a solid food made from milk. It contains no idioms, modal verbs, or complex grammar structures, aligning with A1 criteria."
-"Todavía no me gustan Cavalieri, Tonelli ni Fubini... y mi examen oral de cálculo ya es mañana.",B2,A2,"The sentence uses the present tense with the verb 'gustar' (a preference verb), lists multiple items with 'ni', and connects two independent clauses with 'y'. It contains academic vocabulary (Cavalieri, Tonelli, Fubini, cálculo) but the grammar remains simple and does not include complex connectors or subjunctive mood."
-Hay muchas cosas que no sabes sobre mi personalidad,B1,B1,"The sentence uses a relative clause ('que no sabes sobre mi personalidad') and a basic present tense structure, which aligns with B1 level grammar. It does not include complex connectors, subjunctive mood, or abstract vocabulary, but the relative clause indicates a step beyond A2."
-Todos merecen una segunda oportunidad,B1,A1,"The sentence uses a simple present tense with basic vocabulary. There are no idiomatic expressions, modal verbs, or complex connectors. It follows the structure of a straightforward declarative statement typical of A1 level."
-Hay 1000 películas que uno debe ver antes de morir,B2,A2,"The sentence uses a modal verb 'debe' (should/must) and a relative clause 'que uno debe ver', which are characteristic of A2 level. The structure is simple and does not include complex tenses or advanced connectors."
-"Las siete preguntas que un ingeniero debe hacerse son: quién, qué, cuándo, dónde, por qué, cómo y cuánto.",B2,B2,The sentence uses a relative clause ('que un ingeniero debe hacerse') and a colon to introduce a list of interrogative words. These structures indicate a B2 level due to the use of punctuation to join clauses and the complexity of the relative clause.
-¿Todavía te preguntas cuál es el significado de la vida?,B2,C2,"The sentence is philosophical in nature, discussing the abstract concept of the meaning of life. While the grammar is simple (present tense), the content aligns with C2's focus on abstract or philosophical topics."
-¿Cuándo se puede decir que una persona tiene problemas con el alcohol?,B2,A2,"The sentence uses a modal verb ('puede') and an impersonal structure ('se puede decir'), which are characteristic of A2 level. It does not include complex connectors, subjunctive, or abstract concepts that would classify it higher."
-Recuerda que todos estamos en el mismo barco,B1,B2,"The sentence uses a subordinate clause introduced by 'que' ('que todos estamos en el mismo barco'), which aligns with B2-level complexity involving connectors and multi-clause structures. The vocabulary is idiomatic ('en el mismo barco') but not abstract or academic, and the grammar does not reach C1/C2 complexity."
-"Todo lo que necesito saber sobre la vida, lo aprendí de un muñeco de nieve.",B1,B1,"The sentence uses the past tense 'aprendí' and a relative clause 'que necesito saber sobre la vida', which aligns with B1 level grammar (past tense usage and basic relative clauses). There are no complex connectors, subjunctive mood, or abstract concepts that would classify it as B2 or higher."
-Las despedidas siempre son tristes,B1,C2,"The sentence expresses a philosophical observation about the nature of goodbyes, which aligns with C2-level abstract and reflective language. While grammatically simple (present tense), the content reflects a universal truth about human experience, characteristic of higher CEFR levels."
-Nosotros los hombres estamos acostumbrados a esperar a las mujeres,B1,A2,"The sentence uses the idiomatic expression 'acostumbrados a' (used to), which is a key indicator of A2 level. The structure is simple present tense with a relative clause ('nosotros los hombres'), but the presence of the idiom elevates it beyond A1. No complex grammar or abstract concepts are present."
-"En general, ¿quién visita más a sus padres, los hijos o las hijas?",B1,B1,"The sentence is a general question comparing two groups (sons and daughters) in terms of visiting parents. It uses present tense and a comparison structure, which aligns with B1 level reasoning about everyday topics. There are no complex connectors or subjunctive mood, but the structure reflects everyday reasoning typical of B1."
-Todo esfuerzo merece una recompensa,B1,A1,"The sentence uses a simple present tense structure with basic vocabulary ('esfuerzo', 'merece', 'recompensa'). It lacks idioms, connectors, or complex grammar, fitting the A1 level criteria."
-Más del 90 por ciento de las visitas a una página web provienen de motores de búsqueda,B2,C2,"The sentence contains academic/technical vocabulary ('visitas a una página web', 'motores de búsqueda') and precise numerical data ('más del 90 por ciento'), which aligns with C2-level abstract or specialized content. While the grammar is simple, the context and terminology reflect advanced, factual discourse typical of higher CEFR levels."
-"Sabía que era plástico, pero sabía a madera.",B1,B1,"The sentence uses past tense ('sabía', 'era') and a coordinating conjunction ('pero') to connect two independent clauses. While 'sabía a madera' includes a phrasal verb, the overall structure aligns with B1 criteria of past tense usage and basic connectors, without reaching the complexity of subordinating conjunctions or nuanced subjunctive required for B2."
-Hay cosas en este mundo que simplemente no se pueden expresar con palabras,B1,C2,"The sentence expresses an abstract philosophical concept about the limitations of language, which aligns with C2's focus on abstract or philosophical ideas. While the grammar is simple (present tense, passive voice), the content's abstract nature and nuanced meaning (inexpressibility of certain experiences) justify the C2 classification."
-La forma más pérfida de dañar una causa consiste en defenderla deliberadamente con argumentos defectuosos,B2,C2,"The sentence discusses an abstract philosophical concept (treacherous methods of harming a cause) using advanced vocabulary like 'pérfida' and 'defectuosos'. It employs complex reasoning and formal structure typical of academic/philosophical discourse, aligning with C2 criteria."
-"Por más que lo intentes, no puedes imponer una creencia a otra persona, y mucho menos a ti mismo.",B2,C2,"The sentence discusses a philosophical concept about the impossibility of imposing beliefs on others and oneself, using advanced connectors like 'por más que' and 'y mucho menos'. The abstract nature of the topic and the nuanced use of language align with C2-level complexity."
-Estoy en contra de usar la muerte como castigo. También estoy en contra de usarla como recompensa,B2,C2,"The sentence discusses abstract ethical concepts (opposition to using death as punishment or reward), which aligns with C2's focus on abstract or philosophical content. While the grammar is simple, the thematic depth and philosophical nature of the statement classify it at the highest level."
-La segunda mitad de la vida de un hombre está compuesta únicamente por los hábitos que ha adquirido durante la primera mitad,B2,C2,"The sentence is a philosophical statement about the nature of human life and habits, which aligns with the C2 level's focus on abstract and academic content. Although the grammar is relatively straightforward, the abstract and reflective nature of the statement classifies it as C2."
-"Según un nuevo informe, las niñas tienen más probabilidades que los niños de estar desnutridas, sufrir pobreza, enfrentar violencia y ser privadas de educación.",B2,C2,"The sentence discusses abstract social issues (malnutrition, poverty, violence, education) and uses academic language ('según un nuevo informe'). While the grammar is structurally simple, the content is abstract and analytical, aligning with C2's focus on academic/philosophical topics. The vocabulary and thematic complexity exceed B2's everyday reasoning and connectors."
-"Estamos atormentados por una vida ideal, y es porque llevamos dentro de nosotros el comienzo y la posibilidad de alcanzarla.",B2,C2,"The sentence contains abstract philosophical concepts ('vida ideal', 'atormentados', 'posibilidad de alcanzarla') and complex grammatical structures, including a relative clause ('la posibilidad de alcanzarla') and a causal explanation ('y es porque'). These features align with C2-level academic/philosophical language and nuanced reasoning."
-La teoría científica que más me gusta es que los anillos de Saturno están compuestos enteramente de equipaje perdido,B2,B2,"The sentence uses a complex structure with a relative clause ('que más me gusta') and a subordinate clause introduced by 'es que', which is characteristic of B2 level. The vocabulary is not overly advanced, but the grammatical structure and use of connectors indicate a higher proficiency level than A2/B1."
-La única forma en la Tierra de multiplicar la felicidad es dividirla,B1,C2,"The sentence uses abstract and philosophical language ('multiplicar la felicidad', 'dividirla') to express a nuanced, metaphorical idea. While the grammar is structurally simple (present tense), the conceptual depth and abstract nature align with C2-level content, which involves abstract or philosophical expressions."
-Un error conocido es mejor que una verdad desconocida,B1,C2,"The sentence presents an abstract philosophical concept comparing a known error to an unknown truth, using complex vocabulary and a nuanced argument. According to the guidelines, C2 includes abstract or philosophical sentences even if expressed in simple present tense."
-Todo es teóricamente imposible hasta que se hace,B1,B2,"The sentence uses the connector 'hasta que' to link two clauses, which is a B2-level structure. While the concept is abstract, the grammar remains within B2 complexity without requiring nuanced subjunctive or advanced conditionals."
-"Hasta que hagas las paces con quien eres, nunca estarás contento con lo que tienes.",B1,C2,"The sentence is philosophical in nature, discussing abstract concepts of self-acceptance and contentment. While the grammar (future tense, subjunctive in conditional clauses) could align with B2, the thematic depth and abstract reasoning typical of C2 are present."
-"Puedes sentirte decepcionado si fracasas, pero estás condenado si no lo intentas.",B1,B2,"The sentence uses conditional structures with 'si' clauses and the subjunctive mood ('fracasas', 'intentas'), which are characteristic of B2 level. It also combines two complex conditional statements with 'pero', indicating a higher level of grammatical complexity."
-"El aburrimiento es la sensación de que todo es una pérdida de tiempo; la serenidad, que nada lo es.",B2,B2,"The sentence uses a semicolon to join two independent clauses, which is a B2-level structure. It also contains abstract concepts and philosophical ideas, but the primary grammatical indicator is the use of the semicolon, which aligns with B2 criteria."
-"Nunca pierdas de vista la importancia de un hermoso amanecer, de ver a tus hijos dormir o del olor de la lluvia. A menudo son las pequeñas cosas las que realmente importan en la vida.",B1,C2,"The sentence is philosophical and abstract, discussing the importance of small, meaningful life experiences. It uses the subjunctive mood ('pierdas') in a reflective context and employs complex connectors ('nunca', 'a menudo') to convey nuanced ideas, aligning with C2's focus on abstract and reflective language."
-No hay distancia en esta tierra tan lejana como ayer,B1,B2,"The sentence uses the comparative structure 'tan... como', which is a B2-level grammatical construction. The metaphorical comparison ('tan lejana como ayer') adds nuance but does not require advanced grammar beyond B2. No subjunctive or complex conditionals are present, keeping it below C1."
-",Cada hombre toma los límites de su propio campo de visión como los límites del mundo",B2,C2,"The sentence expresses an abstract philosophical concept about human perception and the limits of perspective. While grammatically simple (present tense), the content is abstract and intellectual, aligning with C2's focus on abstract/philosophical ideas."
-Podemos viajar en el tiempo. Y lo hacemos a la notable velocidad de un segundo por segundo,B1,B2,"The sentence uses a complex adverbial phrase ('a la notable velocidad de un segundo por segundo') and combines two independent clauses with a conjunction ('Y'), which aligns with B2-level structures involving nuanced descriptions and multi-clause coordination."
-Mi interés está en el futuro porque voy a pasar el resto de mi vida allí,B1,B1,"The sentence uses future tense ('voy a pasar') and a causal connector ('porque'), which aligns with B1 level grammar for expressing future actions and everyday reasoning."
-¡El problema con muchas cosas son las ideas preconcebidas que tenemos sobre ellas!,B1,C2,"The sentence discusses an abstract philosophical concept about preconceived ideas affecting perception, which aligns with C2-level content. It uses advanced vocabulary ('preconcebidas') and addresses a nuanced, universal truth about human cognition, typical of academic/philosophical discourse."
-La mejor manera de predecir el futuro es inventarlo,B2,C2,"The sentence is abstract and philosophical in nature, discussing the concept of predicting and inventing the future. According to the guidelines, abstract or philosophical content qualifies as C2, even if expressed in simple present tense."
-La publicidad puede describirse como la ciencia de detener la inteligencia humana el tiempo suficiente para obtener dinero de ella,B2,C2,"The sentence uses abstract and philosophical language ('ciencia de detener la inteligencia humana'), complex structure with embedded clauses, and advanced vocabulary. It reflects a nuanced critique of advertising, typical of C2-level academic or abstract discourse."
-"Para el hombre que solo tiene un martillo en su caja de herramientas, cada problema parece un clavo.",B1,C2,"The sentence is a philosophical metaphor discussing problem-solving approaches, which is abstract and conceptual. While the grammar (relative clauses, subjunctive) is B2-level, the content's abstract and philosophical nature aligns with C2 criteria."
-Nada es imposible para el hombre que no tiene que hacerlo él mismo,B1,C2,"The sentence is abstract and philosophical in nature, discussing a universal truth about human capability and effort. While the grammar is structurally simple, the content aligns with C2's focus on abstract or philosophical ideas, even if expressed in basic present tense."
-Esa es la cuestión con las personas que piensan que odian las computadoras. Lo que realmente odian son los programadores mediocres,B1,C2,"The sentence presents an abstract and nuanced philosophical observation about human perceptions, using complex connectors ('que', 'lo que') and making a generalization about people's attitudes. The content is abstract and requires higher-level comprehension, aligning with C2 criteria for abstract/philosophical language."
-No puedo entender por qué la gente tiene miedo a las nuevas ideas. Yo tengo miedo de las viejas,B1,C2,"The sentence expresses a philosophical reflection on societal attitudes toward new and old ideas, which is abstract and conceptual. While the grammar is simple (present tense), the content's abstract nature aligns with C2 criteria for academic/philosophical language."
-La esperanza no es una estrategia,B1,A1,"The sentence uses a simple present tense structure with basic vocabulary ('esperanza', 'es', 'estrategia'). There are no idioms, connectors, or complex grammatical structures. It follows the basic subject-verb-complement pattern typical of A1 level."
-"El que ríe último, ríe mejor.",A2,A2,"The sentence is an idiom ('El que ríe último, ríe mejor'), which falls under A2 level as it uses a fixed expression with present tense verbs. It does not include connectors, modal verbs, or complex grammar structures beyond basic vocabulary and tense usage."
-"Somos lo que pretendemos ser, así que debemos tener cuidado con lo que pretendemos ser.",B2,C2,"The sentence presents a philosophical reflection on identity and self-perception, using abstract concepts ('pretendemos ser') and a nuanced structure to convey a complex idea. This aligns with C2's focus on abstract or philosophical content."
-La gente debería entender que el mundo está cambiando,B1,B2,"The sentence uses the conditional tense ('debería') and a subordinate clause ('que el mundo está cambiando'), which are typical of B2 level. It conveys a recommendation and a complex idea, fitting the B2 criteria for connectors and multiple clauses."
-"El habla es plata, pero el silencio es oro.",A2,C2,"The sentence is a philosophical proverb expressing an abstract concept about the value of silence over speech. While grammatically simple (present tense), its abstract and philosophical nature aligns with C2 criteria."
-El cincuenta y dos por ciento de las mujeres británicas prefieren el chocolate al sexo,B2,B1,"The sentence uses a percentage (cincuenta y dos por ciento) and a comparison structure (prefieren el chocolate al sexo), which indicates an ability to express factual statements with numerical data and comparative reasoning, aligning with B1-level grammar and vocabulary."
-No puedes lograr lo imposible sin intentar lo absurdo,B2,C2,"The sentence contains a philosophical abstraction ('lo imposible', 'lo absurdo') and uses the subjunctive mood in 'intentar lo absurdo', which is typical of C2-level abstract or nuanced expressions. The structure reflects complex reasoning about hypothetical scenarios."
-Estar en silencio en clase es respetar el sueño de los demás,B1,C2,"The sentence uses an abstract and philosophical metaphor ('respetar el sueño de los demás') to convey a moral concept, which aligns with C2-level content despite the simple grammatical structure. The metaphorical expression and nuanced reasoning about respect and silence in a classroom context indicate abstract thinking typical of C2."
-La lógica es un método sistemático para llegar a la conclusión equivocada con confianza,B2,C2,"The sentence presents an abstract and philosophical concept about logic leading to incorrect conclusions with confidence. It uses advanced vocabulary ('sistemático', 'conclusión equivocada') and conveys a nuanced, paradoxical idea typical of academic or philosophical discourse, which aligns with C2 criteria despite the simple grammatical structure."
-El axioma de Cole: La suma de la inteligencia en el planeta es una constante; la población está creciendo,B2,C2,"The sentence presents an abstract philosophical or scientific axiom, using advanced vocabulary ('axioma', 'inteligencia', 'constante') and a complex structure with a semicolon to connect two independent clauses. The content is academic and theoretical, aligning with C2-level abstraction and complexity."
-La gente aceptará tu idea mucho más fácilmente si les dices que Benjamin Franklin la dijo primero,B2,B2,"The sentence uses a conditional structure with the subjunctive mood ('si les dices que...') and a future tense ('aceptará'), which are typical of B2 level grammar. It also includes a complex clause structure with a main clause and a conditional subordinate clause."
-"Si ves a un hombre acercándose a ti con la clara intención de hacerte el bien, deberías correr por tu vida.",B2,C2,"The sentence uses a complex conditional structure ('si ves... deberías correr') and abstract reasoning to convey a philosophical or ironic idea. The phrase 'con la clara intención de hacerte el bien' adds nuance, and the overall statement reflects a sophisticated, counterintuitive perspective typical of C2-level abstract discourse."
-Aprendemos por experiencia que los hombres nunca aprenden nada de la experiencia,B2,C2,"The sentence is a philosophical observation about human learning, making it abstract and nuanced. While the grammar (relative clauses) could be B2, the abstract and philosophical content aligns with C2 as per guidelines."
-Más vale tarde que nunca,A2,A2,"The sentence contains an idiomatic expression ('Más vale tarde que nunca'), which is classified under A2 according to the guidelines. It uses simple present tense and does not include complex grammar or vocabulary beyond basic idioms."
-"De tal palo, tal astilla.",A2,A2,"The sentence is an idiomatic expression (a proverb), which falls under A2 according to the guidelines. While proverbs can be abstract, the classification here is based on the presence of an idiom rather than philosophical or academic language."
-"A quien madruga, Dios le ayuda.",A2,A2,"The sentence is an idiomatic expression (a common proverb) using simple present tense and basic vocabulary. A2 includes idioms like 'tener hambre' or 'tener frío', and this fits the category as a fixed phrase with cultural meaning."
-En la vida hay altibajos,A2,A1,"The sentence uses a simple present tense structure with basic vocabulary ('vida', 'altibajos'). It lacks idioms, connectors, or complex grammar, fitting the A1 level criteria."
-Todos los gatos son grises en la oscuridad,A2,A1,"The sentence uses a simple present tense structure with basic vocabulary (gatos, grises, oscuridad) and no idioms, connectors, or complex grammar. It follows the pattern 'Todos los [noun] son [adjective] en [location]', which is typical of A1 level Spanish."
-"La riqueza llega a quienes hacen que las cosas sucedan, no a quienes dejan que las cosas sucedan.",B2,C2,"The sentence contains abstract philosophical content about wealth and action, which aligns with C2's focus on abstract or nuanced ideas. While the grammar includes relative clauses and subjunctive mood, the primary classification factor is the abstract nature of the statement."
-"Si piensas que la educación es cara, espera a ver lo que te cuesta la ignorancia.",B2,C2,"The sentence is a philosophical proverb comparing education and ignorance, using abstract concepts and a conditional structure. While the grammar (first conditional) could align with B1, the abstract, philosophical nature of the content and the use of a proverbial saying (comparing education and ignorance) meet the C2 criteria for abstract or philosophical language."
-El mundo se divide en personas que hacen las cosas y personas que se llevan el crédito,B2,B2,"The sentence uses relative clauses ('personas que hacen las cosas' and 'personas que se llevan el crédito') and a compound structure with a general observation about societal roles. While abstract, the grammar aligns with B2 complexity (relative clauses and compound sentences without advanced subjunctive or abstract academic vocabulary)."
-Más personas se meten en problemas por lo que dicen que por lo que hacen,B2,B2,"The sentence uses a comparison structure with 'por lo que' twice, indicating a complex clause with connectors and abstract reasoning. This aligns with B2 level requirements for sentences with multiple clauses and nuanced comparisons."
-"Las personas que te mentirán por ti, también te mentirán a ti.",B1,B1,"The sentence uses a relative clause ('que te mentirán por ti') and future tense ('mentirán'), which aligns with B1 level grammar (past and future tenses, everyday reasoning). It does not include subjunctive or complex connectors typical of B2."
-No hay duda,A1,A1,"The sentence uses a simple present tense structure with basic vocabulary ('no hay duda'). It lacks idioms, connectors, or complex grammar, aligning with A1 criteria."
-"En el mundo empresarial actual, demasiados ejecutivos gastan dinero que no han ganado para comprar cosas que no necesitan para impresionar a personas con las que ni siquiera se gustan.",B2,B2,"The sentence contains multiple relative clauses ('que no han ganado', 'que no necesitan', 'con las que ni siquiera se gustan') and a complex structure with purpose clauses ('para comprar cosas...'). These features align with B2 level requirements, which include sentences with connectors or multiple clauses joined by punctuation. The vocabulary is concrete but the grammatical complexity justifies B2."
-Cualquier actividad que debas realizar llevará más tiempo del que tienes disponible,B2,B2,"The sentence contains a relative clause with the subjunctive mood ('que debas realizar') and a complex comparison structure ('más tiempo del que tienes disponible'), which are typical of B2 level grammar. It uses the subjunctive in a common context and combines multiple clauses with relative pronouns, aligning with B2 complexity."
-No hay amor sin celos,A2,C2,"The sentence expresses a philosophical or abstract concept about love and jealousy, which aligns with C2-level content that deals with abstract or nuanced ideas, even though the grammatical structure is simple."
-Ningún amor es malo ni prisión es justa,B1,B2,"The sentence uses a complex negative structure with 'ni' to connect two clauses, which is more advanced than basic negatives. It also employs abstract vocabulary ('amor', 'prisión'), but the grammar remains within B2 level without subjunctive or complex connectors typical of C1/C2."
-Estamos cortados del mismo paño,A2,A2,"The sentence uses an idiom ('cortados del mismo paño'), which falls under A2 criteria. The structure is simple present tense with no complex grammar or abstract concepts."
-Nada grandioso se ha logrado jugando a lo seguro,B2,B1,"The sentence uses the present perfect tense ('se ha logrado'), which is a B1-level structure. It also includes an idiom ('jugando a lo seguro'), which is A2, but the primary classification is determined by the highest level element, which is B1 here. The sentence is a general statement but does not reach the abstract or academic level required for C2."
-"En general, se sabe poco sobre las ecuaciones diferenciales no lineales de segundo orden.",B2,C2,"The sentence discusses an advanced academic topic (second-order nonlinear differential equations) using technical vocabulary and abstract concepts, which aligns with C2's focus on abstract and academic language."
-Mali es uno de los países más pobres de África subsahariana,B1,B1,"The sentence uses a superlative structure ('más pobres') and a prepositional phrase ('de África subsahariana'), which are typical of B1 level grammar. The vocabulary includes specific terms like 'África subsahariana' but does not involve complex connectors or subjunctive mood."
-"En esta etapa, aún no hay una política energética clara para llevar energía descentralizada a las zonas rurales.",B2,C2,"The sentence discusses an abstract and academic topic (energy policy for rural areas) with technical vocabulary ('política energética', 'energía descentralizada'). While the grammar is not overly complex, the specialized content and formal context align with C2's focus on abstract, academic, or philosophical language."
-Nos preguntamos por qué,B1,A1,"The sentence uses a simple present tense ('Nos preguntamos') with basic vocabulary and a question word ('por qué'), which aligns with A1 level. There are no idioms, connectors, or complex structures present."
-Nos esforzamos tanto por mejorar las cosas para nuestros hijos que las empeoramos,B1,C2,"The sentence presents a philosophical paradox about human behavior and unintended consequences, reflecting abstract reasoning and nuanced critique. The structure uses a complex 'tanto... que' construction to express a general truth about societal actions, aligning with C2-level abstract and critical thinking."
+sentence,cefr_level
+El perro corre rápido.,A1
+La casa es grande.,A1
+Tengo un libro.,A1
+Ella canta bien.,A1
+El sol brilla.,A1
+El niño juega.,A1
+La mesa es roja.,A1
+El gato duerme.,A1
+Yo camino despacio.,A1
+El coche es nuevo.,A1
+La flor es bonita.,A1
+El agua está fría.,A1
+El niño come pan.,A1
+Ella tiene hambre.,A2
+Él quiere aprender inglés.,A2
+Ellos necesitan descansar.,A2
+Los niños pueden jugar en el parque.,A2
+Hay que estudiar para el examen.,A2
+Se puede viajar en tren.,A2
+A María le gusta bailar.,A2
+A mis amigos les encanta viajar.,A2
+¿Tienes frío?,A2
+¿Podemos entrar ahora?,A2
+Yo hablo español todos los días.,A1
+Tú comes pan cada mañana.,A1
+Él vive en Madrid.,A1
+Nosotros estudiábamos en la biblioteca cada tarde.,B1
+Ellos jugaban en el parque cuando empezó a llover.,B1
+Ayer escribí una carta a mi amigo.,B1
+Ellos viajaron a París el año pasado.,B1
+He terminado mi tarea de matemáticas.,B1
+Hemos visto esa película varias veces.,B1
+Había leído ese libro antes de la clase.,B2
+Habías estudiado mucho antes del examen.,B2
+Hube terminado el trabajo antes de salir.,C1
+Mañana visitaré a mis abuelos.,B1
+Ellos llegarán tarde al concierto.,B1
+Habré terminado el proyecto para mañana.,C1
+Habrás aprendido mucho al final del curso.,C1
+Yo estudiaría más si tuviera tiempo.,B2
+Ellos viajarían si tuvieran dinero.,B2
+Habría aceptado la oferta si fuera posible.,C1
+Habríamos terminado antes con más ayuda.,C1
+Espero que tú hables con ella.,B2
+Es posible que él coma en casa.,B2
+Quiero que vivas feliz.,B2
+"Si yo hablara mejor, entenderías más.",C1
+"Si ellos comieran más, estarían fuertes.",C1
+"Si nosotros viviéramos allí, sería distinto.",C1
+Dudo que hayas terminado el trabajo.,C1
+No creo que hayan llegado todavía.,C1
+"Si hubieras estudiado, habrías aprobado.",C1
+"Si hubiésemos tenido tiempo, lo habríamos hecho.",C1
+Habla más despacio.,A2
+Come tus verduras.,A2
+Vive con alegría.,A2
+No hables tan alto.,A2
+No comas demasiado.,A2
+No vivas con miedo.,A2
+Hable usted con el profesor.,B2
+Coma usted en la mesa.,B2
+Vivan ustedes en paz.,B2
+No hablen ustedes durante la clase.,B2
+Yo hablo español todos los días.,A1
+Tú comes pan cada mañana.,A1
+Él vive en Madrid.,A1
+Nosotros estudiamos en la biblioteca.,A1
+Ellos trabajan en la oficina.,A1
+El perro ladra fuerte.,A1
+La casa es pequeña.,A1
+El niño juega en el parque.,A1
+El gato duerme en la cama.,A1
+El sol brilla en el cielo.,A1
+Yo hablaba con mis amigos cada tarde.,B1
+Tú comías pan todos los días.,B1
+Él vivía en Barcelona.,B1
+Nosotros estudiábamos juntos.,B1
+Ellos jugaban en el patio.,B1
+El perro corría rápido.,B1
+La niña cantaba canciones.,B1
+El río pasaba por el pueblo.,B1
+El maestro explicaba la lección.,B1
+El coche estaba viejo.,B1
+Ayer hablé con mi profesor.,B1
+Tú comiste pizza anoche.,B1
+Él vivió en París un año.,B1
+Nosotros estudiamos mucho ayer.,B1
+Ellos viajaron a Italia.,B1
+El perro corrió en el parque.,B1
+La niña cantó en la fiesta.,B1
+El río creció después de la lluvia.,B1
+El maestro enseñó matemáticas.,B1
+El coche llegó tarde.,B1
+He terminado mi tarea.,B1
+Tú has comido demasiado.,B1
+Él ha vivido en Madrid.,B1
+Nosotros hemos estudiado mucho.,B1
+Ellos han viajado a Londres.,B1
+El perro ha corrido rápido.,B1
+La niña ha cantado bien.,B1
+El río ha crecido mucho.,B1
+El maestro ha explicado la lección.,B1
+El coche ha llegado temprano.,B1
+Había terminado el trabajo antes.,B2
+Tú habías comido antes de salir.,B2
+Él había vivido allí mucho tiempo.,B2
+Nosotros habíamos estudiado juntos.,B2
+Ellos habían viajado a Roma.,B2
+El perro había corrido lejos.,B2
+La niña había cantado en el coro.,B2
+El río había cambiado de curso.,B2
+El maestro había enseñado esa materia.,B2
+El coche había estado en el garaje.,B2
+Hube terminado el proyecto antes de salir.,C1
+Tú hubiste comido antes de la reunión.,C1
+Él hubo vivido en esa ciudad.,C1
+Nosotros hubimos estudiado juntos.,C1
+Ellos hubieron viajado a París.,C1
+El perro hubo corrido rápido.,C1
+La niña hubo cantado en el teatro.,C1
+El río hubo crecido demasiado.,C1
+El maestro hubo explicado la lección.,C1
+El coche hubo llegado temprano.,C1
+Mañana hablaré con mi jefe.,B1
+Tú comerás en casa.,B1
+Él vivirá en Madrid.,B1
+Nosotros estudiaremos juntos.,B1
+Ellos viajarán a Londres.,B1
+El perro correrá rápido.,B1
+La niña cantará en el concierto.,B1
+El río crecerá después de la lluvia.,B1
+El maestro explicará la lección.,B1
+El coche llegará temprano.,B1
+Habré terminado el proyecto mañana.,C1
+Tú habrás comido antes de salir.,C1
+Él habrá vivido allí mucho tiempo.,C1
+Nosotros habremos estudiado juntos.,C1
+Ellos habrán viajado a Roma.,C1
+El perro habrá corrido lejos.,C1
+La niña habrá cantado en el coro.,C1
+El río habrá cambiado de curso.,C1
+El maestro habrá enseñado esa materia.,C1
+El coche habrá estado en el garaje.,C1
+Yo estudiaría más si tuviera tiempo.,B2
+Tú comerías más si pudieras.,B2
+Él viviría en París si pudiera.,B2
+Nosotros estudiaríamos juntos.,B2
+Ellos viajarían si tuvieran dinero.,B2
+El perro correría más rápido.,B2
+La niña cantaría mejor.,B2
+El río crecería con la lluvia.,B2
+El maestro enseñaría otra materia.,B2
+El coche llegaría temprano.,B2
+Habría terminado el proyecto si fuera posible.,C1
+Tú habrías comido antes de salir.,C1
+Él habría vivido allí mucho tiempo.,C1
+Nosotros habríamos estudiado juntos.,C1
+Ellos habrían viajado a Roma.,C1
+El perro habría corrido lejos.,C1
+La niña habría cantado en el coro.,C1
+El río habría cambiado de curso.,C1
+El maestro habría enseñado esa materia.,C1
+El coche habría estado en el garaje.,C1
+Espero que tú hables con ella.,B2
+Es posible que él coma en casa.,B2
+Quiero que vivas feliz.,B2
+Dudo que ellos estudien mucho.,B2
+No creo que el perro corra rápido.,B2
+Es probable que la niña cante.,B2
+Prefiero que el río crezca.,B2
+Es mejor que el maestro explique.,B2
+Es necesario que el coche llegue.,B2
+Ojalá que ellos viajen pronto.,B2
+"Si yo hablara mejor, entenderías más.",C1
+"Si tú comieras más, estarías fuerte.",C1
+"Si él viviera allí, sería distinto.",C1
+"Si nosotros estudiáramos más, aprobaríamos.",C1
+"Si ellos viajaran, conocerían más.",C1
+"Si el perro corriera más, ganaría.",C1
+"Si la niña cantara mejor, sería famosa.",C1
+"Si el río creciera más, inundaría.",C1
+"Si el maestro enseñara otra materia, aprenderíamos.",C1
+"Si el coche llegara temprano, saldríamos antes.",C1
+Dudo que hayas terminado el trabajo.,C1
+No creo que hayas comido todavía.,C1
+Es posible que él haya vivido allí.,C1
+Espero que nosotros hayamos estudiado.,C1
+Ojalá que ellos hayan viajado.,C1
+Es probable que el perro haya corrido.,C1
+Es mejor que la niña haya cantado.,C1
+Es necesario que el río haya crecido.,C1
+Es posible que el maestro haya explicado.,C1
+Es probable que el coche haya llegado.,C1
+"Si hubieras estudiado, habrías aprobado.",C1
+"Si tú hubieras comido, no tendrías hambre.",C1
+"Si él hubiera vivido allí, conocería más.",C1
+"Si nosotros hubiéramos estudiado, aprobaríamos.",C1
+"Si ellos hubieran viajado, sabrían más.",C1
+"Si el perro hubiera corrido, estaría cansado.",C1
+"Si la niña hubiera cantado, estaría feliz.",C1
+"Si el río hubiera crecido, habría inundado.",C1
+"Si el maestro hubiera enseñado, aprenderíamos.",C1
+"Si el coche hubiera llegado, saldríamos antes.",C1
+"Si yo hablare, entenderías más.",C2
+"Si tú comieres, estarás fuerte.",C2
+"Si él viviere allí, sería distinto.",C2
+"Si nosotros estudiare mos más, aprobaríamos.",C2
+"Si ellos viajaren, conocerían más.",C2
+"Si el perro corriere más, ganaría.",C2
+"Si la niña cantare mejor, sería famosa.",C2
+"Si el río creciera más, inundaría.",C2
+"Si el maestro enseñare otra materia, aprenderíamos.",C2
+"Si el coche llegare temprano, saldríamos antes.",C2
+"Si yo hubiere hablado, entenderías más.",C2
+"Si tú hubieres comido, estarías fuerte.",C2
+"Si él hubiere vivido allí, sería distinto.",C2
+"Si nosotros hubiéremos estudiado, aprobaríamos.",C2
+"Si ellos hubieren viajado, conocerían más.",C2
+"Si el perro hubiere corrido, ganaría.",C2
+"Si la niña hubiere cantado, sería famosa.",C2
+"Si el río hubiere crecido, inundaría.",C2
+"Si el maestro hubiere enseñado otra materia, aprenderíamos.",C2
+"Si el coche hubiere llegado temprano, saldríamos antes.",C2
+Yo hablaba con mis amigos cada tarde.,B1
+Tú comías pan todos los días.,B1
+Él vivía en Barcelona.,B1
+Nosotros estudiábamos juntos en la biblioteca.,B1
+Ellos jugaban en el patio de la escuela.,B1
+El perro corría rápido por el jardín.,B1
+La niña cantaba canciones en clase.,B1
+El río pasaba por el pueblo.,B1
+El maestro explicaba la lección lentamente.,B1
+El coche estaba viejo y lento.,B1
+Ayer hablé con mi profesor.,B1
+Tú comiste pizza anoche.,B1
+Él vivió en París un año.,B1
+Nosotros estudiamos mucho ayer.,B1
+Ellos viajaron a Italia el verano pasado.,B1
+El perro corrió en el parque.,B1
+La niña cantó en la fiesta.,B1
+El río creció después de la lluvia.,B1
+El maestro enseñó matemáticas.,B1
+El coche llegó tarde.,B1
+He terminado mi tarea.,B1
+Tú has comido demasiado.,B1
+Él ha vivido en Madrid.,B1
+Nosotros hemos estudiado mucho.,B1
+Ellos han viajado a Londres.,B1
+El perro ha corrido rápido.,B1
+La niña ha cantado bien.,B1
+El río ha crecido mucho.,B1
+El maestro ha explicado la lección.,B1
+El coche ha llegado temprano.,B1
+Yo había terminado el proyecto antes de la reunión.,B2
+Tú habías comido ya cuando llegué.,B2
+Él había vivido en Madrid muchos años.,B2
+Nosotros habíamos estudiado juntos en la universidad.,B2
+Vosotros habíais viajado a Roma antes.,B2
+Ellos habían jugado en ese equipo.,B2
+Se había dicho la verdad en la asamblea.,B2
+Había habido problemas con el sistema.,B2
+Mi madre había cocinado la cena.,B2
+El profesor había explicado la lección claramente.,B2
+Yo hablaré con el director mañana.,B1
+Tú comerás en casa esta noche.,B1
+Él vivirá en Barcelona el próximo año.,B1
+Nosotros estudiaremos para el examen.,B1
+Vosotros viajaréis a París en verano.,B1
+Ellos jugarán al fútbol el sábado.,B1
+Se dirá la verdad en la reunión.,B1
+Habrá una fiesta en la escuela.,B1
+Mi hermana cantará en el concierto.,B1
+El coche llegará temprano.,B1
+Yo habré terminado el trabajo para mañana.,C1
+Tú habrás comido antes de salir.,C1
+Él habrá vivido allí diez años.,C1
+Nosotros habremos estudiado bastante.,C1
+Vosotros habréis viajado a muchos países.,C1
+Ellos habrán jugado varios partidos.,C1
+Se habrá dicho todo en la reunión.,C1
+Habrá habido cambios importantes.,C1
+Mi padre habrá cocinado la cena.,C1
+El profesor habrá explicado la lección.,C1
+Yo estudiaría más si tuviera tiempo.,B2
+Tú comerías más si pudieras.,B2
+Él viviría en París si pudiera.,B2
+Nosotros estudiaríamos juntos.,B2
+Vosotros viajaríais si tuvierais dinero.,B2
+Ellos jugarían en el torneo.,B2
+Se diría la verdad en ese caso.,B2
+Habría una fiesta si hubiera música.,B2
+Mi hermana cantaría en la boda.,B2
+El coche llegaría temprano.,B2
+Yo habría terminado el proyecto si fuera posible.,C1
+Tú habrías comido antes de salir.,C1
+Él habría vivido allí mucho tiempo.,C1
+Nosotros habríamos estudiado juntos.,C1
+Vosotros habríais viajado a Roma.,C1
+Ellos habrían jugado en el campeonato.,C1
+Se habría dicho la verdad en la reunión.,C1
+Había habido problemas si no actuaban.,C1
+Mi madre habría cocinado la cena.,C1
+El profesor habría explicado la lección.,C1
+Espero que yo hable con claridad.,B2
+Es posible que tú comas aquí.,B2
+Quiero que él viva feliz.,B2
+Dudo que nosotros estudiemos bastante.,B2
+No creo que vosotros lleguéis tarde.,B2
+Ojalá que ellos viajen pronto.,B2
+Es mejor que se diga la verdad.,B2
+Es necesario que haya silencio.,B2
+Prefiero que mi hermana cante.,B2
+Es probable que el coche llegue temprano.,B2
+"Si yo hablara mejor, entenderías más.",C1
+"Si tú comieras más, estarías fuerte.",C1
+"Si él viviera allí, sería distinto.",C1
+"Si nosotros estudiáramos más, aprobaríamos.",C1
+"Si vosotros viajarais, conoceríais más.",C1
+"Si ellos jugaran, ganarían el partido.",C1
+"Si se dijera la verdad, habría confianza.",C1
+"Si hubiera silencio, aprenderíamos mejor.",C1
+"Si mi hermana cantara mejor, sería famosa.",C1
+"Si el coche llegara temprano, saldríamos antes.",C1
+Dudo que yo haya terminado el trabajo.,C1
+No creo que tú hayas comido todavía.,C1
+Es posible que él haya vivido allí.,C1
+Espero que nosotros hayamos estudiado.,C1
+Ojalá que vosotros hayáis viajado.,C1
+Es probable que ellos hayan jugado.,C1
+Es mejor que se haya dicho la verdad.,C1
+Es necesario que haya habido cambios.,C1
+Es posible que mi madre haya cocinado.,C1
+Es probable que el profesor haya explicado.,C1
+"Si yo hubiera estudiado, habría aprobado.",C1
+"Si tú hubieras comido, no tendrías hambre.",C1
+"Si él hubiera vivido allí, conocería más.",C1
+"Si nosotros hubiéramos estudiado, aprobaríamos.",C1
+"Si vosotros hubierais viajado, sabríais más.",C1
+"Si ellos hubieran jugado, estarían cansados.",C1
+"Si se hubiera dicho la verdad, habría confianza.",C1
+"Si hubiera habido silencio, aprenderíamos mejor.",C1
+"Si mi hermana hubiera cantado, estaría feliz.",C1
+"Si el coche hubiera llegado, saldríamos antes.",C1
+"Si yo hablare, entenderías más.",C2
+"Si tú comieres, estarás fuerte.",C2
+"Si él viviere allí, sería distinto.",C2
+"Si nosotros estudáremos más, aprobaríamos.",C2
+"Si vosotros viajareis, conoceríais más.",C2
+"Si ellos jugaren, ganarían el partido.",C2
+"Si se dijere la verdad, habría confianza.",C2
+"Si hubiere silencio, aprenderíamos mejor.",C2
+"Si mi hermana cantare mejor, sería famosa.",C2
+"Si el coche llegare temprano, saldríamos antes.",C2
+"Si yo hubiere hablado, entenderías más.",C2
+"Si tú hubieres comido, estarías fuerte.",C2
+"Si él hubiere vivido allí, sería distinto.",C2
+"Si nosotros hubiéremos estudiado, aprobaríamos.",C2
+"Si vosotros hubiereis viajado, sabríais más.",C2
+"Si ellos hubieren jugado, ganarían el partido.",C2
+"Si se hubiere dicho la verdad, habría confianza.",C2
+"Si hubiere habido silencio, aprenderíamos mejor.",C2
+"Si mi hermana hubiere cantado, sería famosa.",C2
+"Si el coche hubiere llegado temprano, saldríamos antes.",C2
+"Cuando hube terminado el trabajo, me fui a casa.",C1
+"Después que hubiste comido, empezamos la reunión.",C1
+"Tan pronto como hubo llegado, comenzó la fiesta.",C1
+"En cuanto hubimos estudiado, salimos a jugar.",C1
+"Después que hubieron viajado, descansaron en el hotel.",C1
+"Cuando hube escrito la carta, la envié.",C1
+"Tan pronto como hubiste leído el libro, lo comentamos.",C1
+"En cuanto hubo cantado, todos aplaudieron.",C1
+"Después que hubimos explicado la lección, hubo silencio.",C1
+"Cuando hubieron terminado el partido, celebraron juntos.",C1
+Habla más despacio.,A2
+Come tus verduras.,A2
+Vive con alegría.,A2
+Escribe tu nombre aquí.,A2
+Lee el libro en voz alta.,A2
+Escucha al maestro.,A2
+Abre la ventana.,A2
+Cierra la puerta.,A2
+Corre más rápido.,A2
+Estudia para el examen.,A2
+No hables tan alto.,A2
+No comas demasiado.,A2
+No vivas con miedo.,A2
+No escribas en la pared.,A2
+No leas en la oscuridad.,A2
+No escuches ruido fuerte.,A2
+No abras la caja.,A2
+No cierres la puerta.,A2
+No corras en el pasillo.,A2
+No estudies sin descansar.,A2
+Ellos hablan español en casa.,A1
+Ellas comen pan cada mañana.,A1
+Vosotros vivís en Barcelona.,A1
+Ustedes estudian matemáticas.,A1
+Ellos trabajan en la oficina.,A1
+Ellas cantan canciones.,A1
+Vosotros jugáis al fútbol.,A1
+Ustedes leen libros en clase.,A1
+Ellos corren en el parque.,A1
+Ellas escriben cartas.,A1
+Ellos hablaban con sus amigos cada tarde.,B1
+Ellas comían fruta todos los días.,B1
+Vosotros vivíais en Madrid.,B1
+Ustedes estudiaban juntos.,B1
+Ellos jugaban en el patio.,B1
+Ellas cantaban en el coro.,B1
+Vosotros corríais rápido.,B1
+Ustedes leían novelas.,B1
+Ellos escribían cartas largas.,B1
+Ellas trabajaban en la tienda.,B1
+Ellos hablan español en casa.,A1
+Ellas comen pan cada mañana.,A1
+Vosotros vivís en Barcelona.,A1
+Ustedes estudian matemáticas.,A1
+Ellos trabajan en la oficina.,A1
+Ellos hablaban con sus amigos cada tarde.,B1
+Ellas comían fruta todos los días.,B1
+Vosotros vivíais en Madrid.,B1
+Ustedes estudiaban juntos.,B1
+Ellos jugaban en el patio.,B1
+Ellos hablaron con sus profesores ayer.,B1
+Ellas comieron pizza anoche.,B1
+Vosotros vivisteis en París un año.,B1
+Ustedes estudiaron mucho ayer.,B1
+Ellos viajaron a Italia el verano pasado.,B1
+Ellos han terminado sus tareas.,B1
+Ellas han comido demasiado.,B1
+Vosotros habéis vivido en Madrid.,B1
+Ustedes han estudiado mucho.,B1
+Ellos han viajado a Londres.,B1
+Ellos habían terminado el proyecto antes de la reunión.,B2
+Ellas habían comido ya cuando llegasteis.,B2
+Vosotros habíais vivido allí muchos años.,B2
+Ustedes habían estudiado juntos en la universidad.,B2
+Ellos habían viajado a Roma.,B2
+Ellos hablarán con el director mañana.,B1
+Ellas comerán en casa esta noche.,B1
+Vosotros viviréis en Barcelona el próximo año.,B1
+Ustedes estudiarán para el examen.,B1
+Ellos viajarán a Londres en verano.,B1
+Ellos habrán terminado el trabajo para mañana.,C1
+Ellas habrán comido antes de salir.,C1
+Vosotros habréis vivido allí diez años.,C1
+Ustedes habrán estudiado bastante.,C1
+Ellos habrán viajado a Roma.,C1
+Ellas habrán jugado varios partidos.,C1
+Vosotros habréis leído muchos libros.,C1
+Ustedes habrán trabajado duro.,C1
+Ellos habrán cantado en el coro.,C1
+Ellas habrán escrito cartas largas.,C1
+Ellos estudiarían más si tuvieran tiempo.,B2
+Ellas comerían más si pudieran.,B2
+Vosotros viviríais en París si pudierais.,B2
+Ustedes viajarían si tuvieran dinero.,B2
+Ellos jugarían en el torneo.,B2
+Ellas cantarían mejor con práctica.,B2
+Vosotros correríais más rápido.,B2
+Ustedes leerían más novelas.,B2
+Ellos escribirían cartas largas.,B2
+Ellas trabajarían en la tienda.,B2
+Ellos habrían terminado el proyecto si fuera posible.,C1
+Ellas habrían comido antes de salir.,C1
+Vosotros habríais vivido allí mucho tiempo.,C1
+Ustedes habrían estudiado juntos.,C1
+Ellos habrían viajado a Roma.,C1
+Ellas habrían jugado en el campeonato.,C1
+Vosotros habríais leído más libros.,C1
+Ustedes habrían trabajado duro.,C1
+Ellos habrían cantado en el coro.,C1
+Ellas habrían escrito cartas largas.,C1
+"Cuando ellos hubieron terminado, celebraron juntos.",C1
+"Después que ellas hubieron comido, descansaron.",C1
+Vosotros hubisteis vivido allí antes de mudaros.,C1
+Ustedes hubieron estudiado antes del examen.,C1
+Ellos hubieron viajado a París.,C1
+Ellas hubieron jugado en el torneo.,C1
+Vosotros hubisteis leído el libro.,C1
+Ustedes hubieron trabajado mucho.,C1
+Ellos hubieron cantado en el teatro.,C1
+Ellas hubieron escrito cartas.,C1
+Espero que ellos hablen con claridad.,B2
+Es posible que ellas coman aquí.,B2
+Quiero que vosotros viváis felices.,B2
+Dudo que ustedes estudien bastante.,B2
+No creo que ellos lleguen tarde.,B2
+Ojalá que ellas viajen pronto.,B2
+Es mejor que vosotros digáis la verdad.,B2
+Es necesario que ustedes trabajen más.,B2
+Prefiero que ellos canten en el coro.,B2
+Es probable que ellas escriban cartas.,B2
+"Si ellos hablaran mejor, entenderías más.",C1
+"Si ellas comieran más, estarían fuertes.",C1
+"Si vosotros vivierais allí, sería distinto.",C1
+"Si ustedes estudiaran más, aprobarían.",C1
+"Si ellos viajaran, conocerían más.",C1
+"Si ellas jugaran, ganarían el partido.",C1
+"Si vosotros dijerais la verdad, habría confianza.",C1
+"Si ustedes trabajaran más, aprenderían mejor.",C1
+"Si ellos cantaran mejor, serían famosos.",C1
+"Si ellas escribieran más, mejorarían.",C1
+Dudo que ellos hayan terminado el trabajo.,C1
+No creo que ellas hayan comido todavía.,C1
+Es posible que vosotros hayáis vivido allí.,C1
+Espero que ustedes hayan estudiado.,C1
+Ojalá que ellos hayan viajado.,C1
+Es probable que ellas hayan jugado.,C1
+Es mejor que vosotros hayáis dicho la verdad.,C1
+Es necesario que ustedes hayan trabajado.,C1
+Es posible que ellos hayan cantado.,C1
+Es probable que ellas hayan escrito cartas.,C1
+"Si ellos hubieran estudiado, habrían aprobado.",C1
+"Si ellas hubieran comido, no tendrían hambre.",C1
+"Si vosotros hubierais vivido allí, conoceríais más.",C1
+"Si ustedes hubieran estudiado, aprobarían.",C1
+"Si ellos hubieran viajado, sabrían más.",C1
+"Si ellas hubieran jugado, estarían cansadas.",C1
+"Si vosotros hubierais dicho la verdad, habría confianza.",C1
+"Si ustedes hubieran trabajado más, aprenderían mejor.",C1
+"Si ellos hubieran cantado, estarían felices.",C1
+"Si ellas hubieran escrito más, mejorarían.",C1
+"Si ellos hablare, entenderías más.",C2
+"Si ellas comieren, estarán fuertes.",C2
+"Si vosotros viviereis allí, sería distinto.",C2
+"Si ustedes estudiaren más, aprobarían.",C2
+"Si ellos viajaren, conocerían más.",C2
+"Si ellas jugaren, ganarían el partido.",C2
+"Si vosotros dijereis la verdad, habría confianza.",C2
+"Si ustedes trabajaren más, aprenderían mejor.",C2
+"Si ellos cantaren mejor, serían famosos.",C2
+"Si ellas escribieren más, mejorarían.",C2
+"Si ellos hubieren estudiado, habrían aprobado.",C2
+"Si ellas hubieren comido, no tendrían hambre.",C2
+"Si vosotros hubiereis vivido allí, conoceríais más.",C2
+"Si ustedes hubieren estudiado, aprobarían.",C2
+"Si ellos hubieren viajado, sabrían más.",C2
+"Si ellas hubieren jugado, estarían cansadas.",C2
+"Si vosotros hubiereis dicho la verdad, habría confianza.",C2
+"Si ustedes hubieren trabajado más, aprenderían mejor.",C2
+"Si ellos hubieren cantado, estarían felices.",C2
+"Si ellas hubieren escrito más, mejorarían.",C2
+"Hablad más despacio, vosotros.",A2
+"Comed vuestras verduras, vosotros.",A2
+"Vivid con alegría, vosotros.",A2
+"Estudiad para el examen, vosotros.",A2
+"Jugad en el parque, vosotros.",A2
+"Hablemos todos, ustedes.",B2
+Coman ustedes en la mesa.,B2
+Vivan ustedes en paz.,B2
+Lean ustedes el libro.,B2
+Escriban ustedes sus nombres.,B2
+"No habléis tan alto, vosotros.",B1
+"No comáis demasiado, vosotros.",B1
+"No viváis con miedo, vosotros.",B1
+"No corráis en el pasillo, vosotros.",B1
+"No estudiéis sin descansar, vosotros.",B1
+No hablen ustedes durante la clase.,B1
+No coman ustedes en la biblioteca.,B1
+No vivan ustedes con prisa.,B1
+No corran ustedes en la calle.,B1
+No estudien ustedes sin concentración.,B1
+"Si ellos hubieren estudiado, habrían aprobado.",C2
+"Si ellas hubieren comido, no tendrían hambre.",C2
+"Si vosotros hubiereis vivido allí, conoceríais más.",C2
+"Si ustedes hubieren estudiado, aprobarían.",C2
+"Si ellos hubieren viajado, sabrían más.",C2
+"Si ellas hubieren jugado, estarían cansadas.",C2
+"Si vosotros hubiereis dicho la verdad, habría confianza.",C2
+"Si ustedes hubieren trabajado más, aprenderían mejor.",C2
+"Si ellos hubieren cantado, estarían felices.",C2
+"Si ellas hubieren escrito más, mejorarían.",C2
+"Hablad más despacio, vosotros.",B1
+"Comed vuestras verduras, vosotros.",B1
+"Vivid con alegría, vosotros.",B1
+"Estudiad para el examen, vosotros.",B1
+"Jugad en el parque, vosotros.",B1
+"Hablemos todos, ustedes.",B1
+Coman ustedes en la mesa.,B1
+Vivan ustedes en paz.,B1
+Lean ustedes el libro.,B1
+Escriban ustedes sus nombres.,B1
+"No habléis tan alto, vosotros.",B1
+"No comáis demasiado, vosotros.",B1
+"No viváis con miedo, vosotros.",B1
+"No corráis en el pasillo, vosotros.",B1
+"No estudiéis sin descansar, vosotros.",B1
+No hablen ustedes durante la clase.,B1
+No coman ustedes en la biblioteca.,B1
+No vivan ustedes con prisa.,B1
+No corran ustedes en la calle.,B1
+No estudien ustedes sin concentración.,B1
