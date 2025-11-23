@@ -12,6 +12,9 @@ from openai import OpenAI
 OLLAMA_URL = "http://localhost:11434/v1"
 MODEL_NAME = "qwen2.5:14b"  
 
+# --- CEFR Mapping ---
+CEFR_MAP = {"A1": 1, "A2": 2, "B1": 3, "B2": 4, "C1": 5}
+
 # --- USER PROMPTS ---
 try:
     SAMPLE_SIZE = int(input("Enter sample size (e.g., 1000): ").strip())

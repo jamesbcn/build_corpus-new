@@ -1,12 +1,13 @@
-from groq_client import analyzer  # replace with your actual module name
+from qwen_sm import analyzer  # replace with your actual module name
 
 # Example Spanish sentence
-spanish_sentence = "El perro corre rápido."
+spanish_sentence = "Trabajo en una tienda y estudio por las tardes."
 
 # Call the analyzer
-raw_response = analyzer(spanish_sentence)
+level, explanation = analyzer(spanish_sentence)
 
 # Print the full raw output
 print("----- FULL RAW ANALYZER RESPONSE -----")
-print(raw_response)
+print("Level:", level)
+print("Reasoning:", explanation)
 print("--------------------------------------")

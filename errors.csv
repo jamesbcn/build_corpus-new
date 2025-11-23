@@ -1,0 +1,6 @@
+sentence,expected,predicted,reasoning
+Trabajo en una tienda y estudio por las tardes.,A1,A2,"Present tense with connector 'y', basic lexicon for daily routines and occupations, typical of A2."
+Mi hermana es médica y mi hermano es estudiante.,A1,A2,"Present tense only with basic lexicon and occupations, no expansions beyond A2 criteria."
+"Mal que bien, se habrá alcanzado el objetivo.",C1,B2,"Use of futuro perfecto (haber + participio) and concessive connector 'mal que bien', typical of B2 but leaning towards advanced B2 due to complex structure."
+Me levanto a las siete y desayuno café.,A1,A2,"Present tense only but includes daily routine and use of 'y', typical expansions for A2 level."
+Mi hermano vive en Barcelona y estudia ingeniería.,A1,A2,"Present tense with basic lexicon and connector 'y', no expansions beyond A2 criteria."

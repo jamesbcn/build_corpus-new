@@ -1,5 +1,5 @@
 import pandas as pd
-from qwen import analyzer
+from qwen_sm import analyzer
 from diagnostic_dashboard import diagnostic_dashboard
 import time
 

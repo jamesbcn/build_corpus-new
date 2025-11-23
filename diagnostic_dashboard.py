@@ -4,19 +4,17 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 from collections import Counter
-from qwen import analyzer
+from qwen_sm import analyzer
 from sklearn.metrics import classification_report
 
 # --- Dashboard function ---
-def diagnostic_dashboard(test_results, import_results, levels=("A1","A2","B1","B2","C1","C2","UNKNOWN")):
+def diagnostic_dashboard(test_results, import_results, levels=("A1","A2","B1","B2","C1")):
     # Overall accuracy
     harness_correct = sum(1 for r in test_results if r["predicted"] == r["expected"])
     import_correct = sum(1 for r in import_results if r["predicted"] == r["expected"])
-    unknowns = sum(1 for r in import_results if r["predicted"] == "UNKNOWN")
 
     print(f"Harness Accuracy: {harness_correct}/{len(test_results)} = {harness_correct/len(test_results):.2%}")
     print(f"Import Accuracy:  {import_correct}/{len(import_results)} = {import_correct/len(import_results):.2%}")
-    print(f"Unknowns: {unknowns}/{len(import_results)} = {unknowns/len(import_results):.2%}")
 
     # Confusion matrix (numeric)
     matrix = {exp: Counter() for exp in levels}
@@ -64,7 +62,7 @@ def diagnostic_dashboard(test_results, import_results, levels=("A1","A2","B1","B
     plt.figure(figsize=(9,5))
     plt.bar(levels, accuracies, color="skyblue")
     plt.ylim(0,1)
-    plt.title("Per-Level Accuracy (including UNKNOWN)")
+    plt.title("Per-Level Accuracy")
     plt.ylabel("Accuracy")
     plt.xlabel("CEFR Level")
     plt.show()
@@ -75,7 +73,7 @@ def diagnostic_dashboard(test_results, import_results, levels=("A1","A2","B1","B
 
     plt.figure(figsize=(9,6))
     sns.heatmap(df, annot=True, fmt="d", cmap="Blues", cbar=True)
-    plt.title("Confusion Matrix Heatmap (including UNKNOWN)")
+    plt.title("Confusion Matrix Heatmap")
     plt.xlabel("Predicted")
     plt.ylabel("Expected")
     plt.show()

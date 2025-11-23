@@ -36,7 +36,7 @@ TRANSLATOR_MODEL = MODEL_NAME
 ANALYZER_MODEL = MODEL_NAME
 
 # --- CEFR Mapping ---
-CEFR_MAP = {"A1": 1, "A2": 2, "B1": 3, "B2": 4, "C1": 5, "C2": 6}
+CEFR_MAP = {"A1": 1, "A2": 2, "B1": 3, "B2": 4, "C1": 5}
 
 def translator(english_sentence: str) -> str:
     """Translate English → Spanish using llama3."""
@@ -185,7 +185,7 @@ def report_results(collection, query=None):
     levels = [doc.get("cefr_level", "UNKNOWN") for doc in cursor]
     counts = Counter(levels)
     print("\n📊 CEFR Classification Report")
-    for level in ["A1", "A2", "B1", "B2", "C1", "C2", "UNKNOWN"]:
+    for level in ["A1", "A2", "B1", "B2", "C1", "UNKNOWN"]:
         print(f"{level}: {counts.get(level, 0)}")
     total = sum(counts.values())
     print(f"\nTotal classified sentences: {total}")
@@ -251,13 +251,13 @@ def test_harness(export_csv=False, csv_path="harness_results.csv"):
         ("Es posible que hubiera sido diferente si lo intentaras.", "C1"),
 
         # --- C2: abstract, academic ---
-        ("La globalización ha generado una interdependencia económica sin precedentes.", "C2"),
-        ("La epistemología cuestiona los fundamentos del conocimiento humano.", "C2"),
-        ("El paradigma científico se transformó radicalmente tras la revolución cuántica.", "C2"),
-        ("La literatura posmoderna refleja la fragmentación de la identidad contemporánea.", "C2"),
-        ("La semiótica analiza los signos y su interpretación cultural.", "C2"),
-        ("La hermenéutica explora la interpretación de los textos en contextos históricos.", "C2"),
-        ("La ontología estudia la naturaleza del ser y la existencia.", "C2"),
+        ("La globalización ha generado una interdependencia económica sin precedentes.", "C1"),
+        ("La epistemología cuestiona los fundamentos del conocimiento humano.", "C1"),
+        ("El paradigma científico se transformó radicalmente tras la revolución cuántica.", "C1"),
+        ("La literatura posmoderna refleja la fragmentación de la identidad contemporánea.", "C1"),
+        ("La semiótica analiza los signos y su interpretación cultural.", "C1"),
+        ("La hermenéutica explora la interpretación de los textos en contextos históricos.", "C1"),
+        ("La ontología estudia la naturaleza del ser y la existencia.", "C1"),
     ]
 
 
