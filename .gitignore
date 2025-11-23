@@ -3,3 +3,4 @@
 *.bz2
 harness_results.csv
 *.jsonl
+*.png

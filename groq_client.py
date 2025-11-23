@@ -55,37 +55,89 @@ def translator(english_sentence: str) -> str:
 
 def analyzer(spanish_sentence: str, max_retries: int = 10, pause: float = 0.5) -> str:
     """Classify Spanish sentence by CEFR level. Returns 'UNKNOWN' if JSON parsing fails."""
-    valid_levels = {"A1","A2","B1","B2","C1","C2"}
+    valid_levels = {"A1","A2","B1","B2","C1"}
      
     for attempt in range(1, max_retries + 1):
         try:
             response = client.chat.completions.create(
             model=ANALYZER_MODEL,
             messages=[
-                {"role": "system", "content": (
-                    "Classify the following Spanish sentence by CEFR level (A1, A2, B1, B2, C1, C2). "
-                    "Guidelines: "
-                    "A1 = simple present tense with basic vocabulary. "
-                    "A2 = idiomatic expressions (tener hambre, tener frío), habitual actions, modal verbs (tener que, poder, necesitar, querer), preference verbs (gustar, encantar). "
-                    "B1 = past and future tenses, present perfect, everyday reasoning. "
-                    "B2 = sentences with connectors (aunque, sin embargo, mientras, cuando) OR multiple independent clauses joined by punctuation (semicolon, colon, dash), and subjunctive in common contexts (es posible que, prefiero que). "
-                    "C1 = complex conditionals, nuanced subjunctive, advanced connectors. "
-                    "C2 = abstract, academic, or philosophical sentences, even if expressed in simple present tense. "
-                    "Classify at the highest CEFR level indicated by the grammar or vocabulary present. "
-                    "Sentences containing idioms, connectors, modal verbs, or academic language should not be treated as A1."
-                     "Respond ONLY with a JSON object of the form: "
-                      "{ \"cefr_level\": \"A1|A2|B1|B2|C1|C2\", \"reasoning\": \"explanation\" } "
-                )},
+                {
+                    "role": "system",
+                    "content": (
+                        "You are an official DELE senior examiner for Instituto Cervantes with 20+ years of experience.\n"
+                        "Your task: assign a CEFR level followed by an in-depth justification.\n\n"
+                        "Decision rules (strict hierarchical order – never skip):\n"
+                        "A1 → exclusively present tense, extremely basic lexicon (saludar, ser/estar, tener for age/family/possession, números, colores). "
+                        "Functions limited to introductions, simple possession, location, age. "
+                        "No modal verbs (tener que, poder, deber), no idiomatic tener-phrases (hambre, frío, sueño), no periphrastic constructions. "
+                        "Discourse limited to isolated sentences or y.\n\n"
+                        "A2 → first appearance of pretérito indefinido or perfecto compuesto OR functional expansions: obligation (tener que, deber), ability (poder, saber + inf), "
+                        "desire (querer + inf), idiomatic tener-phrases (hambre, frío, sueño). "
+                        "Lexicon expands to everyday topics (food, shopping, health, hobbies). "
+                        "Discourse includes basic connectors (y, pero, porque, cuando). "
+                        "No systematic tense contrast, no subjunctive.\n\n"
+                        "B1 → systematic and correct contrast between indefinido and imperfecto. "
+                        "Lexicon broadens to narrative vocabulary (childhood, travel, work). "
+                        "Functions include hypothesis and future plans (ir a + inf), present subjunctive in main clauses (querer que, esperar que). "
+                        "Discourse shows varied connectors (aunque, mientras, entonces, por eso). "
+                        "No pluscuamperfecto subjunctive yet, limited register shifts.\n\n"
+                        "B2 → obligatory pluscuamperfecto de indicativo AND consistent imperfect subjunctive in typical triggers (emoción, duda, concesión). "
+                        "Lexicon includes abstract vocabulary (opinions, arguments, social issues). "
+                        "Functions include hypothesis, concession, nuanced argumentation, and production of common idioms/proverbs. "
+                        "Discourse shows rich markers (sin embargo, por lo tanto, además) and complex sentence linking. "
+                        "Rare literary tenses not required, register still neutral.\n\n"
+                        "C1 → presence of at least one rare tense (pretérito anterior, futuro perfecto, condicional perfecto, pluscuamperfecto de subjuntivo) used correctly. "
+                        "Lexicon includes cultured, idiomatic phrasing and less common idioms/collocations. "
+                        "Functions include register shifts (formal/informal), idiomatic expressions beyond common proverbs, nuanced argumentation. "
+                        "Discourse shows cohesive, sophisticated connectors and fluid paragraph-level cohesion. "
+                        "Respond ONLY with a JSON object of the form: "
+                        "{ \"cefr_level\": \"A1|A2|B1|B2|C1\", \"reasoning\": \"short justification\" } "
+                    )
+                },
+
+                {"role": "user","content": "Me llamo Ana. Tengo 25 años. Vivo en Madrid."},
+                {"role": "assistant","content": "{ \"cefr_level\": \"A1\", \"reasoning\": \"Only present tense, survival lexicon (introductions, age, residence). No modal or idiomatic expansions.\" }"},
+
+                {"role": "user","content": "Tengo hambre y quiero comer una pizza."},
+                {"role": "assistant","content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"Idiomatic tener-phrase (hambre) and querer + inf show functional expansion beyond A1.\" }"},
+
+                {"role": "user","content": "Ayer fui al cine con mis amigos y me gustó mucho."},
+                {"role": "assistant","content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"First use of pretérito indefinido with basic connector y.\" }"},
+
+                {"role": "user","content": "Cuando era pequeño, mi abuela me contaba cuentos antes de dormir."},
+                {"role": "assistant","content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"Correct contrast between imperfecto (era, contaba) and narrative context. Cohesive connector cuando.\" }"},
+
+                {"role": "user","content": "Espero que vengas mañana a mi casa."},
+                {"role": "assistant","content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"Present subjunctive (vengas) triggered by esperar que, typical of B1 functional expansion.\" }"},
+
+                {"role": "user","content": "Si hubiera estudiado más, habría aprobado el examen."},
+                {"role": "assistant","content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"Use of pluscuamperfecto subjunctive (hubiera estudiado) and condicional perfecto (habría aprobado) in hypothesis.\" }"},
+
+                {"role": "user","content": "Aunque estaba cansado, seguí trabajando porque quería terminar el proyecto."},
+                {"role": "assistant","content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"Connector aunque with imperfecto, nuanced concession and causal discourse markers (porque).\" }"},
+
+                {"role": "user","content": "De tal palo, tal astilla."},
+                {"role": "assistant","content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"Common proverb used appropriately; demonstrates idiomatic competence without rare tense or advanced register.\" }"},
+
+                {"role": "user","content": "Apenas hube cerrado la puerta, sonó el teléfono."},
+                {"role": "assistant","content": "{ \"cefr_level\": \"C1\", \"reasoning\": \"Rare tense pretérito anterior (hube cerrado) used correctly in literary register.\" }"},
+
+                {"role": "user","content": "Si hubiera sabido la verdad, no habría dicho nada, pero al fin y al cabo todos cometemos errores."},
+                {"role": "assistant","content": "{ \"cefr_level\": \"C1\", \"reasoning\": \"Pluscuamperfecto subjunctive with condicional perfecto, idiomatic connector 'al fin y al cabo' shows cultured phrasing and cohesive discourse.\" }"},
+
+                {"role": "user","content": "No hay mal que por bien no venga; a la postre, fue una decisión sensata."},
+                {"role": "assistant","content": "{ \"cefr_level\": \"C1\", \"reasoning\": \"Less common idiom plus cultured connector 'a la postre' shows advanced register and cohesive discourse.\" }"},
 
                 # --- Actual request ---
-                {"role": "user", "content": spanish_sentence},
+                {"role": "user", "content": spanish_sentence}
             ],
             response_format={ "type": "json_object" },
             temperature=0.0,
             top_p=1.0,
             reasoning_effort="default",
             stream=False,
-            max_completion_tokens=1000,
+            max_completion_tokens=100,
         )
 
             raw_output = response.choices[0].message.content.strip()

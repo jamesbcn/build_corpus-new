@@ -132,7 +132,7 @@ def analyzer(spanish_sentence: str, max_retries: int = 10, pause: float = 0.5):
 
                 # --- Actual request ---
                 {"role": "user", "content": spanish_sentence}
-            ]
+            ],
                 response_format={ "type": "json_object" },
                 temperature=0.0,
                 top_p=1.0,

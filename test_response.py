@@ -1,7 +1,7 @@
-from qwen import analyzer  # replace with your actual module name
+from groq_client import analyzer  # replace with your actual module name
 
 # Example Spanish sentence
-spanish_sentence = "Cuanto antes, mejor."
+spanish_sentence = "El perro corre rápido."
 
 # Call the analyzer
 raw_response = analyzer(spanish_sentence)
