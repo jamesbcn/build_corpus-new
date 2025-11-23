@@ -22,8 +22,9 @@ except ValueError:
     SAMPLE_SIZE = 1000
     print("⚠️ Invalid input, defaulting SAMPLE_SIZE to 1000.")
 
-empty_choice = input("Do you want to wipe all AI ratings before regrading? (yes/no): ").strip().lower()
-EMPTY_COLLECTION = empty_choice in ["yes", "y", "true", "1"]
+#empty_choice = input("Do you want to wipe all AI ratings before regrading? (yes/no): ").strip().lower()
+#EMPTY_COLLECTION = empty_choice in ["yes", "y", "true", "1"]
+EMPTY_COLLECTION = False
 
 print(f"✅ SAMPLE_SIZE set to {SAMPLE_SIZE}")
 print(f"✅ EMPTY_COLLECTION set to {EMPTY_COLLECTION}")
