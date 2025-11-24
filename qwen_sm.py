@@ -16,18 +16,18 @@ MODEL_NAME = "qwen2.5:14b"
 CEFR_MAP = {"A1": 1, "A2": 2, "B1": 3, "B2": 4, "C1": 5}
 
 # --- USER PROMPTS ---
-try:
-    SAMPLE_SIZE = int(input("Enter sample size (e.g., 1000): ").strip())
-except ValueError:
-    SAMPLE_SIZE = 1000
-    print("⚠️ Invalid input, defaulting SAMPLE_SIZE to 1000.")
+# try:
+#     SAMPLE_SIZE = int(input("Enter sample size (e.g., 1000): ").strip())
+# except ValueError:
+#     SAMPLE_SIZE = 1000
+#     print("⚠️ Invalid input, defaulting SAMPLE_SIZE to 1000.")
 
 #empty_choice = input("Do you want to wipe all AI ratings before regrading? (yes/no): ").strip().lower()
 #EMPTY_COLLECTION = empty_choice in ["yes", "y", "true", "1"]
 EMPTY_COLLECTION = False
 
-print(f"✅ SAMPLE_SIZE set to {SAMPLE_SIZE}")
-print(f"✅ EMPTY_COLLECTION set to {EMPTY_COLLECTION}")
+# print(f"✅ SAMPLE_SIZE set to {SAMPLE_SIZE}")
+# print(f"✅ EMPTY_COLLECTION set to {EMPTY_COLLECTION}")
 
 # --- CONFIGURATION ---
 MONGO_URI = "mongodb://localhost:27017/"
@@ -70,33 +70,53 @@ def analyzer(spanish_sentence: str, max_retries: int = 10, pause: float = 0.5):
                                     {
                     "role": "system",
                     "content": (
-                        "You are an official DELE senior examiner for Instituto Cervantes with 20+ years of experience.\n"
                         "Your task: assign a CEFR level followed by an in‑depth justification.\n\n"
-                        "Decision rules (strict hierarchical order – never skip):\n\n"
-                        "A1 → only present tense, ultra‑basic lexicon (ser/estar, tener for age/family/possession, numbers, colors). "
+
+                        "A1 → only present tense (ser/estar, tener for age/family/possession, basic verbs like vivir, trabajar, gustar). "
                         "No modals, no idiomatic tener (hambre, frío, sueño), no periphrasis. "
-                        "Discourse: isolated sentences or simple additive connector 'y'. No contrast (pero) or cause (porque).\n\n"
-                        "A2 → first use of pretérito indefinido/perfecto OR expansions: obligation (tener que, deber), ability (poder, saber+inf), desire (querer+inf), idiomatic tener (hambre, frío, sueño). "
-                        "Lexicon: everyday topics (food, shopping, health, hobbies). "
-                        "Connectors: pero (contrast), porque (cause), cuando (time), or multiple connectors. Presence of 'y' alone does not determine A2. "
-                        "No systematic tense contrast, no subjunctive.\n\n"
-                        "B1 → systematic contrast between indefinido vs imperfecto. "
+                        "Connectors: y (and), o (or). "
+                        "No contrast (pero), cause (porque), or time (cuando). "
+                        "Use of less common nouns does not signal A2.\n\n"
+
+                        "A2 → first use of pretérito indefinido/perfecto OR expansions: obligation (tener que, deber), "
+                        "ability (poder, saber+inf), desire (querer+inf), idiomatic tener (hambre, frío, sueño). "
+                        "Connectors: pero (contrast), porque (cause), cuando (time). "
+                        "Future plans with ir a+inf are allowed. "
+                        "No systematic tense contrast, no subjunctive. "
+                        "Examples: Quiero viajar mañana porque tengo tiempo. Sé tocar la guitarra. Voy a llegar tarde.\n\n"
+
+                        "B1 → systematic contrast between indefinido vs imperfecto (imperfect indicative vs simple past). "
                         "Lexicon: narrative (childhood, travel, work). "
-                        "Functions: hypothesis, future plans (ir a+inf), present subjunctive in main clauses (querer que, esperar que). "
+                        "Functions: hypothesis, future plans (ir a+inf). "
+                        "Present subjunctive belongs here in desire/hope clauses (quiero que vengas, espero que no llueva), "
+                        "necessity/advice clauses (es mejor que estudies, es importante que descanses), "
+                        "relative clauses (busco un piso que sea tranquilo), "
+                        "and possibility markers (tal vez llegue, quizás venga). "
+                        "Simple past narratives with opinions. "
+                        "No imperfect subjunctive (si pudiera, quisiera) or pluscuamperfecto subjunctive at this level. "
                         "Connectors: aunque, mientras, entonces, por eso. "
-                        "No pluscuamperfecto subjunctive yet.\n\n"
-                        "B2 → obligatory pluscuamperfecto indicativo AND consistent imperfect subjunctive in typical triggers (emoción, duda, concesión). "
+                        "May use everyday connectors and near‑future expressions (estar a punto de + inf). "
+                        "Examples: Quiero que sepas que te apoyo. Tal vez llegue más tarde. Pensaba ir al cine, pero me quedé en casa.\n\n"
+
+                        "B2 → requires pluscuamperfecto indicativo AND consistent use of imperfect subjunctive in typical triggers "
+                        "(emoción, duda, concesión). "
                         "Lexicon: abstract (opinions, arguments, social issues). "
-                        "Functions: hypothesis, concession, nuanced argumentation, common idioms/proverbs. "
+                        "Functions: hypothesis, concession, nuanced argumentation, idioms/proverbs. "
                         "Connectors: sin embargo, por lo tanto, además. "
-                        "Complex sentence linking, register neutral.\n\n"
+                        "Complex sentence linking, register neutral. "
+                        "Present subjunctive alone does not qualify for B2. "
+                        "Examples: Si pudiera, lo haría. Dudaba que vinieras. Había pensado que era mejor esperar.\n\n"
+
                         "C1 → at least one rare tense (pretérito anterior, futuro perfecto, condicional perfecto, pluscuamperfecto subjuntivo) used correctly. "
                         "Lexicon: cultured phrasing, less common idioms/collocations. "
                         "Functions: register shifts, idiomatic expressions beyond common proverbs, nuanced argumentation. "
-                        "Discourse: cohesive, sophisticated connectors, paragraph‑level cohesion.\n\n"
-                        "IMPORTANT: Do not classify sentences with only present tense and basic lexicon as A2 merely because they contain daily routines, occupations, locations, or common connectors. "
-                        "Presence of 'y' alone, or multiple clauses joined only by these connectors, must remain A1 unless modals, idiomatic tener, or past tenses are present.\n"
-                        "IMPORTANT: Pretérito anterior (hube + participio) and futuro perfecto (habrá + participio) are rare tenses. Any correct use of them must be classified as C1, not B2.\n\n"
+                        "Discourse: cohesive, sophisticated connectors, paragraph‑level cohesion. "
+                        "Examples: Habrá terminado antes de que llegues. Ojalá hubiera sabido la verdad. Hube terminado el trabajo cuando llegaste.\n\n"
+
+                        "IMPORTANT: Pretérito anterior (hube + participio) and futuro perfecto (habrá + participio) are rare tenses. "
+                        "Any correct use of them must be classified as C1. "
+                        "Do not misclassify A2 or B1 sentences as B2 simply because they contain connectors, modals, or present subjunctive triggers.\n\n"
+
                         "Respond ONLY with a JSON object:\n"
                         "{ \"cefr_level\": \"A1|A2|B1|B2|C1\", \"reasoning\": \"justification\" } "
                     )
@@ -105,33 +125,177 @@ def analyzer(spanish_sentence: str, max_retries: int = 10, pause: float = 0.5):
                 # Few‑shot examples
                 { "role": "user", "content": "Me llamo Luis y vivo en Valencia." },
                 { "role": "assistant", "content": "{ \"cefr_level\": \"A1\", \"reasoning\": \"Simple present tense, basic lexicon (introductions, residence), no expansions, A1.\" }" },
+                
+                { "role": "user", "content": "Me gusta caliente o frío." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"A1\", \"reasoning\": \"Uses 'me gusta' with two adjectives joined by 'y'. Present tense only, no modals, no past tense, no expansions. This is A1.\" }" },
+                
+                { "role": "user", "content": "Me gusta la mermelada y el queso azul." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"A1\", \"reasoning\": \"Uses 'me gusta' with two nouns joined by 'y'. Present tense only, no modals, no past tense, no expansions. This is A1.\" }" },
 
-                { "role": "user", "content": "El perro corre rápido pero es pequeño y tímido." },
-                { "role": "assistant", "content": "{ \"cefr_level\": \"A1\", \"reasoning\": \"Present tense only, basic lexicon with connectors 'pero' and 'y', no expansions, A1.\" }" },
+                { "role": "user", "content": "La mesa es grande y la silla es pequeña." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"A1\", \"reasoning\": \"Simple present tense with connector 'y'. No expansions, no past tense. A1.\" }" },
+
+                { "role": "user", "content": "Hoy es domingo y estoy en casa." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"A1\", \"reasoning\": \"Present tense only, connector 'y', no expansions. This is A1.\" }" },
+
+                { "role": "user", "content": "El libro está en la mesa y la ventana está abierta." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"A1\", \"reasoning\": \"Simple present tense with 'y'. No modals, no past tense. A1.\" }" },
+
+                { "role": "user", "content": "¿Dónde está el baño?" },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"A1\", \"reasoning\": \"Basic present tense question, no expansions. A1.\" }" },
+
+                { "role": "user", "content": "Mi casa es pequeña y bonita." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"A1\", \"reasoning\": \"Present tense description with 'y'. No expansions. A1.\" }" },
+
+                { "role": "user", "content": "Voy al supermercado y compro frutas y verduras." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"A1\", \"reasoning\": \"Present tense verbs ('voy', 'compro') with connector 'y'. No past tense, no modals, no idiomatic tener, no connectors beyond 'y'. This is A1.\" }" },
+                
+                { "role": "user", "content": "Voy a la escuela y estudio matemáticas." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"A1\", \"reasoning\": \"Uses present tense verbs ('voy', 'estudio') with connector 'y'. 'Voy a la escuela' is movement to a place, not 'ir a + infinitive' future. No expansions beyond A1.\" }" },
+
+                { "role": "user", "content": "Voy a estudiar matemáticas mañana." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"Uses 'ir a + infinitive' ('voy a estudiar') to express a future plan. The time marker 'mañana' reinforces the expansion. This is A2.\" }" },
+
+                { "role": "user", "content": "Vivo cerca del parque y camino todos los días." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"Present tense only, connector 'y'. No modals or past tense. A2.\" }" },
+                
+                { "role": "user", "content": "Puedo cocinar pasta y preparar ensalada." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"Uses 'poder + infinitive' to express ability. This is a functional expansion typical of A2.\" }" },
+
+                { "role": "user", "content": "Tengo que estudiar para el examen y hacer mis deberes." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"Uses 'tener que + infinitive' to express obligation. This is an A2 construction.\" }" },
 
                 { "role": "user", "content": "Quiero viajar a México el año que viene." },
                 { "role": "assistant", "content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"Use of querer+infinitive for desire, functional expansion typical of A2.\" }" },
 
                 { "role": "user", "content": "Ellos necesitan descansar después del trabajo." },
                 { "role": "assistant", "content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"Modal/functional expansion (necesitar+infinitive), everyday lexicon, typical of A2.\" }" },
+                
+                {"role": "user", "content": "Sé tocar la guitarra un poco."}, 
+                {"role": "assistant", "content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"Uses saber + infinitive to express ability. This is typical A2 functional language.\" }"},
+                
+                {"role": "user", "content": "Voy a empezar un curso de fotografía."}, 
+                {"role": "assistant", "content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"Uses 'ir a + infinitive' for future plans. This is an A2 construction, not B2.\" }"},
+                
+                {"role": "user", "content": "¿Sabes conducir o prefieres ir en taxi?"}, 
+                {"role": "assistant", "content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"Uses saber + infinitive for ability and simple preference. These are A2 features.\" }"},
+                
+                {"role": "user", "content": "Cuando llego, te llamo porque no tengo tiempo."}, 
+                {"role": "assistant", "content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"Simple present with connectors 'cuando' and 'porque'. These are A2 sentence structures.\" }"},
+                
+                {"role": "user", "content": "Deberías descansar; estás muy cansado."}, 
+                {"role": "assistant", "content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"Uses modal deber + infinitive for advice. This is A2 functional language.\" }"},
+
+                { "role": "user", "content": "Puedo ayudarte si quieres." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"Uses 'poder + infinitive' ('puedo ayudarte') with a conditional clause in present indicative ('si quieres'). This is a straightforward A2 construction, not B2.\" }" },
+
+                { "role": "user", "content": "Si quieres, vamos al cine." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"Uses 'si + present indicative' ('si quieres') with a simple present plan ('vamos'). This is a straightforward A2 conditional construction.\" }" },
+
+                { "role": "user", "content": "Si tienes hambre, comemos ahora." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"Uses 'si + present indicative' ('si tienes') with a simple present action ('comemos'). This is a basic A2 conditional structure.\" }" },
+
+                { "role": "user", "content": "Si estudias, aprendes más rápido." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"Uses 'si + present indicative' ('si estudias') with a present result ('aprendes'). This is a simple A2 conditional sentence.\" }" },
+
+                {"role": "user", "content": "Quiero que vengas a mi fiesta."}, 
+                {"role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"Uses present subjunctive after querer. This is a B1 feature, not B2.\" }"},
+                
+                {"role": "user", "content": "Espero que no llueva mañana."},
+                {"role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"Uses present subjunctive after esperar with future reference. This is typical B1 usage.\" }"},
+                
+                {"role": "user", "content": "El año pasado viajé a Perú y fue inolvidable."},
+                {"role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"Simple past narrative with opinion. This is B1 storytelling, not B2.\" }"},
+                
+                {"role": "user", "content": "Estoy a punto de salir; voy a llegar tarde."},
+                {"role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"Uses 'estar a punto de' for near future and consequence. This is B1 functional language.\" }"},
+                
+                { "role": "user", "content": "Busco un profesor que sea paciente y amable." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"Uses present subjunctive in a relative clause ('que sea paciente'). This is a B1 feature.\" }" },
+                
+                {"role": "user", "content": "Aunque estaba cansado, fui al cine."},
+                {"role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"Connector 'aunque' with simple past. This is a B1 sentence, not B2.\" }"},
+
+                { "role": "user", "content": "Espero que tengas tiempo." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"Uses present subjunctive ('tengas') in a desire clause ('Espero que'). This is a standard B1 trigger, not B2.\" }" },
+
+                { "role": "user", "content": "¿Has comido ya?" },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"Uses present perfect ('has comido') in a simple everyday question. Present perfect is introduced at B1 and does not require B2 complexity.\" }" },
+
+                { "role": "user", "content": "Es mejor que estudies más." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"Uses present subjunctive ('estudies') in an opinion clause ('Es mejor que'). This is a typical B1 construction, not B2.\" }" },
 
                 { "role": "user", "content": "Cuando era pequeño, jugaba en el patio con mis primos." },
                 { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"Imperfecto in narrative context with connector 'cuando', typical of B1.\" }" },
 
                 { "role": "user", "content": "De niño, siempre leía cuentos antes de dormir." },
                 { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"Imperfect tense used for habitual past actions, typical of B1.\" }" },
+                
+                { "role": "user", "content": "Si tuviera más dinero, viajaría por el mundo." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"Uses imperfect subjunctive ('tuviera') in a conditional clause. This construction is introduced at B2.\" }" },
+
+                { "role": "user", "content": "Aunque llueva, iremos al parque." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"Uses concessive subjunctive ('aunque llueva'). Concessive clauses with subjunctive are typical of B2.\" }" },
+                
+                { "role": "user", "content": "Habría estudiado más, pero no tuve tiempo." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"Uses conditional perfect ('habría estudiado'), which is introduced at B2. No rare idiomatic register elevates it to C1.\" }" },
 
                 { "role": "user", "content": "Aunque llueva, iremos al concierto." },
                 { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"Imperfect subjunctive trigger (concesión) plus future plan, typical of B2.\" }" },
 
+                { "role": "user", "content": "Si hubieras estudiado más, habrías aprobado el examen." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"Conditional exception with 'si + pluscuamperfecto subjunctivo' and 'condicional perfecto'. This is a B2 anchor.\" }" },
+
                 { "role": "user", "content": "Me gustaría que me lo explicaras con detalle." },
                 { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"Subjunctive trigger (gustar+que), nuanced request, typical of B2.\" }" },
+                
+                { "role": "user", "content": "Cuando termines, avísame." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"Uses present subjunctive ('termines') in a temporal clause with imperative ('avísame'). Present subjunctive in common triggers is introduced at B1, not B2.\" }" },
+
+                { "role": "user", "content": "Cuando hayas terminado, avísame." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"Uses compound subjunctive ('hayas terminado') with imperative. Compound subjunctive forms are introduced at B2.\" }" },
+
+                { "role": "user", "content": "Ojalá hubiera tenido más tiempo para terminar el proyecto." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"C1\", \"reasoning\": \"Uses pluscuamperfecto subjunctivo in a wish ('hubiera tenido'). Rare tense forces C1.\" }" },
 
                 { "role": "user", "content": "Apenas hube terminado, salí corriendo." },
                 { "role": "assistant", "content": "{ \"cefr_level\": \"C1\", \"reasoning\": \"Rare pretérito anterior tense used correctly, literary register, typical of C1.\" }" },
 
                 { "role": "user", "content": "Para entonces, se habrá resuelto el conflicto." },
                 { "role": "assistant", "content": "{ \"cefr_level\": \"C1\", \"reasoning\": \"Futuro perfecto construction, advanced temporal nuance, typical of C1.\" }" },
+
+                {"role": "user", "content": "Habrá comido pan."},
+                {"role": "assistant", "content": "{ \"cefr_level\": \"C1\", \"reasoning\": \"Sentence uses futuro perfecto ('habrá comido') with ultra-basic lexicon. Rare tense forces C1 regardless of simplicity.\" }"},
+
+                {"role": "user", "content": "¿Habrá terminado el examen?"},
+                {"role": "assistant", "content": "{ \"cefr_level\": \"C1\", \"reasoning\": \"Sentence uses futuro perfecto in a question ('¿Habrá terminado el examen?'). Rare tense forces C1 even in interrogatives.\" }"},
+                
+                { "role": "user", "content": "Aunque llueva, vamos al parque." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"Uses present subjunctive ('llueva') in a concessive clause. Present subjunctive in common triggers is introduced at B1.\" }" },
+
+                { "role": "user", "content": "Aunque fuera difícil, lo intentaría." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"Uses imperfect subjunctive ('fuera') with conditional ('intentaría'). Imperfect subjunctive with conditional is typical of B2.\" }" },
+
+                {"role": "user", "content": "Debería haber estudiado más."},
+                {"role": "assistant", "content": "{ \"cefr_level\": \"C1\", \"reasoning\": \"Sentence combines condicional perfecto ('debería haber estudiado') with modal deber. Rare tense forces C1 despite modal overlap.\" }"},
+
+                {"role": "user", "content": "Cuando hube llegado, ya se habían ido."},
+                {"role": "assistant", "content": "{ \"cefr_level\": \"C1\", \"reasoning\": \"Sentence uses pretérito anterior ('hube llegado') within a narrative connector ('cuando'). Rare tense forces C1 regardless of narrative framing.\" }"},
+
+                { "role": "user", "content": "Por ende, la decisión fue irrevocable." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"C1\", \"reasoning\": \"Uses the rare formal connector 'por ende'. Even though the verb 'fue' is simple past, the idiomatic register forces classification at C1.\" }" },
+
+                { "role": "user", "content": "En aras de la justicia, aceptó el castigo." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"C1\", \"reasoning\": \"Uses the rare idiomatic expression 'en aras de'. Despite the simple past verb 'aceptó', the formal idiomatic framing elevates the sentence to C1.\" }" },
+                
+                { "role": "user", "content": "Ojalá hubiera tenido más tiempo." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"C1\", \"reasoning\": \"Uses pluscuamperfecto subjunctivo ('hubiera tenido') in a wish construction. This rare tense elevates the sentence to C1.\" }" },
+
+                { "role": "user", "content": "Cuando hayas terminado el proyecto, habré viajado a Madrid." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"C1\", \"reasoning\": \"Uses futuro perfecto ('habré viajado') combined with a subordinate clause. Rare tense usage places this at C1.\" }" },
+
+                { "role": "user", "content": "Por ende, la propuesta fue rechazada." },
+                { "role": "assistant", "content": "{ \"cefr_level\": \"C1\", \"reasoning\": \"Uses the rare formal connector 'por ende'. Even though the verb 'fue' is simple past, the idiomatic register forces classification at C1.\" }" },
 
                     # --- Actual request ---
                     {"role": "user", "content": spanish_sentence}
