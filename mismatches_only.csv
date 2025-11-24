@@ -1,44 +1,53 @@
 sentence,expected,predicted,reasoning
-Temo que no haya tiempo suficiente.,B1,B2,Uses present subjunctive in a fear clause (temo que) with abstract concept 'tiempo suficiente'. This is typical B2 usage.
-¿Has visto la película que te recomendé?,B1,B2,"Uses present perfect tense 'has visto' with a relative clause. This is typical B2 usage, not involving rare tenses or overly complex structures."
-Me parece bien que cambiemos el plan.,B1,B2,"Uses present subjunctive in an opinion clause, which is typical B2 usage and does not qualify as C1 on its own."
-"Sea como fuere, conviene mantener la calma.",C1,B2,Uses present subjunctive in an idiomatic expression ('sea como fuere') followed by advice. This is typical B2 functional language.
-"A fuer de sincero, no me convenció la propuesta.",C1,B2,"Uses idiomatic expression 'a fuer de' with sincere opinion, typical nuanced argumentation for B2 level."
-"Que venga quien quiera; los demás, que esperen fuera.",B2,C1,Uses subjunctive in complex sentence structure with register shift and nuanced instruction ('que venga quien quiera'). This level of complexity and register is typical of C1.
-"De no ser por ti, todo habría salido mal.",B2,C1,Uses pluscuamperfecto subjunctive in a hypothetical clause ('si + pluscuamperfecto subjunctive'). This is a C1 feature.
-"Con todo y con eso, resultó ser lo mejor.",C1,B2,Uses 'con todo y con eso' (despite that) with a past event described in simple past ('resultó ser'). This is typical nuanced argumentation and complex sentence structure of B2.
-"Antes que nada, permítanme agradecer su presencia.",C1,B2,"Uses formal register and subjunctive in polite request ('permítanme'), typical B2 functional language without rare tenses."
-Me levanto a las siete y desayuno café.,A1,A2,"Simple present tense with time expression, typical A2 functional language and lexicon."
-Hoy es martes y tengo clase de inglés.,A1,A2,"Present tense with basic vocabulary and connector 'y'. No expansions or complex structures, typical of A2."
-Voy al supermercado y compro pan y leche.,A1,A2,Uses present tense with 'ir a + infinitive' for future plans and connector 'y'. This is typical A2 construction.
-Puedo ayudarte si quieres.,A2,B2,"Uses 'poder + infinitive' and conditional clause with subjunctive ('si + quieres'), typical B2 construction without rare tenses or overly complex structures."
-He visitado a mis abuelos este fin de semana.,A2,B1,Uses present perfect tense but does not qualify as rare or complex for C1. This is typical B1 usage.
-Ayer fui al cine con mis amigos.,A2,B1,"Uses pretérito indefinido (fui) in a simple past context with basic lexicon, typical of B1 level."
-"Me duele la cabeza, pero sigo trabajando.",A2,B1,Uses present tense with connectors 'pero' for contrast and simple expression of physical state. This is typical B1 language structure.
-Me levanto temprano y voy al trabajo.,A1,A2,Uses present tense with connectors 'y' and no expansions beyond basic A2 functional language.
-Voy al supermercado y compro frutas y verduras.,A1,A2,"Uses present tense verbs and simple sentence structure without expansions or complex tenses, typical of A2 level."
-Trabajo en una oficina y uso el ordenador.,A1,A2,"Simple present tense with basic vocabulary and no expansions, typical of A2 level."
-Mi cumpleaños es en mayo y tengo 30 años.,A1,A2,"Uses present tense and tener for age, typical A2 construction without expansions or complex tenses."
-"Si llueve, no salgo; si hace sol, voy a la playa.",B1,B2,Uses conditional clauses with present subjunctive ('si + presente de subjuntivo') and simple future tense. This is typical B2 construction.
-"Por ende de lo expuesto, concluyo que es viable.",C1,B2,Uses 'por ende' for conclusion and abstract reasoning typical of B2 level discourse. No rare tenses or constructions that would elevate it to C1.
-Hoy es lunes y tengo clase de matemáticas.,A1,A2,Present tense with basic lexicon and connector 'y'. No expansions beyond A2 level.
-Voy al mercado y compro pan y leche.,A1,A2,Uses present tense with 'ir a + infinitive' for future plans and connector 'y'. This is typical A2 construction.
-"A fuer de honesto, no me convenció.",C1,B2,Uses an idiomatic expression 'a fuer de' with imperfect indicative ('no me convenció'). This is nuanced and typical of B2 level.
-Habría bebido café sin embargo estaba tarde.,C1,B2,"Sentence uses futuro perfecto ('habría bebido') but lacks a typical subjunctive trigger or rare tense construction beyond the conditional use. The presence of 'sin embargo' is B2-level, but overall structure does not meet C1 criteria."
-Habría abierto la ventana sin embargo hacía frío.,C1,B2,Sentence uses futuro perfecto conditional ('habría abierto') but lacks a rare tense or complex subjunctive construction to qualify for C1. This is advanced B2 due to conditional and contrast.
-Habría comido arroz.,C1,B2,"Uses futuro perfecto condicional ('habría comido'), but this alone does not elevate to C1 if no other rare tenses or complex structures are present."
-Habría bebido café.,C1,B2,"Uses conditional perfect (habría + past participle) which is typical of B2 for expressing hypothetical situations or regret, not necessarily a rare tense like pretérito anterior or pluscuamperfecto subjuntivo."
-Habría abierto la ventana.,C1,B2,"Uses conditional perfect 'habría abierto' which is typical of B2 level, not a rare tense like pretérito anterior or pluscuamperfecto subjuntivo."
-Habría dicho su nombre.,C1,B2,"Uses conditional perfect ('habría dicho'), which is typical of B2, not a rare tense like pretérito anterior or pluscuamperfecto subjuntivo."
-Habría terminado la tarea.,C1,B2,"Uses conditional perfect 'habría terminado', which is typical of B2 for expressing hypothetical situations or future-in-the-past, not a rare tense."
-"Si hubiera estudiado, habría aprobado.",C1,B2,"Uses pluscuamperfecto subjunctive (hubiera estudiado) in a conditional sentence with futuro perfecto (habría aprobado). This is typical of B2 level, not C1."
-Estoy en casa y miro la televisión.,A1,A2,"Simple present tense with basic lexicon and connector 'y'. No expansions or complex structures, typical of A2."
-Mi perro está en el jardín y mi gato en la cocina.,A1,A2,"Simple present tense with location expressions and connector 'y'. No expansions or complex structures, typical of A2."
-Busco mi mochila; está debajo de la mesa.,A1,A2,"Uses present tense and location expression with basic vocabulary, typical A2 construction without complex tenses or subjunctive."
-Somos cuatro en la familia y vivimos juntos.,A1,A2,"Uses present tense and basic family vocabulary without expansions or complex structures, typical of A2 level."
-Como arroz y bebo agua todos los días.,A1,A2,Simple present tense with everyday lexicon and no expansions beyond basic A2 constructions.
-Vivo cerca del parque y camino por la mañana.,A1,A2,Present tense verbs with no expansions beyond basic A2 constructions and connectors.
-El museo abre a las diez y cierra a las seis.,A1,A2,"Simple present tense with time expressions, no expansions or complex structures beyond A2 level."
-"Estoy de acuerdo, pero no entiendo todo.",A2,B1,"Uses connectors 'pero' and 'de acuerdo', with simple present tense. This is typical B1 language structure without advanced features like subjunctive or rare tenses."
-"Antes no comía pescado, pero ahora me gusta.",A2,B1,"Uses imperfect and simple past to describe change over time, typical B1 narrative structure without rare tenses or complex subjunctive."
-"Cuando termines, avísame.",A2,B2,"Uses future perfect construction 'termines' (subjunctive) with a conditional clause, typical B2 level for complex sentence structures involving subjunctive."
+Fue entonces cuando entendí lo que pasaba.,B1,B2,"Temporal clause with indicative, not a formal or rare structure."
+"De niño, siempre leía cuentos antes de dormir.",B1,B2,Imperfect tense used for past habits and states.
+Estoy a punto de salir; voy a llegar tarde.,B1,A2,"Use of estar a punto de + infinitive, common A2 structure for near future plans."
+Busco un piso que sea tranquilo y luminoso.,B1,B2,Relative clause with subjunctive (specific).
+Tal vez llegue más tarde; no estoy seguro.,B1,B2,"Expresses possibility with tal vez, indicative mood for future uncertainty."
+Fue entonces cuando entendí lo que pasaba.,B1,B2,"Temporal clause with indicative, not a formal or rare structure."
+Me gustaría que me lo explicaras con detalle.,B1,B2,"Polite request using conditional + subjunctive, common in B2 level."
+Era necesario que actuáramos con prudencia.,B2,B1,"Es/necesario que + subjunctive, which is a B1 level structure."
+Me molestó que hablaran tan alto en la reunión.,B2,B1,"Emotion verb + subjunctive, but within B1 complexity level."
+"De tal palo, tal astilla.",B2,C1,Proverbial expression with formal register.
+"Quien mal anda, mal acaba.",B2,C1,Proverbial expression with formal register.
+"Si hubieras sabido la verdad, no habrías dicho nada; al fin y al cabo, todos cometemos errores.",C1 (complex discourse + connectors),C1,Complex conditional with type-3 construction and formal expression 'al fin y al cabo'.
+Quisiera que te hubieras quedado un poco más.,C1,B2,"Polite wish with pluperfect subjunctive, but not genuinely rare or sophisticated register shift as required for C1."
+"A poco que te esfuerces, lo habrás conseguido.",C1,B2,A poco que + subjunctive with future perfect (not C1).
+"Por mucho que dijeran, no habría cambiado de opinión.",C1,B2,Por mucho que + indicative (hypothetical concession).
+"Ni que lo hubieras hecho tú, habría salido mejor.",C1,B2,"Type-3 conditional with pluperfect subjunctive, but not a formal or rare structure as required for C1."
+Habíamos pensado que se habría resuelto antes.,C1,B2,"Pluscuamperfecto + condicional perfecto, both B2 level structures."
+"Si para entonces hubiere terminado, me avisará.",C1,B2,"Future perfect subjunctive is B2 level, not C1."
+"Quien hubiera querido participar, habría podido hacerlo.",C1,B2,Type-3 conditional with imperfect subjunctive and conditional perfect.
+"Que venga quien quiera; los demás, que esperen fuera.",B2,C1,Formal register shift with subjunctive.
+Me temo que no lleguemos a tiempo.,B1,B2,"Formal expression me temo que + subjunctive, which is common in B2 level formal contexts."
+"Sin que nadie lo advirtiera, cambió de plan.",B2,C1,Complex formal construction with subjunctive.
+"Si para entonces hubiere llegado, le notificaremos.",C1,B2,Future perfect subjunctive (not genuinely rare or rarely used at C1 level).
+"Tan pronto como hubieron salido, empezó la lluvia.",C1,B2,Pluperfect subjunctive in a temporal clause (not genuinely rare).
+"Quien no hubiera estudiado, habría suspendido.",C1,B2,Type-3 conditional with imperfect subjunctive and conditional perfect.
+"En caso de que hubiere nuevas evidencias, se revisará el informe.",C1,B2,In case of + pluperfect subjunctive (hypothetical scenario).
+He visitado a mis abuelos este fin de semana.,B1,A2,Present perfect indicating recent past actions.
+Deberías descansar; estás muy cansado.,A2,B1,"Should + infinitive and estar + adjective, both common B1 structures."
+"Me duele la cabeza, pero sigo trabajando.",B1,A2,"Coordinated clauses with pero, basic present tense."
+"En caso de que hubiere nuevas pruebas, se revisará el caso.",C1,B2,"Conditional clause with pluperfect subjunctive, but not genuinely rare or sophisticated register shift as required for C1."
+Me llamo Luis y vivo en Valencia.,A1,A2,Basic self-introduction with present tense and location.
+Necesito agua...,A2,A1,Basic present tense need expression.
+"Estoy de acuerdo, pero no entiendo todo.",B1,A2,Coordinated clauses with pero and basic agreement expression.
+Como pan y bebo agua.,A1,B2,"This phrase does not fit the C1 criteria as it is an idiom expressing simplicity or frugality, but it uses a simple construction without complex subjunctive or formal structures typical of C1 level."
+Prefiero que me llames por la tarde.,B2,B1,"Preference expression with subjunctive, common B1 level construction."
+Creo que mañana hará sol.,B1,A2,Present tense prediction using creo que + future simple.
+Ojalá tengamos vacaciones pronto.,B1,B2,Ojalá + present subjunctive for near future wish.
+Me alegro mucho de que hayas venido.,B1,B2,"Expression of joy with present perfect subjunctive, common B2 level construction."
+He estado enfermo toda la semana.,B1,A2,Present perfect indicating a continuous state over a period of time.
+Hace tres años que estudio español.,B1,B2,Present perfect with duration since a past time (for X years).
+"Aunque estaba cansado, terminé el trabajo.",B2,B1,Aunque + imperfect indicative (background condition).
+Espero que hayas tenido buen viaje.,B1,B2,"Present perfect subjunctive, common in B2 level for wishes and hopes about past events."
+Me da igual que llueva o haga sol.,B2,A2,"Simple expression of indifference using present tense, no subjunctive required."
+"Con tal de que no se entere nadie, lo hago.",C1,B2,Con tal de que + subjunctive (common conditional structure).
+"Por más que lo intento, no logro entenderlo.",C1,B2,Por más que + indicative (hypothetical concession).
+"Mal que le pese, tendrá que disculparse.",C1,B2,"Formal adversative construction with future tense, not requiring C1 level formal subjunctive."
+Me gustaría que me ayudaras mañana.,B1,B2,Polite request using conditional (future courtesy).
+Es una pena que no hayas podido venir.,B1,B2,"Expression of regret with present perfect subjunctive, common in B2 level."
+No entiendo por qué se enfadó tanto.,B1,B2,"Why-clause with indicative, expressing confusion or complaint."
+Ojalá llueva esta noche.,B1,B2,Ojalá + present subjunctive (hope for future event).
+"Siempre y cuando me avises con tiempo, no hay problema.",C1,B2,Conditional phrase 'siempre y cuando' with subjunctive (not rare enough for C1).
+Prefiero que me llames por la tarde.,B2,B1,"Preference expression with subjunctive, common B1 level construction."

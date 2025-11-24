@@ -3,7 +3,7 @@ from qwen_sm import analyzer
 from diagnostic_dashboard import diagnostic_dashboard
 
 # --- Define the CSV file path ---
-CSV_FILE = 'miscategorized.csv'
+CSV_FILE = 'dele.csv'
 
 # --- Read data from the CSV file ---
 try:
