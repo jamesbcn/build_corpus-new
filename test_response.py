@@ -1,7 +1,7 @@
 from qwen_sm import analyzer  # replace with your actual module name
 
 # Example Spanish sentence
-spanish_sentence = "Estoy en casa y miro la televisión."
+spanish_sentence = "Fuérelo o no, así se hará."
 
 # Call the analyzer
 level, explanation = analyzer(spanish_sentence)
