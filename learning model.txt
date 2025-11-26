@@ -1,0 +1,201 @@
+{
+  "role": "system",
+  "content": "CRITICAL B1 ANCHOR (DELE/SIELE 2025 / Plan Curricular B1 Inventory): These structures are EXCLUSIVELY B1—do NOT push to B2 unless imperfect/pluperfect subjunctive or complex embedding is added. Present subjunctive (only tense at B1) in: ojalá + present subj. (e.g., Ojalá llueva), temo que / me temo que + present subj., no me importa que + present subj., querer que / esperar que + present subj., emotion verbs (me alegra que, es una pena que) + present subj., impersonals (es importante/necesario/mejor que) + present subj., non-specific relatives (busco un X que + present subj.), me gustaría que + present subj. (polite requests). Also B1: present perfect for recent/life experiences (he viajado) or duration (hace X que + present); doubt/indifference (no estoy seguro de + inf., me da igual si + indic./subj.); narratives (imperfect background like cuando era niño, indefinido contrast); connectors (aunque + indicative, pero for plans); uncertainty (tal vez + present subj., creo que + future); periphrasis (estar a punto de + inf.). Present perfect subjunctive (haya + pp.) in B1 emotion/wish clauses = B1 (e.g., me alegro de que hayas venido)."
+}
+                {"role": "user", "content": "Ojalá ganemos el partido mañana."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Ojalá + present subjunctive = official B1 wish.\"}"},
+
+                {"role": "user", "content": "Me temo que perdemos el tren."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Temo que + subjunctive = B1 emotion/doubt verb (DELE B1).\"}"},
+
+                {"role": "user", "content": "Busco un compañero que hable francés."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Relative clause with subjunctive for non-specific search = B1 (official).\"}"},
+
+                {"role": "user", "content": "No estoy seguro de poder asistir."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"No estoy seguro de + infinitive = standard B1 doubt expression.\"}"},
+
+                {"role": "user", "content": "No entiendo por qué llegó tan tarde."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"No entiendo por qué + indicative = classic B1 confusion/questioning.\"}"},
+                
+                
+                {"role": "user", "content": "Quiero que me ayudes con los deberes."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Querer que + subjunctive = first systematic subjunctive trigger, core B1.\"}"},
+
+                {"role": "user", "content": "Este verano he viajado a Italia con amigos."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Present perfect for recent past experience = standard B1.\"}"},
+
+                {"role": "user", "content": "Me duele la espalda, pero tengo que trabajar."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Physical state + pero contrast with obligation = typical B1 personal narrative.\"}"},
+
+                {"role": "user", "content": "Me da igual si llegas tarde o temprano."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Me da igual + indifference structure = B1 emotion expression.\"}"},
+
+                {"role": "user", "content": "Quiero que vengas a mi fiesta."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"First regular subjunctive trigger (querer que).\"}"},
+
+                {"role": "user", "content": "Espero que tengas un buen día."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Subjunctive after esperar que.\"}"},
+
+                {"role": "user", "content": "Temo que no haya tiempo suficiente."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Emotion verb temo que + present subjunctive.\"}"},
+
+                {"role": "user", "content": "Me alegra que estés aquí."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Emotion verb + subjunctive.\"}"},
+
+                {"role": "user", "content": "Es importante que vengas temprano."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Impersonal expression + subjunctive.\"}"},
+
+                {"role": "user", "content": "Me parece bien que cambiemos el plan."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Opinion verb parecer + subjunctive.\"}"},
+
+                {"role": "user", "content": "Busco un piso que tenga balcón."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Relative clause with subjunctive (non-specific).\"}"},
+
+                {"role": "user", "content": "El año pasado viajé a Japón."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Pretérito indefinido narrative.\"}"},
+
+                {"role": "user", "content": "Cuando era pequeño, vivía en Sevilla."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Imperfect for ba
+
+                {"role": "user", "content": "Aunque no me gusta, lo haré."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Aunque + indicative (real concession).\"}"},
+                
+                {"role": "user", "content": "Ojalá llueva mañana."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Ojalá + present subjunctive = core B1 wish.\"}"},
+
+                {"role": "user", "content": "Me alegro de que hayas venido."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Emotion verb + present perfect subjunctive = B2.\"}"},
+
+                {"role": "user", "content": "Hace tres años que estudio español."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Hace + time + que + present = standard B1 duration.\"}"},
+
+                {"role": "user", "content": "Me temo que no llegue a tiempo."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Me temo que + subjunctive = B1 emotion verb.\"}"},
+
+                {"role": "user", "content": "Es una pena que no hayas podido venir."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Es una pena que + present perfect subjunctive = B1.\"}"},
+
+                {"role": "user", "content": "De niño, siempre jugaba en el parque."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Imperfect for childhood habits = B1.\"}"},
+
+                {"role": "user", "content": "Fue entonces cuando entendí todo."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Fue entonces cuando + preterite = classic B1 narrative marker.\"}"},
+
+                {"role": "user", "content": "Tal vez llegue más tarde."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Tal vez + present/indicative for uncertainty = B1.\"}"},
+                
+                {"role": "user", "content": "Ojalá nieve esta Navidad."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Ojalá + present subjunctive = standard B1 wish.\"}"},
+
+                {"role": "user", "content": "Quiero que me llames cuando llegues."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Querer que + present subjunctive = core B1 trigger.\"}"},
+
+                {"role": "user", "content": "He vivido en tres países diferentes."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Present perfect for life experience = classic B1.\"}"},
+
+                {"role": "user", "content": "Me da igual si vienes o no."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Da igual (que/si) + subjunctive/indicative indifference = B1.\"}"},
+
+                {"role": "user", "content": "Estoy a punto de perder el autobús."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Estar a punto de + infinitive = imminent future, B1 periphrasis.\"}"},
+
+                {"role": "user", "content": "Me temo que hemos perdido el tren."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Temo que + subjunctive expressing fear/doubt = B1 emotion verb.\"}"},
+                {"role": "user", "content": "Ojalá llueva mañana por la noche."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Ojalá + present subjunctive = core B1 wish (DELE B1 official).\"}"},
+
+                {"role": "user", "content": "Espero que hayas tenido buen fin de semana."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Esperar que + present perfect subjunctive = standard B2 wish about past.\"}"},
+
+                {"role": "user", "content": "No me importa que llegues un poco tarde."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"No me importa que + subjunctive = classic B1 indifference.\"}"},
+
+                {"role": "user", "content": "Me temo que no lleguemos antes de las ocho."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Temo que + subjunctive = B1 emotion/doubt verb.\"}"},
+
+                {"role": "user", "content": "Creo que mañana hará buen tiempo."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Creo que + future tense prediction = normal B1.\"}"},
+
+                {"role": "user", "content": "Busco un piso que tenga terraza."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Relative clause with subjunctive for non-specific search = B1.\"}"},
+
+                {"role": "user", "content": "Pensaba salir, pero al final me quedé en casa."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Imperfect + pero + change of plan = typical B1 narrative contrast.\"}"},
+
+                {"role": "user", "content": "He comprado un regalo para mi madre."},
+                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Present perfect for recent completed action = core B1.\"}"},
+
+                { "role": "user", "content": "Es mejor que vengas temprano." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: evaluative clause with present subjunctive, common trigger.\" }" },
+
+{ "role": "user", "content": "Es necesario que estudies más." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: subjunctive in opinion clause, everyday register.\" }" },
+
+{ "role": "user", "content": "Cuando llegué, vi a mis amigos." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: temporal clause with indicative, narrative sequencing.\" }" },
+
+{ "role": "user", "content": "Cuando era niño, jugaba en el parque." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: imperfect narrative with temporal connector cuando.\" }" },
+
+{ "role": "user", "content": "Hoy he visto a mis abuelos." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"A2: present perfect for recent everyday event.\" }" },
+
+{ "role": "user", "content": "Ya he terminado los deberes." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"A2: present perfect in everyday context, simple completion.\" }" },
+
+{ "role": "user", "content": "Me alegro de que hayas venido." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: present perfect subjunctive in emotion clause.\" }" },
+
+{ "role": "user", "content": "Espero que hayas tenido buen viaje." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: present perfect subjunctive in wish clause.\" }" },
+
+{ "role": "user", "content": "El verano pasado fui a la playa y fue fantástico." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: indefinido narrative with evaluative adjective, simple past experience.\" }" },
+
+{ "role": "user", "content": "Ayer cené con amigos y estuvo genial." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: simple past (indefinido) with evaluative adjective, everyday narrative.\" }" },
+
+{ "role": "user", "content": "Hace dos años viajé a Italia y fue increíble." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: past narrative with evaluation, no subjunctive or conditional.\" }" },
+
+{ "role": "user", "content": "Me gustaría que me explicaras el problema con detalle." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: conditional + imperfect subjunctive, polite evaluative request.\" }" },
+
+{ "role": "user", "content": "Preferiría que me lo contaras mañana." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: conditional preference + imperfect subjunctive, evaluative nuance.\" }" },
+
+{ "role": "user", "content": "Es posible que haya perdido el móvil." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: evaluative clause with present perfect subjunctive, expressing possibility.\" }" },
+
+{ "role": "user", "content": "Me gustaría que me ayudes con la tarea esta tarde." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"Me gustaría que + present subjunctive (ayudes) for polite present/future request = core B1 volition (Plan Curricular B1).\" }" },
+
+{ "role": "user", "content": "Me gustaría que vengas a la reunión de mañana." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"Me gustaría que + present subjunctive (vengas) = standard B1 polite invitation/wish (DELE B1).\" }" },
+
+{ "role": "user", "content": "Me gustaría que me expliques la lección ahora." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"Me gustaría que + present subjunctive (expliques) for immediate polite request = B1 (Cervantes inventory).\" }" },
+
+{ "role": "user", "content": "Me gustaría que me llames cuando termines el trabajo." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"Me gustaría que + present subjunctive (llames) in future temporal = B1 polite suggestion.\" }" },
+
+{ "role": "user", "content": "Me gustaría que elijamos el restaurante juntos." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"Me gustaría que + present subjunctive (elijamos) for collaborative polite proposal = B1 function.\" }" },
+
+{ "role": "user", "content": "Me gustaría que me ayudaras con la mudanza de ayer." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"Me gustaría que + pluperfect subjunctive (hubieras ayudado, implied) for unreal past regret = B2 hypothetical (imperfect/pluperfect subj.).\" }" },
+
+{ "role": "user", "content": "Me gustaría que hablaras más bajo en la biblioteca." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"Me gustaría que + imperfect subjunctive (hablaras) for ongoing hypothetical politeness = B2 nuance (DELE B2).\" }" },
+
+{ "role": "user", "content": "Me gustaría que hubiéramos ganado el partido." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"Me gustaría que + pluperfect subjunctive (hubiéramos ganado) for past counterfactual wish = B2.\" }" },
+
+{ "role": "user", "content": "Me gustaría que no dijeras eso en público." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"Me gustaría que + imperfect subjunctive (dijeras) for general hypothetical prohibition = B2.\" }" },
+
+{ "role": "user", "content": "Me gustaría que todo saliera perfecto mañana." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"Me gustaría que + imperfect subjunctive (saliera) for future hypothetical wish = B2 (vs. B1 present subj.).\" }" }
+
+{ "role": "user", "content": "Preferiría que me lo explicaras con calma." },
+{ "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: conditional preference + imperfect subjunctive.\" }" }
