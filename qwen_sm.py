@@ -152,6 +152,9 @@ def analyzer(spanish_sentence: str, max_retries: int = 10, pause: float = 0.5):
                                             {"role": "user", "content": "Tengo que estudiar para el examen."},
                                             {"role": "assistant", "content": "{\"cefr_level\": \"A2\", \"reasoning\": \"Tener que + infinitive obligation.\"}"},
                                             
+                                            {"role": "user", "content": "Me duele la garganta desde el viernes."},
+                                            {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Physical sensation + desde + specific past point (duration up to present) = core B1 time marker.\"}"},
+
                                             { "role": "user", "content": "Es mejor que vengas temprano." },
                                             { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: evaluative clause with present subjunctive, common trigger.\" }" },
 
