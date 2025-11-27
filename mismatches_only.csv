@@ -1,6 +1,6 @@
 sentence,expected,predicted,reasoning
-Me gustaría que me lo explicaras con detalle.,B1,B2,Conditional + imperfect subjunctive for polite request with detail specification.
-Me gustaría vivir en otro país.,B1,B2,Conditional desire expressed with imperfect subjunctive.
+Me gustaría que me lo explicaras con detalle.,B1,B2,Conditional + imperfect subjunctive for polite request with detail nuance.
+Creo que mañana hará sol.,B1,B2,"Future tense prediction, no subjunctive required."
 Me gustaría que me ayudaras mañana.,B1,B2,Conditional + imperfect subjunctive for polite request.
-Me gustaría vivir en otro país.,B1,B2,Conditional desire expressed with imperfect subjunctive.
+Creo que mañana hará sol.,B1,B2,"Future tense prediction, no subjunctive required."
 Me gustaría que me ayudaras mañana.,B1,B2,Conditional + imperfect subjunctive for polite request.

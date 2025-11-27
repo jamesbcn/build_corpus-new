@@ -1,32 +1,6 @@
 sentence,expected,predicted,reasoning
-Me parece bien que cambiemos el plan.,B1,B2,"Es + adj. + que + subjunctive, a typical B2 construction for expressing opinions or reactions."
-Fue entonces cuando entendí lo que pasaba.,B1,B2,"Temporal clause with indicative, not a formal or rare structure."
-El año pasado viajé a Perú y fue inolvidable.,B1,B2,"Simple past and evaluation, no rare structures involved."
-Estoy a punto de salir; voy a llegar tarde.,B1,A2,"Present tense with 'a punto de' construction, indicating near future without subjunctive or complex structures."
-Me gustaría que me ayudaras con este proyecto.,B1,B2,"Conditional + subjunctive, expressing a polite request or wish."
-Tal vez llegue más tarde; no estoy seguro.,B1,B2,"Expressing uncertainty with tal vez, no estoy seguro."
-Me parece bien que cambiemos el plan.,B1,B2,"Es + adj. + que + subjunctive, a typical B2 construction for expressing opinions or reactions."
-Fue entonces cuando entendí lo que pasaba.,B1,B2,"Temporal clause with indicative, not a formal or rare structure."
-Me gustaría que me lo explicaras con detalle.,B1,B2,"Conditional + subjunctive, expressing a polite request or wish."
-He visitado a mis abuelos este fin de semana.,B1,A2,"Present perfect for recent past, common A2 structure."
-Ayer fui al cine con mis amigos.,B1,A2,Simple past tense sentence with no complex structures or subjunctive mood.
-"Me duele la cabeza, pero sigo trabajando.",B1,A2,Basic use of pero to contrast two simple clauses.
-"Estoy de acuerdo, pero no entiendo todo.",B1,A2,Coordinated clauses with pero and basic agreement expression.
-El fin de semana pasado fui al campo.,B1,A2,"Simple past tense (preterite) used for recent past events, which is A2 level."
-Creo que mañana hará sol.,B1,A2,Present tense prediction with creer + que + future simple.
-Me alegro mucho de que hayas venido.,B1,B2,"Expression of joy with present perfect subjunctive, which is B2 level."
-He estado enfermo toda la semana.,B1,A2,"Present perfect indicating a continuous state over a period of time, which is A2 level."
-Me gustaría vivir en otro país.,B1,B2,Conditional expression (me gustaría).
-Es la primera vez que visito Madrid.,B1,A2,"Present perfect used for first-time experiences, typical A2 level."
-Espero que hayas tenido buen viaje.,B1,B2,"Esperar que + pluperfect subjunctive, which is B2 level."
-Me gustaría que me ayudaras mañana.,B1,B2,Conditional sentence with conditional perfect (habría + past participle).
-No entiendo por qué se enfadó tanto.,B1,B2,"Why-clause with indicative, expressing surprise or confusion."
-El fin de semana pasado fui al campo.,B1,A2,"Simple past tense (preterite) used for recent past events, which is A2 level."
-Creo que mañana hará sol.,B1,A2,Present tense prediction with creer + que + future simple.
-Me alegro mucho de que hayas venido.,B1,B2,"Expression of joy with present perfect subjunctive, which is B2 level."
-He estado enfermo toda la semana.,B1,A2,"Present perfect indicating a continuous state over a period of time, which is A2 level."
-Me gustaría vivir en otro país.,B1,B2,Conditional expression (me gustaría).
-Es la primera vez que visito Madrid.,B1,A2,"Present perfect used for first-time experiences, typical A2 level."
-Espero que hayas tenido buen viaje.,B1,B2,"Esperar que + pluperfect subjunctive, which is B2 level."
-Me gustaría que me ayudaras mañana.,B1,B2,Conditional sentence with conditional perfect (habría + past participle).
-No entiendo por qué se enfadó tanto.,B1,B2,"Why-clause with indicative, expressing surprise or confusion."
+Me gustaría que me lo explicaras con detalle.,B1,B2,Conditional + imperfect subjunctive for polite request with detail nuance.
+Creo que mañana hará sol.,B1,B2,"Future tense prediction, no subjunctive required."
+Me gustaría que me ayudaras mañana.,B1,B2,Conditional + imperfect subjunctive for polite request.
+Creo que mañana hará sol.,B1,B2,"Future tense prediction, no subjunctive required."
+Me gustaría que me ayudaras mañana.,B1,B2,Conditional + imperfect subjunctive for polite request.

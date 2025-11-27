@@ -68,324 +68,338 @@ def analyzer(spanish_sentence: str, max_retries: int = 10, pause: float = 0.5):
                 model=ANALYZER_MODEL,
                 messages=[
                             {
-                            "role": "system",
-                            "content": (
-                                "Your task: assign a CEFR level (A1–C1) to the Spanish sentence with an in-depth justification.\n\n"
+                                "role": "system",
+                                "content": (
+                                    "Your task: assign a CEFR level (A1–C1) to the Spanish sentence with an in-depth justification.\n\n"
 
-                                "A1 → only present tense (ser/estar, tener for age/family/possession, basic verbs). "
-                                "No modals, no idiomatic tener expressions, no periphrasis. "
-                                "Connectors: y, o, and pero. "
-                                "Porque and cuando are A2.\n\n"
+                                    "A1 → only present tense (ser/estar, tener for age/family/possession, basic verbs). "
+                                    "No modals, no idiomatic tener expressions, no periphrasis. "
+                                    "Connectors: y, o, and pero. "
+                                    "Porque and cuando are A2.\n\n"
 
-                                "A2 → first coordinated clauses (y, pero), connectors porque/cuando, ir a + inf, "
-                                "obligation (tener que, hay que, deber), ability (poder, saber + inf), "
-                                "present perfect (he comido hoy), idiomatic tener (hambre, sueño, calor). "
-                                "No subjunctive.\n\n"
+                                    "A2 → first coordinated clauses (y, pero), connectors porque/cuando, ir a + inf, "
+                                    "obligation (tener que, hay que, deber), ability (poder, saber + inf), "
+                                    "present perfect (he comido hoy), idiomatic tener (hambre, sueño, calor). "
+                                    "No subjunctive.\n\n"
 
-                                "B1 → includes present subjunctive and present perfect subjunctive (haya + participio) in emotion, doubt, wish, volition, or relative clauses. "
-                                "Conditional present alone (me gustaría + infinitivo) = B1 unless other B2 signals are present.\n\n"
+                                    "B1 → includes present subjunctive and present perfect subjunctive (haya + participio) in emotion, doubt, wish, volition, or relative clauses. "
+                                    "Conditional present alone (me gustaría + infinitivo) = B1 unless other B2 signals are present.\n\n"
 
-                                "CRITICAL SUBJUNCTIVE RULE (overrides everything else):\n"
-                                "- Present subjunctive = ALWAYS B1\n"
-                                "- Present PERFECT subjunctive (haya / hayas / hayan + participio) = ALWAYS B1\n"
-                                "- ONLY imperfect subjunctive (hablara / hubiese) or pluperfect subjunctive (hubiera + participio) can push a sentence to B2 or higher\n\n"
+                                    "CRITICAL SUBJUNCTIVE RULE (overrides everything else):\n"
+                                    "- Present subjunctive = ALWAYS B1\n"
+                                    "- Present PERFECT subjunctive (haya / hayas / hayan + participio) = ALWAYS B1\n"
+                                    "- ONLY imperfect subjunctive (hablara / hubiese) or pluperfect subjunctive (hubiera + participio) can push a sentence to B2 or higher\n\n"
 
-                                "B2 → requires imperfect or pluperfect subjunctive, or compound/advanced tenses (conditional perfect, futuro perfecto, temporal/subordinate clauses with subjunctive). "
-                                "Conditional + imperfect subjunctive in polite requests (me gustaría que + V-ara/iese) = B2. "
-                                "Other triggers: type-2 and type-3 conditionals, aunque/por mucho que + subj., ojalá + hubiera, futuro perfecto, condicional perfecto, concessive/argumentative discourse.\n\n"
+                                    "B2 → requires imperfect or pluperfect subjunctive, or compound/advanced tenses (conditional perfect, futuro perfecto, temporal/subordinate clauses with subjunctive). "
+                                    "Conditional + imperfect subjunctive in polite requests (me gustaría que + V-ara/iese) = B2. "
+                                    "Other triggers: type-2 and type-3 conditionals, aunque/por mucho que + subj., ojalá + hubiera, futuro perfecto, condicional perfecto, concessive/argumentative discourse.\n\n"
 
-                                "C1 → genuinely rare structures: pretérito anterior (hube + participio), "
-                                "formal fixed expressions (sea como fuere, quiérase o no, a poco que, mal que le pese, "
-                                "en aras de, habida cuenta de, a la postre, ni por asomo), sophisticated register shifts.\n\n"
+                                    "C1 → genuinely rare structures: pretérito anterior (hube + participio), "
+                                    "formal fixed expressions (sea como fuere, quiérase o no, a poco que, mal que le pese, "
+                                    "en aras de, habida cuenta de, a la postre, ni por asomo), sophisticated register shifts.\n\n"
 
-                                "CRITICAL CORRECTIONS:\n"
-                                "- Futuro perfecto (habrá + participio) = B2 (not C1)\n"
-                                "- Condicional perfecto (habría + participio) = B2 (not C1)\n"
-                                "- Type-3 conditionals (Si hubieras…, habría…) = B2 (not C1)\n"
-                                "- Pluscuamperfecto indicativo (había + participio) = B1 (not B2)\n"
-                                "- The ONLY tense that automatically triggers C1 is pretérito anterior (hube/hubiste… + participio)\n\n"
+                                    "CRITICAL CORRECTIONS:\n"
+                                    "- Futuro perfecto (habrá + participio) = B2 (not C1)\n"
+                                    "- Condicional perfecto (habría + participio) = B2 (not C1)\n"
+                                    "- Type-3 conditionals (Si hubieras…, habría…) = B2 (not C1)\n"
+                                    "- Pluscuamperfecto indicativo (había + participio) = B1 (not B2)\n"
+                                    "- The ONLY tense that automatically triggers C1 is pretérito anterior (hube/hubiste… + participio)\n\n"
 
-                                "Respond EXCLUSIVELY with valid JSON:\n"
-                                "{ \"cefr_level\": \"A1|A2|B1|B2|C1\", "
-                                "\"reasoning\": \"detailed justification in 1–2 sentences\", "
-                                "\"grammar\": [\"grammatical categories only, e.g. present tense, imperfect subjunctive, conditional perfect, fixed expression. NOTHING in patentheses!\"] }"
-                            )
-                            },
+                                    "Respond EXCLUSIVELY with valid JSON:\n"
+                                    "{ \"cefr_level\": \"A1|A2|B1|B2|C1\", "
+                                    "\"reasoning\": \"detailed justification in 1–2 sentences\", "
+                                    "\"grammar\": [\"grammatical categories in English only, e.g. present tense, imperfect subjunctive, conditional perfect, fixed expression. NOTHING in patentheses!\"] }"
+                                )
+                                },
 
-                                            # Few‑shot examples
-                                            {"role": "user", "content": "Me llamo Luis."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"A1\", \"reasoning\": \"Basic self-introduction, present tense ser.\"}"},
+                                                # Few‑shot examples
+                                                {"role": "user", "content": "Me llamo Luis."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"A1\", \"reasoning\": \"Basic self-introduction, present tense ser.\"}"},
 
-                                            {"role": "user", "content": "¿Cómo te llamas?"},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"A1\", \"reasoning\": \"Basic question with ser.\"}"},
+                                                {"role": "user", "content": "¿Cómo te llamas?"},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"A1\", \"reasoning\": \"Basic question with ser.\"}"},
 
-                                            {"role": "user", "content": "Tengo 25 años."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"A1\", \"reasoning\": \"Tener for age, numbers.\"}"},
+                                                {"role": "user", "content": "Tengo 25 años."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"A1\", \"reasoning\": \"Tener for age, numbers.\"}"},
 
-                                            {"role": "user", "content": "La mesa es grande."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"A1\", \"reasoning\": \"Ser + adjective description.\"}"},
+                                                {"role": "user", "content": "La mesa es grande."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"A1\", \"reasoning\": \"Ser + adjective description.\"}"},
 
-                                            {"role": "user", "content": "Quiero un café, por favor."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"A1\", \"reasoning\": \"Querer + noun, basic request.\"}"},
+                                                {"role": "user", "content": "Quiero un café, por favor."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"A1\", \"reasoning\": \"Querer + noun, basic request.\"}"},
 
-                                            {"role": "user", "content": "Vivo en una casa y tengo un perro."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"A2\", \"reasoning\": \"Two clauses coordinated with y.\"}"},
+                                                {"role": "user", "content": "Vivo en una casa y tengo un perro."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"A2\", \"reasoning\": \"Two clauses coordinated with y.\"}"},
 
-                                            {"role": "user", "content": "Miro la televisión y descanso."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"A2\", \"reasoning\": \"Classic A2 compound sentence with y.\"}"},
+                                                {"role": "user", "content": "Miro la televisión y descanso."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"A2\", \"reasoning\": \"Classic A2 compound sentence with y.\"}"},
 
-                                            {"role": "user", "content": "Hoy es lunes y voy al trabajo."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"A2\", \"reasoning\": \"Coordination + time marker.\"}"},
+                                                {"role": "user", "content": "Hoy es lunes y voy al trabajo."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"A2\", \"reasoning\": \"Coordination + time marker.\"}"},
 
-                                            {"role": "user", "content": "Me gusta el fútbol y juego los sábados."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"A2\", \"reasoning\": \"Gustar + activity + frequency.\"}"},
+                                                {"role": "user", "content": "Me gusta el fútbol y juego los sábados."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"A2\", \"reasoning\": \"Gustar + activity + frequency.\"}"},
 
-                                            {"role": "user", "content": "Voy al supermercado porque necesito leche."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"A2\", \"reasoning\": \"Causal connector porque.\"}"},
+                                                {"role": "user", "content": "Voy al supermercado porque necesito leche."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"A2\", \"reasoning\": \"Causal connector porque.\"}"},
 
-                                            {"role": "user", "content": "Esta tarde he quedado con Ana."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"A2\", \"reasoning\": \"Present perfect for near-future plans, very common A2.\"}"},
+                                                {"role": "user", "content": "Esta tarde he quedado con Ana."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"A2\", \"reasoning\": \"Present perfect for near-future plans, very common A2.\"}"},
 
-                                            {"role": "user", "content": "Puedo ayudarte si quieres."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"A2\", \"reasoning\": \"Poder + infinitive, si + present.\"}"},
+                                                {"role": "user", "content": "El billete costará unos 50 euros, creo."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"A2\", \"reasoning\": \"Simple future (costará) for price estimation = standard A2.\"}"},
 
-                                            {"role": "user", "content": "Tengo que estudiar para el examen."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"A2\", \"reasoning\": \"Tener que + infinitive obligation.\"}"},
-                                            
-                                            {"role": "user", "content": "Me duele la garganta desde el viernes."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Physical sensation + desde + specific past point (duration up to present) = core B1 time marker.\"}"},
+                                                {"role": "user", "content": "Puedo ayudarte si quieres."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"A2\", \"reasoning\": \"Poder + infinitive, si + present.\"}"},
 
-                                            { "role": "user", "content": "Es mejor que vengas temprano." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: evaluative clause with present subjunctive, common trigger.\" }" },
+                                                {"role": "user", "content": "Tengo que estudiar para el examen."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"A2\", \"reasoning\": \"Tener que + infinitive obligation.\"}"},
+                                                
+                                                {"role": "user", "content": "Me duele la garganta desde el viernes."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Physical sensation + desde + specific past point (duration up to present) = core B1 time marker.\"}"},
 
-                                            { "role": "user", "content": "Es necesario que estudies más." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: subjunctive in opinion clause, everyday register.\" }" },
+                                                { "role": "user", "content": "Es mejor que vengas temprano." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: evaluative clause with present subjunctive, common trigger.\" }" },
 
-                                            { "role": "user", "content": "Cuando llegué, vi a mis amigos." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: temporal clause with indicative, narrative sequencing.\" }" },
+                                                { "role": "user", "content": "Es necesario que estudies más." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: subjunctive in opinion clause, everyday register.\" }" },
 
-                                            { "role": "user", "content": "Cuando era niño, jugaba en el parque." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: imperfect narrative with temporal connector cuando.\" }" },
+                                                { "role": "user", "content": "Cuando llegué, vi a mis amigos." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: temporal clause with indicative, narrative sequencing.\" }" },
 
-                                            { "role": "user", "content": "Hoy he visto a mis abuelos." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"A2: present perfect for recent everyday event.\" }" },
+                                                { "role": "user", "content": "Cuando era niño, jugaba en el parque." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: imperfect narrative with temporal connector cuando.\" }" },
 
-                                            { "role": "user", "content": "Ya he terminado los deberes." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"A2: present perfect in everyday context, simple completion.\" }" },
+                                                { "role": "user", "content": "Hoy he visto a mis abuelos." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"A2: present perfect for recent everyday event.\" }" },
 
-                                            { "role": "user", "content": "Me alegro de que hayas venido." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: present perfect subjunctive in emotion clause.\" }" },
+                                                { "role": "user", "content": "Ya he terminado los deberes." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"A2\", \"reasoning\": \"A2: present perfect in everyday context, simple completion.\" }" },
 
-                                            { "role": "user", "content": "Espero que hayas tenido buen viaje." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: present perfect subjunctive in wish clause.\" }" },
+                                                { "role": "user", "content": "Me alegro de que hayas venido." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: present perfect subjunctive in emotion clause.\" }" },
 
-                                            { "role": "user", "content": "Me gustaría que me ayudaras mañana." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: conditional + imperfect subjunctive for polite request.\" }" },
+                                                { "role": "user", "content": "Espero que hayas tenido buen viaje." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: present perfect subjunctive in wish clause.\" }" },
 
-                                            { "role": "user", "content": "Preferiría que me lo explicaras con calma." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: conditional preference + imperfect subjunctive.\" }" },
+                                                { "role": "user", "content": "Me gustaría que me ayudaras mañana." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: conditional + imperfect subjunctive for polite request.\" }" },
 
-                                            {"role": "system", "content": "CRITICAL 2025 DELE RULE: ANY sentence with present subjunctive in common triggers (querer que, ojalá, temo que, es importante que, me da igual que, busco que, etc.) OR present perfect (he comido) OR imperfect vs preterite contrast OR hace + time + que OR childhood imperfect → is B1 unless it contains conditional sentences, pluperfect subjunctive, future perfect, por mucho que, aunque + subjunctive, or archaic forms."},
+                                                { "role": "user", "content": "Preferiría que me lo explicaras con calma." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: conditional preference + imperfect subjunctive.\" }" },
+                                                
+                                                {"role": "user", "content": "Siempre que salgo sin paraguas, llueve."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Siempre que + present indicative for habitual actions ('whenever') = core B2 temporal connector.\"}"},
 
-                                            {"role": "user", "content": "Fue entonces cuando entendí lo que pasaba."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Classic B1 narrative cleft with preterite (DELE B1 official).\"}"},
+                                                {"role": "system", "content": "CRITICAL 2025 DELE RULE: ANY sentence with present subjunctive in common triggers (querer que, ojalá, temo que, es importante que, me da igual que, busco que, etc.) OR present perfect (he comido) OR imperfect vs preterite contrast OR hace + time + que OR childhood imperfect → is B1 unless it contains conditional sentences, pluperfect subjunctive, future perfect, por mucho que, aunque + subjunctive, or archaic forms."},
 
-                                            {"role": "user", "content": "Estoy a punto de salir; voy a llegar tarde."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Estar a punto de + infinitive = B1 imminent future periphrasis (Plan Curricular B1).\"}"},
+                                                {"role": "user", "content": "Fue entonces cuando entendí lo que pasaba."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Classic B1 narrative cleft with preterite.\"}"},
 
-                                            {"role": "user", "content": "Tal vez llegue más tarde; no estoy seguro."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Tal vez + present subjunctive and no estoy seguro de + inf = B1 doubt/possibility expressions.\"}"},
+                                                {"role": "user", "content": "Estoy a punto de salir; voy a llegar tarde."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Estar a punto de + infinitive = B1 imminent future periphrasis.\"}"},
 
-                                            {"role": "user", "content": "Me temo que no lleguemos a tiempo."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Me temo que + present subjunctive = B1 emotion/doubt verb (DELE B1 official).\"}"},
+                                                {"role": "user", "content": "Tal vez llegue más tarde; no estoy seguro."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Tal vez + present subjunctive and no estoy seguro de + inf = B1 doubt/possibility expressions.\"}"},
 
-                                            {"role": "user", "content": "He visitado a mis abuelos este fin de semana."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Present perfect for recent experience (this weekend) = B1 experiential use.\"}"},
+                                                {"role": "user", "content": "Me temo que no lleguemos a tiempo."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Me temo que + present subjunctive = B1 emotion/doubt verb.\"}"},
 
-                                            {"role": "user", "content": "Ayer fui al cine con mis amigos."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Indefinido with ayer = B1 simple past narrative (Plan Curricular B1).\"}"},
+                                                {"role": "user", "content": "He visitado a mis abuelos este fin de semana."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Present perfect for recent experience (this weekend) = B1 experiential use.\"}"},
 
-                                            {"role": "user", "content": "Me duele la cabeza, pero sigo trabajando."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Physical complaint + pero contrast in present = B1 personal narrative (DELE B1).\"}"},
+                                                {"role": "user", "content": "Ayer fui al cine con mis amigos."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Indefinido with ayer = B1 simple past narrative.\"}"},
 
-                                            {"role": "user", "content": "Ojalá nieve mañana."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Ojalá + present subjunctive = core B1.\"}"},
+                                                {"role": "user", "content": "Me duele la cabeza, pero sigo trabajando."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Physical complaint + pero contrast in present = B1 personal narrative.\"}"},
 
-                                            {"role": "user", "content": "Quiero que vengas a cenar."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Querer que + present subjunctive = first systematic subjunctive, B1.\"}"},
+                                                {"role": "user", "content": "Ojalá nieve mañana."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Ojalá + present subjunctive = core B1.\"}"},
 
-                                            {"role": "user", "content": "Me temo que perdemos el avión."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Temo que + subjunctive = B1 emotion verb.\"}"},
+                                                {"role": "user", "content": "Quiero que vengas a cenar."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Querer que + present subjunctive = first systematic subjunctive, B1.\"}"},
 
-                                            {"role": "user", "content": "Busco un piso que tenga ascensor."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Relative subjunctive = B1.\"}"},
+                                                {"role": "user", "content": "Me temo que perdemos el avión."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Temo que + subjunctive = B1 emotion verb.\"}"},
 
-                                            {"role": "user", "content": "He leído cuatro libros este verano."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Present perfect for recent past = B1.\"}"},
+                                                {"role": "user", "content": "Busco un piso que tenga ascensor."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Relative subjunctive = B1.\"}"},
 
-                                            {"role": "user", "content": "Cuando era pequeño vivía en un pueblo."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Imperfect for childhood = B1.\"}"},
+                                                {"role": "user", "content": "He leído cuatro libros este verano."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Present perfect for recent past = B1.\"}"},
 
-                                            {"role": "user", "content": "Pensaba ir al cine, pero me quedé en casa."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Indefinido/imperfecto contrast + pero = classic B1 narrative.\"}"},
+                                                {"role": "user", "content": "Cuando era pequeño vivía en un pueblo."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Imperfect for childhood = B1.\"}"},
 
-                                            {"role": "user", "content": "Hace cinco años que estudio español."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Hace + time + que + present = B1 duration.\"}"},
-                                            
-                                            { "role": "user", "content": "Es mejor que vengas temprano." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: evaluative clause with present subjunctive, common trigger.\" }" },
+                                                {"role": "user", "content": "Pensaba ir al cine, pero me quedé en casa."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Indefinido/imperfecto contrast + pero = classic B1 narrative.\"}"},
 
-                                            { "role": "user", "content": "Es importante que estudies para el examen." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: opinion clause with present subjunctive, everyday register.\" }" },
+                                                {"role": "user", "content": "Hace cinco años que estudio español."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B1\", \"reasoning\": \"Hace + time + que + present = B1 duration.\"}"},
+                                                
+                                                { "role": "user", "content": "Es mejor que vengas temprano." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: evaluative clause with present subjunctive, common trigger.\" }" },
 
-                                            { "role": "user", "content": "Me parece mal que no vengas." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: evaluative clause with present subjunctive, simple opinion.\" }" },
-                                            
-                                            { "role": "user", "content": "El verano pasado fui a la playa y fue fantástico." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: indefinido narrative with evaluative adjective, simple past experience.\" }" },
+                                                { "role": "user", "content": "Es importante que estudies para el examen." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: opinion clause with present subjunctive, everyday register.\" }" },
 
-                                            { "role": "user", "content": "Ayer cené con amigos y estuvo genial." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: simple past (indefinido) with evaluative adjective, everyday narrative.\" }" },
+                                                { "role": "user", "content": "Me parece mal que no vengas." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: evaluative clause with present subjunctive, simple opinion.\" }" },
+                                                
+                                                { "role": "user", "content": "El verano pasado fui a la playa y fue fantástico." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: indefinido narrative with evaluative adjective, simple past experience.\" }" },
 
-                                            { "role": "user", "content": "Hace dos años viajé a Italia y fue increíble." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: past narrative with evaluation, no subjunctive or conditional.\" }" },
+                                                { "role": "user", "content": "Ayer cené con amigos y estuvo genial." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: simple past (indefinido) with evaluative adjective, everyday narrative.\" }" },
 
-                                            { "role": "user", "content": "Quiero un profesor que sea paciente." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: relative clause with present subjunctive, common everyday trigger.\" }" },
+                                                { "role": "user", "content": "Hace dos años viajé a Italia y fue increíble." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: past narrative with evaluation, no subjunctive or conditional.\" }" },
 
-                                            { "role": "user", "content": "Busco un piso que tenga balcón." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: present subjunctive in relative clause, indefinite antecedent.\" }" },
+                                                { "role": "user", "content": "Quiero un profesor que sea paciente." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: relative clause with present subjunctive, common everyday trigger.\" }" },
 
-                                            { "role": "user", "content": "Necesito un coche que funcione bien." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: relative clause with present subjunctive, everyday context.\" }" },
-                                            
-                                            { "role": "user", "content": "Me encanta que participes en clase." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: everyday attitude clause with present subjunctive, positive reaction.\" }" },
+                                                { "role": "user", "content": "Busco un piso que tenga balcón." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: present subjunctive in relative clause, indefinite antecedent.\" }" },
 
-                                            { "role": "user", "content": "Me sorprende que llegues tan temprano." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: attitude clause with present subjunctive, everyday surprise expression.\" }" },
+                                                { "role": "user", "content": "Necesito un coche que funcione bien." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: relative clause with present subjunctive, everyday context.\" }" },
+                                                
+                                                { "role": "user", "content": "Me encanta que participes en clase." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: everyday attitude clause with present subjunctive, positive reaction.\" }" },
 
-                                            { "role": "user", "content": "Me fastidia que olvides las llaves." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: attitude clause with present subjunctive, everyday annoyance expression.\" }" },
+                                                { "role": "user", "content": "Me sorprende que llegues tan temprano." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: attitude clause with present subjunctive, everyday surprise expression.\" }" },
 
-                                            { "role": "user", "content": "Me gustaría que me acompañaras al banco mañana." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: conditional + imperfect subjunctive, polite evaluative request.\" }" },
+                                                { "role": "user", "content": "Me fastidia que olvides las llaves." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B1\", \"reasoning\": \"B1: attitude clause with present subjunctive, everyday annoyance expression.\" }" },
 
-                                            { "role": "user", "content": "Preferiría que me lo entregaras por escrito." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: conditional preference + imperfect subjunctive, evaluative nuance.\" }" },
+                                                { "role": "user", "content": "Me gustaría que me acompañaras al banco mañana." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: conditional + imperfect subjunctive, polite evaluative request.\" }" },
 
-                                            { "role": "user", "content": "Es posible que hayas olvidado el documento." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: evaluative clause with present perfect subjunctive, compound tense.\" }" },
+                                                { "role": "user", "content": "Preferiría que me lo entregaras por escrito." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: conditional preference + imperfect subjunctive, evaluative nuance.\" }" },
 
-                                            { "role": "user", "content": "Buscaba un piso que fuera tranquilo." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: imperfect subjunctive in relative clause, past context.\" }" },
+                                                { "role": "user", "content": "Es posible que hayas olvidado el documento." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: evaluative clause with present perfect subjunctive, compound tense.\" }" },
 
-                                            { "role": "user", "content": "Quería un profesor que ayudara a todos." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: imperfect subjunctive in relative clause, past desire.\" }" },
+                                                { "role": "user", "content": "Buscaba un piso que fuera tranquilo." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: imperfect subjunctive in relative clause, past context.\" }" },
 
-                                            { "role": "user", "content": "Habría preferido un coche que hubiera sido más rápido." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: pluperfect subjunctive in relative clause, conditional nuance.\" }" },
+                                                { "role": "user", "content": "Quería un profesor que ayudara a todos." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: imperfect subjunctive in relative clause, past desire.\" }" },
 
-                                            { "role": "user", "content": "Preferiría que me lo contaras mañana." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: conditional preference + imperfect subjunctive, evaluative nuance.\" }" },
+                                                { "role": "user", "content": "Habría preferido un coche que hubiera sido más rápido." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: pluperfect subjunctive in relative clause, conditional nuance.\" }" },
 
-                                            { "role": "user", "content": "Es posible que haya perdido el móvil." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: evaluative clause with present perfect subjunctive, expressing possibility.\" }" },
+                                                { "role": "user", "content": "Preferiría que me lo contaras mañana." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: conditional preference + imperfect subjunctive, evaluative nuance.\" }" },
 
-                                            { "role": "user", "content": "Preferiría que me lo explicaras con calma." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: conditional preference + imperfect subjunctive.\" }" },
+                                                { "role": "user", "content": "Es posible que haya perdido el móvil." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: evaluative clause with present perfect subjunctive, expressing possibility.\" }" },
 
-                                            { "role": "user", "content": "Querría que me acompañaras al médico." },
-                                            { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: conditional desire + imperfect subjunctive, polite nuance.\" }" },
-                                            
-                                            {"role": "user", "content": "Si tuviera dinero, viajaría."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Type-2 hypothetical (imperfect subjunctive + conditional).\"}"},
+                                                { "role": "user", "content": "Preferiría que me lo explicaras con calma." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: conditional preference + imperfect subjunctive.\" }" },
 
-                                            {"role": "user", "content": "Si hubieras estudiado, habrías aprobado."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Type-3 unreal past conditional.\"}"},
+                                                { "role": "user", "content": "Querría que me acompañaras al médico." },
+                                                { "role": "assistant", "content": "{ \"cefr_level\": \"B2\", \"reasoning\": \"B2: conditional desire + imperfect subjunctive, polite nuance.\" }" },
+                                                
+                                                {"role": "user", "content": "Si tuviera dinero, viajaría."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Type-2 hypothetical (imperfect subjunctive + conditional).\"}"},
 
-                                            {"role": "user", "content": "Aunque llueva, iremos al parque."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Aunque + present subjunctive (hypothetical concession).\"}"},
+                                                {"role": "user", "content": "Si hubieras estudiado, habrías aprobado."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Type-3 unreal past conditional.\"}"},
 
-                                            {"role": "user", "content": "Cuando termines, avísame."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Cuando + present subjunctive for future action.\"}"},
+                                                {"role": "user", "content": "Aunque llueva, iremos al parque."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Aunque + present subjunctive (hypothetical concession).\"}"},
 
-                                            {"role": "user", "content": "Para que no te pierdas, te doy un mapa."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Para que + subjunctive (purpose).\"}"},
+                                                {"role": "user", "content": "Cuando termines, avísame."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Cuando + present subjunctive for future action.\"}"},
 
-                                            {"role": "user", "content": "Habrá terminado antes de las cinco."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Future perfect.\"}"},
+                                                {"role": "user", "content": "Para que no te pierdas, te doy un mapa."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Para que + subjunctive (purpose).\"}"},
 
-                                            {"role": "user", "content": "Habría venido si me hubieras avisado."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Conditional perfect.\"}"},
+                                                {"role": "user", "content": "Habrá terminado antes de las cinco."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Future perfect.\"}"},
 
-                                            {"role": "user", "content": "De no ser por ti, no lo habríamos conseguido."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"De no ser por + conditional perfect.\"}"},
+                                                {"role": "user", "content": "Habría venido si me hubieras avisado."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Conditional perfect.\"}"},
 
-                                            {"role": "user", "content": "Por mucho que corra, no llegaré a tiempo."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Por mucho que + subjunctive concession.\"}"},
+                                                {"role": "user", "content": "De no ser por ti, no lo habríamos conseguido."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"De no ser por + conditional perfect.\"}"},
 
-                                            {"role": "user", "content": "Ojalá hubiera llovido ayer."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Ojalá + pluperfect subjunctive.\"}"},
-                                            
-                                            {"role": "user", "content": "En caso de que surjan complicaciones, llámame inmediatamente."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"En caso de que + present subjunctive = B2 conditional connector (Plan Curricular B2).\"}"},
+                                                {"role": "user", "content": "Por mucho que corra, no llegaré a tiempo."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Por mucho que + subjunctive concession.\"}"},
 
-                                            {"role": "user", "content": "En caso de que necesiten ayuda extra, estaré en la oficina hasta tarde."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"En caso de que + present subjunctive for future contingency = B2.\"}"},
+                                                {"role": "user", "content": "Ojalá hubiera llovido ayer."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Ojalá + pluperfect subjunctive.\"}"},
+                                                
+                                                {"role": "user", "content": "En caso de que surjan complicaciones, llámame inmediatamente."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"En caso de que + present subjunctive = B2 conditional connector (Plan Curricular B2).\"}"},
 
-                                            {"role": "user", "content": "En caso de que aprueben la nueva ley, tendremos que cambiar el plan."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"En caso de que + present subjunctive = standard B2 structure.\"}"},
+                                                {"role": "user", "content": "En caso de que necesiten ayuda extra, estaré en la oficina hasta tarde."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"En caso de que + present subjunctive for future contingency = B2.\"}"},
 
-                                            {"role": "user", "content": "En caso de que llueva mañana, cancelaremos el picnic."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"En caso de que + present subjunctive = B2 conditional clause.\"}"},
+                                                {"role": "user", "content": "En caso de que aprueben la nueva ley, tendremos que cambiar el plan."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"En caso de que + present subjunctive = standard B2 structure.\"}"},
 
-                                            {"role": "user", "content": "Es normal que esté cansado después del viaje."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Es normal que + subjunctive.\"}"},
+                                                {"role": "user", "content": "En caso de que llueva mañana, cancelaremos el picnic."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"En caso de que + present subjunctive = B2 conditional clause.\"}"},
 
-                                            {"role": "user", "content": "Apenas hube terminado, sonó el teléfono."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Pretérico anterior (very rare literary tense).\"}"},
+                                                {"role": "user", "content": "Es normal que esté cansado después del viaje."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"B2\", \"reasoning\": \"Es normal que + subjunctive.\"}"},
 
-                                            {"role": "user", "content": "Sea como fuere, debemos seguir adelante."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Formal concessive expression with subjunctive.\"}"},
+                                                {"role": "user", "content": "Apenas hube terminado, sonó el teléfono."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Pretérico anterior (very rare literary tense).\"}"},
 
-                                            {"role": "user", "content": "Por más que lo intenté, no lo conseguí."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Por más que + indicative (formal concession).\"}"},
+                                                {"role": "user", "content": "Sea como fuere, debemos seguir adelante."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Formal concessive expression with subjunctive.\"}"},
 
-                                            {"role": "user", "content": "Así las cosas, poco podemos hacer."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Formal discourse marker.\"}"},
+                                                {"role": "user", "content": "Por más que lo intenté, no lo conseguí."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Por más que + indicative (formal concession).\"}"},
 
-                                            {"role": "user", "content": "Con todo, aceptaron la propuesta."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Formal adversative connector.\"}"},
+                                                {"role": "user", "content": "Así las cosas, poco podemos hacer."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Formal discourse marker.\"}"},
 
-                                            {"role": "user", "content": "En aras de la transparencia, publicaremos los datos."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Fixed formal expression.\"}"},
+                                                {"role": "user", "content": "Con todo, aceptaron la propuesta."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Formal adversative connector.\"}"},
 
-                                            {"role": "user", "content": "Quiérase o no, tendremos que adaptarnos."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Impersonal formal subjunctive construction.\"}"},
+                                                {"role": "user", "content": "En aras de la transparencia, publicaremos los datos."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Fixed formal expression.\"}"},
 
-                                            {"role": "user", "content": "A poco que te esfuerces, lo conseguirás."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"A poco que + subjunctive (nuanced concession).\"}"},
+                                                {"role": "user", "content": "Quiérase o no, tendremos que adaptarnos."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Impersonal formal subjunctive construction.\"}"},
 
-                                            {"role": "user", "content": "Habida cuenta de las circunstancias, actuaremos con cautela."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Formal fixed expression.\"}"},
+                                                {"role": "user", "content": "A poco que te esfuerces, lo conseguirás."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"A poco que + subjunctive (nuanced concession).\"}"},
 
-                                            {"role": "user", "content": "Mal que le pese, deberá disculparse."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Formal concessive with subjunctive.\"}"},
+                                                {"role": "user", "content": "Habida cuenta de las circunstancias, actuaremos con cautela."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Formal fixed expression.\"}"},
 
-                                            {"role": "user", "content": "De haberlo sabido, habría actuado distinto."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Inverted pluperfect subjunctive construction (formal).\"}"},
+                                                {"role": "user", "content": "Mal que le pese, deberá disculparse."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Formal concessive with subjunctive.\"}"},
 
-                                            {"role": "user", "content": "A la postre, todo salió bien."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Literary temporal expression.\"}"},
+                                                {"role": "user", "content": "De haberlo sabido, habría actuado distinto."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Inverted pluperfect subjunctive construction (formal).\"}"},
 
-                                            {"role": "user", "content": "Ni por asomo se me ocurrió que pudiera pasar."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Strong idiomatic negation.\"}"},
-                                            
-                                            {"role": "user", "content": "En caso de que hubiere inconvenientes de última hora, se aplazará la ceremonia."},
-                                            {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Future subjunctive (hubiere) after 'en caso de que' + formal passive future = automatic C1 (only surviving context for future subjunctive in modern Spanish).\"}"},
-                                            
-                                            
+                                                {"role": "user", "content": "A la postre, todo salió bien."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Literary temporal expression.\"}"},
+
+                                                {"role": "user", "content": "Ni por asomo se me ocurrió que pudiera pasar."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Strong idiomatic negation.\"}"},
+                                                
+                                                {"role": "user", "content": "Se sentía menospreciado y vilipendiado por quienes envidiaban su talento."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Formal low-frequency vocabulary (vilipendiado, menospreciado) + sophisticated passive/reflexive structures = automatic C1.\"}"},
+                                                
+                                                {"role": "user", "content": "En caso de que hubiere inconvenientes de última hora, se aplazará la ceremonia."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Future subjunctive (hubiere) after 'en caso de que' + formal passive future = automatic C1 (only surviving context for future subjunctive in modern Spanish).\"}"},
+                                                
+                                                {"role": "user", "content": "El informe no podrá publicarse sin el visto bueno del comité."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Fixed formal expression 'visto bueno' in administrative context = automatic C1 (DELE C1 official).\"}"},
+
+                                                {"role": "user", "content": "Dado el caso de que surjan nuevas pruebas, se reabrirá la investigación."},
+                                                {"role": "assistant", "content": "{\"cefr_level\": \"C1\", \"reasoning\": \"Formal conditional 'dado el caso (de que) + subjunctive' = core C1 discourse marker (Plan Curricular C1).\"}"},
+                                                
                                                 # --- Actual request ---
                                                 {"role": "user", "content": spanish_sentence}
                                             ],
